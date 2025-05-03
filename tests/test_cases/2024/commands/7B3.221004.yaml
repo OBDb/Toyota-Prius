@@ -1,0 +1,736 @@
+command_id: 7B3.221004
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7BB06621004000000
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000001
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000002
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000003
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000004
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000005
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000006
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000007
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB066210040000FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 0
+- response: 7BB06621004000100
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000101
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000102
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000103
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000105
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000106
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000107
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB066210040001FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 1.5
+- response: 7BB06621004000200
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000201
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000202
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000203
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000205
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000206
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB066210040002FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 3
+- response: 7BB06621004000300
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000301
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000302
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000303
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000304
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000307
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB066210040003FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 4.5
+- response: 7BB06621004000400
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB06621004000406
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB066210040004F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB066210040004FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB066210040004FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB066210040004FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB066210040004FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 6
+- response: 7BB06621004000500
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB06621004000501
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB06621004000504
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB06621004000506
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB06621004000507
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB066210040005FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 7.5
+- response: 7BB06621004000601
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB06621004000603
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB06621004000604
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB06621004000605
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB06621004000606
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB066210040006FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB066210040006FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB066210040006FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 9
+- response: 7BB06621004000702
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 10.5
+- response: 7BB06621004000704
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 10.5
+- response: 7BB06621004000706
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 10.5
+- response: 7BB066210040007FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 10.5
+- response: 7BB066210040007FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 10.5
+- response: 7BB06621004000802
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB06621004000803
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB06621004000804
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB06621004000807
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB066210040008F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB066210040008FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB066210040008FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 12
+- response: 7BB06621004000900
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 13.5
+- response: 7BB06621004000901
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 13.5
+- response: 7BB066210040009FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 13.5
+- response: 7BB066210040009FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 13.5
+- response: 7BB066210040009FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 13.5
+- response: 7BB06621004000A07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 15
+- response: 7BB06621004000B04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 16.5
+- response: 7BB06621004000BFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 16.5
+- response: 7BB06621004000CF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 18
+- response: 7BB06621004000DFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 19.5
+- response: 7BB06621004000DFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 19.5
+- response: 7BB06621004000E01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 21
+- response: 7BB06621004000FFB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 22.5
+- response: 7BB06621004000FFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 22.5
+- response: 7BB06621004001003
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 24
+- response: 7BB066210040010FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 24
+- response: 7BB066210040010FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 24
+- response: 7BB06621004001200
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 27
+- response: 7BB06621004001406
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 30
+- response: 7BB066210040016FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 33
+- response: 7BB06621004001705
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 34.5
+- response: 7BB066210040018FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 36
+- response: 7BB06621004001B02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 40.5
+- response: 7BB06621004001BFB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 40.5
+- response: 7BB06621004001D02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 43.5
+- response: 7BB06621004002006
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 48
+- response: 7BB06621004002500
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 55.5
+- response: 7BB066210040029FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 61.5
+- response: 7BB06621004002A02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 63
+- response: 7BB06621004002FFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 70.5
+- response: 7BB06621004003E05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 93
+- response: 7BB06621004004304
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 100.5
+- response: 7BB066210040047FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 106.5
+- response: 7BB066210040048FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 108
+- response: 7BB06621004004902
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 109.5
+- response: 7BB066210040056FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 129
+- response: 7BB06621004005FFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 142.5
+- response: 7BB06621004008901
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 205.5
+- response: 7BB0662100400BCFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 282
+- response: 7BB0662100400E1FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 337.5
+- response: 7BB0662100400F5FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: 367.5
+- response: 7BB06621004FF4A00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -273
+- response: 7BB06621004FF77FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -205.5
+- response: 7BB06621004FF7D04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -196.5
+- response: 7BB06621004FF99FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -154.5
+- response: 7BB06621004FF9D07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -148.5
+- response: 7BB06621004FFCBFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -79.5
+- response: 7BB06621004FFD8FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -60
+- response: 7BB06621004FFDFF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -49.5
+- response: 7BB06621004FFE300
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -43.5
+- response: 7BB06621004FFE401
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -42
+- response: 7BB06621004FFE4F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -42
+- response: 7BB06621004FFE5FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -40.5
+- response: 7BB06621004FFE8FE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -36
+- response: 7BB06621004FFEBFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -31.5
+- response: 7BB06621004FFED02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -28.5
+- response: 7BB06621004FFEE03
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -27
+- response: 7BB06621004FFEE07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -27
+- response: 7BB06621004FFEEFB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -27
+- response: 7BB06621004FFEEFE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -27
+- response: 7BB06621004FFEF04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -25.5
+- response: 7BB06621004FFEF05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -25.5
+- response: 7BB06621004FFF0FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -24
+- response: 7BB06621004FFF101
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -22.5
+- response: 7BB06621004FFF102
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -22.5
+- response: 7BB06621004FFF2FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -21
+- response: 7BB06621004FFF303
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -19.5
+- response: 7BB06621004FFF304
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -19.5
+- response: 7BB06621004FFF3F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -19.5
+- response: 7BB06621004FFF401
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -18
+- response: 7BB06621004FFF404
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -18
+- response: 7BB06621004FFF405
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -18
+- response: 7BB06621004FFF406
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -18
+- response: 7BB06621004FFF4FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -18
+- response: 7BB06621004FFF502
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -16.5
+- response: 7BB06621004FFF5F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -16.5
+- response: 7BB06621004FFF5FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -16.5
+- response: 7BB06621004FFF5FF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -16.5
+- response: 7BB06621004FFF6FB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -15
+- response: 7BB06621004FFF701
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -13.5
+- response: 7BB06621004FFF703
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -13.5
+- response: 7BB06621004FFF704
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -13.5
+- response: 7BB06621004FFF7F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -13.5
+- response: 7BB06621004FFF800
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -12
+- response: 7BB06621004FFF804
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -12
+- response: 7BB06621004FFF8FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -12
+- response: 7BB06621004FFF8FC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -12
+- response: 7BB06621004FFF903
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -10.5
+- response: 7BB06621004FFF904
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -10.5
+- response: 7BB06621004FFF9F9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -10.5
+- response: 7BB06621004FFF9FA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -10.5
+- response: 7BB06621004FFF9FD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -10.5
+- response: 7BB06621004FFFA00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFA01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFAF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFAFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFAFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFAFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -9
+- response: 7BB06621004FFFB00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFB02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFB04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFB05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFB06
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFBFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFBFB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFBFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFBFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -7.5
+- response: 7BB06621004FFFC00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC03
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC06
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFC07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFCF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFCFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFCFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFCFE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFCFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -6
+- response: 7BB06621004FFFD00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFD01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFD03
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFD05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFD06
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFD07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFDF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFDFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFDFE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -4.5
+- response: 7BB06621004FFFE00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE03
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE06
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFE07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFEF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFEFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFEFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFEFE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFEFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -3
+- response: 7BB06621004FFFF00
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF01
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF02
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF03
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF04
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF05
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF06
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFF07
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFF9
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFA
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFB
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFC
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFD
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFE
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5
+- response: 7BB06621004FFFFFF
+  expected_values:
+    TOYOTA_STEERING_ANGLE: -1.5

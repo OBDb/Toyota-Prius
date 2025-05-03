@@ -1,0 +1,325 @@
+command_id: 7D2.7DA.221F0D
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7DA04621F0D00
+  expected_values:
+    TOYOTA_VSS: 0
+- response: 7DA04621F0D03
+  expected_values:
+    TOYOTA_VSS: 3
+- response: 7DA04621F0D04
+  expected_values:
+    TOYOTA_VSS: 4
+- response: 7DA04621F0D05
+  expected_values:
+    TOYOTA_VSS: 5
+- response: 7DA04621F0D06
+  expected_values:
+    TOYOTA_VSS: 6
+- response: 7DA04621F0D07
+  expected_values:
+    TOYOTA_VSS: 7
+- response: 7DA04621F0D08
+  expected_values:
+    TOYOTA_VSS: 8
+- response: 7DA04621F0D09
+  expected_values:
+    TOYOTA_VSS: 9
+- response: 7DA04621F0D0A
+  expected_values:
+    TOYOTA_VSS: 10
+- response: 7DA04621F0D0B
+  expected_values:
+    TOYOTA_VSS: 11
+- response: 7DA04621F0D0C
+  expected_values:
+    TOYOTA_VSS: 12
+- response: 7DA04621F0D0D
+  expected_values:
+    TOYOTA_VSS: 13
+- response: 7DA04621F0D0E
+  expected_values:
+    TOYOTA_VSS: 14
+- response: 7DA04621F0D0F
+  expected_values:
+    TOYOTA_VSS: 15
+- response: 7DA04621F0D10
+  expected_values:
+    TOYOTA_VSS: 16
+- response: 7DA04621F0D11
+  expected_values:
+    TOYOTA_VSS: 17
+- response: 7DA04621F0D12
+  expected_values:
+    TOYOTA_VSS: 18
+- response: 7DA04621F0D13
+  expected_values:
+    TOYOTA_VSS: 19
+- response: 7DA04621F0D14
+  expected_values:
+    TOYOTA_VSS: 20
+- response: 7DA04621F0D15
+  expected_values:
+    TOYOTA_VSS: 21
+- response: 7DA04621F0D16
+  expected_values:
+    TOYOTA_VSS: 22
+- response: 7DA04621F0D17
+  expected_values:
+    TOYOTA_VSS: 23
+- response: 7DA04621F0D18
+  expected_values:
+    TOYOTA_VSS: 24
+- response: 7DA04621F0D19
+  expected_values:
+    TOYOTA_VSS: 25
+- response: 7DA04621F0D1A
+  expected_values:
+    TOYOTA_VSS: 26
+- response: 7DA04621F0D1B
+  expected_values:
+    TOYOTA_VSS: 27
+- response: 7DA04621F0D1C
+  expected_values:
+    TOYOTA_VSS: 28
+- response: 7DA04621F0D1D
+  expected_values:
+    TOYOTA_VSS: 29
+- response: 7DA04621F0D1E
+  expected_values:
+    TOYOTA_VSS: 30
+- response: 7DA04621F0D1F
+  expected_values:
+    TOYOTA_VSS: 31
+- response: 7DA04621F0D20
+  expected_values:
+    TOYOTA_VSS: 32
+- response: 7DA04621F0D21
+  expected_values:
+    TOYOTA_VSS: 33
+- response: 7DA04621F0D22
+  expected_values:
+    TOYOTA_VSS: 34
+- response: 7DA04621F0D23
+  expected_values:
+    TOYOTA_VSS: 35
+- response: 7DA04621F0D24
+  expected_values:
+    TOYOTA_VSS: 36
+- response: 7DA04621F0D25
+  expected_values:
+    TOYOTA_VSS: 37
+- response: 7DA04621F0D26
+  expected_values:
+    TOYOTA_VSS: 38
+- response: 7DA04621F0D27
+  expected_values:
+    TOYOTA_VSS: 39
+- response: 7DA04621F0D28
+  expected_values:
+    TOYOTA_VSS: 40
+- response: 7DA04621F0D29
+  expected_values:
+    TOYOTA_VSS: 41
+- response: 7DA04621F0D2A
+  expected_values:
+    TOYOTA_VSS: 42
+- response: 7DA04621F0D2B
+  expected_values:
+    TOYOTA_VSS: 43
+- response: 7DA04621F0D2C
+  expected_values:
+    TOYOTA_VSS: 44
+- response: 7DA04621F0D2D
+  expected_values:
+    TOYOTA_VSS: 45
+- response: 7DA04621F0D2E
+  expected_values:
+    TOYOTA_VSS: 46
+- response: 7DA04621F0D2F
+  expected_values:
+    TOYOTA_VSS: 47
+- response: 7DA04621F0D30
+  expected_values:
+    TOYOTA_VSS: 48
+- response: 7DA04621F0D31
+  expected_values:
+    TOYOTA_VSS: 49
+- response: 7DA04621F0D32
+  expected_values:
+    TOYOTA_VSS: 50
+- response: 7DA04621F0D33
+  expected_values:
+    TOYOTA_VSS: 51
+- response: 7DA04621F0D34
+  expected_values:
+    TOYOTA_VSS: 52
+- response: 7DA04621F0D35
+  expected_values:
+    TOYOTA_VSS: 53
+- response: 7DA04621F0D36
+  expected_values:
+    TOYOTA_VSS: 54
+- response: 7DA04621F0D37
+  expected_values:
+    TOYOTA_VSS: 55
+- response: 7DA04621F0D38
+  expected_values:
+    TOYOTA_VSS: 56
+- response: 7DA04621F0D39
+  expected_values:
+    TOYOTA_VSS: 57
+- response: 7DA04621F0D3A
+  expected_values:
+    TOYOTA_VSS: 58
+- response: 7DA04621F0D3B
+  expected_values:
+    TOYOTA_VSS: 59
+- response: 7DA04621F0D3C
+  expected_values:
+    TOYOTA_VSS: 60
+- response: 7DA04621F0D3D
+  expected_values:
+    TOYOTA_VSS: 61
+- response: 7DA04621F0D3E
+  expected_values:
+    TOYOTA_VSS: 62
+- response: 7DA04621F0D3F
+  expected_values:
+    TOYOTA_VSS: 63
+- response: 7DA04621F0D40
+  expected_values:
+    TOYOTA_VSS: 64
+- response: 7DA04621F0D41
+  expected_values:
+    TOYOTA_VSS: 65
+- response: 7DA04621F0D42
+  expected_values:
+    TOYOTA_VSS: 66
+- response: 7DA04621F0D43
+  expected_values:
+    TOYOTA_VSS: 67
+- response: 7DA04621F0D44
+  expected_values:
+    TOYOTA_VSS: 68
+- response: 7DA04621F0D45
+  expected_values:
+    TOYOTA_VSS: 69
+- response: 7DA04621F0D46
+  expected_values:
+    TOYOTA_VSS: 70
+- response: 7DA04621F0D47
+  expected_values:
+    TOYOTA_VSS: 71
+- response: 7DA04621F0D48
+  expected_values:
+    TOYOTA_VSS: 72
+- response: 7DA04621F0D49
+  expected_values:
+    TOYOTA_VSS: 73
+- response: 7DA04621F0D4A
+  expected_values:
+    TOYOTA_VSS: 74
+- response: 7DA04621F0D4C
+  expected_values:
+    TOYOTA_VSS: 76
+- response: 7DA04621F0D4D
+  expected_values:
+    TOYOTA_VSS: 77
+- response: 7DA04621F0D4E
+  expected_values:
+    TOYOTA_VSS: 78
+- response: 7DA04621F0D4F
+  expected_values:
+    TOYOTA_VSS: 79
+- response: 7DA04621F0D50
+  expected_values:
+    TOYOTA_VSS: 80
+- response: 7DA04621F0D51
+  expected_values:
+    TOYOTA_VSS: 81
+- response: 7DA04621F0D52
+  expected_values:
+    TOYOTA_VSS: 82
+- response: 7DA04621F0D53
+  expected_values:
+    TOYOTA_VSS: 83
+- response: 7DA04621F0D57
+  expected_values:
+    TOYOTA_VSS: 87
+- response: 7DA04621F0D58
+  expected_values:
+    TOYOTA_VSS: 88
+- response: 7DA04621F0D59
+  expected_values:
+    TOYOTA_VSS: 89
+- response: 7DA04621F0D5A
+  expected_values:
+    TOYOTA_VSS: 90
+- response: 7DA04621F0D5B
+  expected_values:
+    TOYOTA_VSS: 91
+- response: 7DA04621F0D5C
+  expected_values:
+    TOYOTA_VSS: 92
+- response: 7DA04621F0D5D
+  expected_values:
+    TOYOTA_VSS: 93
+- response: 7DA04621F0D5E
+  expected_values:
+    TOYOTA_VSS: 94
+- response: 7DA04621F0D5F
+  expected_values:
+    TOYOTA_VSS: 95
+- response: 7DA04621F0D60
+  expected_values:
+    TOYOTA_VSS: 96
+- response: 7DA04621F0D61
+  expected_values:
+    TOYOTA_VSS: 97
+- response: 7DA04621F0D62
+  expected_values:
+    TOYOTA_VSS: 98
+- response: 7DA04621F0D63
+  expected_values:
+    TOYOTA_VSS: 99
+- response: 7DA04621F0D64
+  expected_values:
+    TOYOTA_VSS: 100
+- response: 7DA04621F0D65
+  expected_values:
+    TOYOTA_VSS: 101
+- response: 7DA04621F0D66
+  expected_values:
+    TOYOTA_VSS: 102
+- response: 7DA04621F0D67
+  expected_values:
+    TOYOTA_VSS: 103
+- response: 7DA04621F0D68
+  expected_values:
+    TOYOTA_VSS: 104
+- response: 7DA04621F0D69
+  expected_values:
+    TOYOTA_VSS: 105
+- response: 7DA04621F0D6A
+  expected_values:
+    TOYOTA_VSS: 106
+- response: 7DA04621F0D6B
+  expected_values:
+    TOYOTA_VSS: 107
+- response: 7DA04621F0D6C
+  expected_values:
+    TOYOTA_VSS: 108
+- response: 7DA04621F0D6D
+  expected_values:
+    TOYOTA_VSS: 109
+- response: 7DA04621F0D6E
+  expected_values:
+    TOYOTA_VSS: 110
+- response: 7DA04621F0D6F
+  expected_values:
+    TOYOTA_VSS: 111
+- response: 7DA04621F0D70
+  expected_values:
+    TOYOTA_VSS: 112

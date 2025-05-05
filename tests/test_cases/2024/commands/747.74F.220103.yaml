@@ -4,658 +4,658 @@ extended_addressing_enabled: false
 test_cases:
 - response: 74F07620103020047FC
   expected_values:
-    TOYOTA_ODO: 18428
+    TOYOTA_ODO_V2: 18428
 - response: 74F07620103020047FD
   expected_values:
-    TOYOTA_ODO: 18429
+    TOYOTA_ODO_V2: 18429
 - response: 74F07620103020047FE
   expected_values:
-    TOYOTA_ODO: 18430
+    TOYOTA_ODO_V2: 18430
 - response: 74F07620103020047FF
   expected_values:
-    TOYOTA_ODO: 18431
+    TOYOTA_ODO_V2: 18431
 - response: 74F0762010302004800
   expected_values:
-    TOYOTA_ODO: 18432
+    TOYOTA_ODO_V2: 18432
 - response: 74F0762010302004801
   expected_values:
-    TOYOTA_ODO: 18433
+    TOYOTA_ODO_V2: 18433
 - response: 74F0762010302004802
   expected_values:
-    TOYOTA_ODO: 18434
+    TOYOTA_ODO_V2: 18434
 - response: 74F0762010302004803
   expected_values:
-    TOYOTA_ODO: 18435
+    TOYOTA_ODO_V2: 18435
 - response: 74F0762010302004804
   expected_values:
-    TOYOTA_ODO: 18436
+    TOYOTA_ODO_V2: 18436
 - response: 74F0762010302004805
   expected_values:
-    TOYOTA_ODO: 18437
+    TOYOTA_ODO_V2: 18437
 - response: 74F0762010302004806
   expected_values:
-    TOYOTA_ODO: 18438
+    TOYOTA_ODO_V2: 18438
 - response: 74F0762010302004807
   expected_values:
-    TOYOTA_ODO: 18439
+    TOYOTA_ODO_V2: 18439
 - response: 74F0762010302004808
   expected_values:
-    TOYOTA_ODO: 18440
+    TOYOTA_ODO_V2: 18440
 - response: 74F0762010302004809
   expected_values:
-    TOYOTA_ODO: 18441
+    TOYOTA_ODO_V2: 18441
 - response: 74F076201030200480A
   expected_values:
-    TOYOTA_ODO: 18442
+    TOYOTA_ODO_V2: 18442
 - response: 74F0762010302004868
   expected_values:
-    TOYOTA_ODO: 18536
+    TOYOTA_ODO_V2: 18536
 - response: 74F0762010302004869
   expected_values:
-    TOYOTA_ODO: 18537
+    TOYOTA_ODO_V2: 18537
 - response: 74F076201030200486A
   expected_values:
-    TOYOTA_ODO: 18538
+    TOYOTA_ODO_V2: 18538
 - response: 74F076201030200486B
   expected_values:
-    TOYOTA_ODO: 18539
+    TOYOTA_ODO_V2: 18539
 - response: 74F076201030200486C
   expected_values:
-    TOYOTA_ODO: 18540
+    TOYOTA_ODO_V2: 18540
 - response: 74F076201030200486D
   expected_values:
-    TOYOTA_ODO: 18541
+    TOYOTA_ODO_V2: 18541
 - response: 74F076201030200486E
   expected_values:
-    TOYOTA_ODO: 18542
+    TOYOTA_ODO_V2: 18542
 - response: 74F076201030200486F
   expected_values:
-    TOYOTA_ODO: 18543
+    TOYOTA_ODO_V2: 18543
 - response: 74F0762010302004870
   expected_values:
-    TOYOTA_ODO: 18544
+    TOYOTA_ODO_V2: 18544
 - response: 74F0762010302004871
   expected_values:
-    TOYOTA_ODO: 18545
+    TOYOTA_ODO_V2: 18545
 - response: 74F0762010302004872
   expected_values:
-    TOYOTA_ODO: 18546
+    TOYOTA_ODO_V2: 18546
 - response: 74F0762010302004873
   expected_values:
-    TOYOTA_ODO: 18547
+    TOYOTA_ODO_V2: 18547
 - response: 74F0762010302004874
   expected_values:
-    TOYOTA_ODO: 18548
+    TOYOTA_ODO_V2: 18548
 - response: 74F07620103020048F6
   expected_values:
-    TOYOTA_ODO: 18678
+    TOYOTA_ODO_V2: 18678
 - response: 74F07620103020048F7
   expected_values:
-    TOYOTA_ODO: 18679
+    TOYOTA_ODO_V2: 18679
 - response: 74F07620103020048F8
   expected_values:
-    TOYOTA_ODO: 18680
+    TOYOTA_ODO_V2: 18680
 - response: 74F07620103020048F9
   expected_values:
-    TOYOTA_ODO: 18681
+    TOYOTA_ODO_V2: 18681
 - response: 74F07620103020048FA
   expected_values:
-    TOYOTA_ODO: 18682
+    TOYOTA_ODO_V2: 18682
 - response: 74F07620103020048FB
   expected_values:
-    TOYOTA_ODO: 18683
+    TOYOTA_ODO_V2: 18683
 - response: 74F07620103020048FC
   expected_values:
-    TOYOTA_ODO: 18684
+    TOYOTA_ODO_V2: 18684
 - response: 74F07620103020048FD
   expected_values:
-    TOYOTA_ODO: 18685
+    TOYOTA_ODO_V2: 18685
 - response: 74F07620103020048FE
   expected_values:
-    TOYOTA_ODO: 18686
+    TOYOTA_ODO_V2: 18686
 - response: 74F07620103020048FF
   expected_values:
-    TOYOTA_ODO: 18687
+    TOYOTA_ODO_V2: 18687
 - response: 74F0762010302004900
   expected_values:
-    TOYOTA_ODO: 18688
+    TOYOTA_ODO_V2: 18688
 - response: 74F0762010302004901
   expected_values:
-    TOYOTA_ODO: 18689
+    TOYOTA_ODO_V2: 18689
 - response: 74F0762010302004902
   expected_values:
-    TOYOTA_ODO: 18690
+    TOYOTA_ODO_V2: 18690
 - response: 74F0762010302004903
   expected_values:
-    TOYOTA_ODO: 18691
+    TOYOTA_ODO_V2: 18691
 - response: 74F0762010302004904
   expected_values:
-    TOYOTA_ODO: 18692
+    TOYOTA_ODO_V2: 18692
 - response: 74F0762010302004905
   expected_values:
-    TOYOTA_ODO: 18693
+    TOYOTA_ODO_V2: 18693
 - response: 74F0762010302004906
   expected_values:
-    TOYOTA_ODO: 18694
+    TOYOTA_ODO_V2: 18694
 - response: 74F0762010302004907
   expected_values:
-    TOYOTA_ODO: 18695
+    TOYOTA_ODO_V2: 18695
 - response: 74F0762010302004908
   expected_values:
-    TOYOTA_ODO: 18696
+    TOYOTA_ODO_V2: 18696
 - response: 74F0762010302004909
   expected_values:
-    TOYOTA_ODO: 18697
+    TOYOTA_ODO_V2: 18697
 - response: 74F076201030200490A
   expected_values:
-    TOYOTA_ODO: 18698
+    TOYOTA_ODO_V2: 18698
 - response: 74F076201030200490B
   expected_values:
-    TOYOTA_ODO: 18699
+    TOYOTA_ODO_V2: 18699
 - response: 74F076201030200490C
   expected_values:
-    TOYOTA_ODO: 18700
+    TOYOTA_ODO_V2: 18700
 - response: 74F076201030200490D
   expected_values:
-    TOYOTA_ODO: 18701
+    TOYOTA_ODO_V2: 18701
 - response: 74F076201030200490E
   expected_values:
-    TOYOTA_ODO: 18702
+    TOYOTA_ODO_V2: 18702
 - response: 74F076201030200490F
   expected_values:
-    TOYOTA_ODO: 18703
+    TOYOTA_ODO_V2: 18703
 - response: 74F0762010302004910
   expected_values:
-    TOYOTA_ODO: 18704
+    TOYOTA_ODO_V2: 18704
 - response: 74F0762010302004911
   expected_values:
-    TOYOTA_ODO: 18705
+    TOYOTA_ODO_V2: 18705
 - response: 74F0762010302004912
   expected_values:
-    TOYOTA_ODO: 18706
+    TOYOTA_ODO_V2: 18706
 - response: 74F0762010302004913
   expected_values:
-    TOYOTA_ODO: 18707
+    TOYOTA_ODO_V2: 18707
 - response: 74F0762010302004914
   expected_values:
-    TOYOTA_ODO: 18708
+    TOYOTA_ODO_V2: 18708
 - response: 74F0762010302004915
   expected_values:
-    TOYOTA_ODO: 18709
+    TOYOTA_ODO_V2: 18709
 - response: 74F0762010302004916
   expected_values:
-    TOYOTA_ODO: 18710
+    TOYOTA_ODO_V2: 18710
 - response: 74F0762010302004917
   expected_values:
-    TOYOTA_ODO: 18711
+    TOYOTA_ODO_V2: 18711
 - response: 74F0762010302004918
   expected_values:
-    TOYOTA_ODO: 18712
+    TOYOTA_ODO_V2: 18712
 - response: 74F0762010302004919
   expected_values:
-    TOYOTA_ODO: 18713
+    TOYOTA_ODO_V2: 18713
 - response: 74F076201030200491A
   expected_values:
-    TOYOTA_ODO: 18714
+    TOYOTA_ODO_V2: 18714
 - response: 74F076201030200491B
   expected_values:
-    TOYOTA_ODO: 18715
+    TOYOTA_ODO_V2: 18715
 - response: 74F076201030200491C
   expected_values:
-    TOYOTA_ODO: 18716
+    TOYOTA_ODO_V2: 18716
 - response: 74F076201030200491D
   expected_values:
-    TOYOTA_ODO: 18717
+    TOYOTA_ODO_V2: 18717
 - response: 74F076201030200491E
   expected_values:
-    TOYOTA_ODO: 18718
+    TOYOTA_ODO_V2: 18718
 - response: 74F076201030200491F
   expected_values:
-    TOYOTA_ODO: 18719
+    TOYOTA_ODO_V2: 18719
 - response: 74F0762010302004920
   expected_values:
-    TOYOTA_ODO: 18720
+    TOYOTA_ODO_V2: 18720
 - response: 74F0762010302004921
   expected_values:
-    TOYOTA_ODO: 18721
+    TOYOTA_ODO_V2: 18721
 - response: 74F0762010302004922
   expected_values:
-    TOYOTA_ODO: 18722
+    TOYOTA_ODO_V2: 18722
 - response: 74F0762010302004923
   expected_values:
-    TOYOTA_ODO: 18723
+    TOYOTA_ODO_V2: 18723
 - response: 74F0762010302004924
   expected_values:
-    TOYOTA_ODO: 18724
+    TOYOTA_ODO_V2: 18724
 - response: 74F0762010302004925
   expected_values:
-    TOYOTA_ODO: 18725
+    TOYOTA_ODO_V2: 18725
 - response: 74F0762010302004926
   expected_values:
-    TOYOTA_ODO: 18726
+    TOYOTA_ODO_V2: 18726
 - response: 74F0762010302004927
   expected_values:
-    TOYOTA_ODO: 18727
+    TOYOTA_ODO_V2: 18727
 - response: 74F0762010302004928
   expected_values:
-    TOYOTA_ODO: 18728
+    TOYOTA_ODO_V2: 18728
 - response: 74F0762010302004929
   expected_values:
-    TOYOTA_ODO: 18729
+    TOYOTA_ODO_V2: 18729
 - response: 74F076201030200492A
   expected_values:
-    TOYOTA_ODO: 18730
+    TOYOTA_ODO_V2: 18730
 - response: 74F076201030200492B
   expected_values:
-    TOYOTA_ODO: 18731
+    TOYOTA_ODO_V2: 18731
 - response: 74F076201030200492C
   expected_values:
-    TOYOTA_ODO: 18732
+    TOYOTA_ODO_V2: 18732
 - response: 74F076201030200492D
   expected_values:
-    TOYOTA_ODO: 18733
+    TOYOTA_ODO_V2: 18733
 - response: 74F076201030200492E
   expected_values:
-    TOYOTA_ODO: 18734
+    TOYOTA_ODO_V2: 18734
 - response: 74F076201030200492F
   expected_values:
-    TOYOTA_ODO: 18735
+    TOYOTA_ODO_V2: 18735
 - response: 74F0762010302004930
   expected_values:
-    TOYOTA_ODO: 18736
+    TOYOTA_ODO_V2: 18736
 - response: 74F0762010302004931
   expected_values:
-    TOYOTA_ODO: 18737
+    TOYOTA_ODO_V2: 18737
 - response: 74F0762010302004932
   expected_values:
-    TOYOTA_ODO: 18738
+    TOYOTA_ODO_V2: 18738
 - response: 74F0762010302004933
   expected_values:
-    TOYOTA_ODO: 18739
+    TOYOTA_ODO_V2: 18739
 - response: 74F0762010302004934
   expected_values:
-    TOYOTA_ODO: 18740
+    TOYOTA_ODO_V2: 18740
 - response: 74F0762010302004935
   expected_values:
-    TOYOTA_ODO: 18741
+    TOYOTA_ODO_V2: 18741
 - response: 74F0762010302004936
   expected_values:
-    TOYOTA_ODO: 18742
+    TOYOTA_ODO_V2: 18742
 - response: 74F0762010302004937
   expected_values:
-    TOYOTA_ODO: 18743
+    TOYOTA_ODO_V2: 18743
 - response: 74F0762010302004938
   expected_values:
-    TOYOTA_ODO: 18744
+    TOYOTA_ODO_V2: 18744
 - response: 74F0762010302004939
   expected_values:
-    TOYOTA_ODO: 18745
+    TOYOTA_ODO_V2: 18745
 - response: 74F076201030200493A
   expected_values:
-    TOYOTA_ODO: 18746
+    TOYOTA_ODO_V2: 18746
 - response: 74F076201030200493B
   expected_values:
-    TOYOTA_ODO: 18747
+    TOYOTA_ODO_V2: 18747
 - response: 74F076201030200493C
   expected_values:
-    TOYOTA_ODO: 18748
+    TOYOTA_ODO_V2: 18748
 - response: 74F076201030200493D
   expected_values:
-    TOYOTA_ODO: 18749
+    TOYOTA_ODO_V2: 18749
 - response: 74F076201030200493E
   expected_values:
-    TOYOTA_ODO: 18750
+    TOYOTA_ODO_V2: 18750
 - response: 74F076201030200493F
   expected_values:
-    TOYOTA_ODO: 18751
+    TOYOTA_ODO_V2: 18751
 - response: 74F0762010302004940
   expected_values:
-    TOYOTA_ODO: 18752
+    TOYOTA_ODO_V2: 18752
 - response: 74F0762010302004941
   expected_values:
-    TOYOTA_ODO: 18753
+    TOYOTA_ODO_V2: 18753
 - response: 74F0762010302004942
   expected_values:
-    TOYOTA_ODO: 18754
+    TOYOTA_ODO_V2: 18754
 - response: 74F0762010302004943
   expected_values:
-    TOYOTA_ODO: 18755
+    TOYOTA_ODO_V2: 18755
 - response: 74F0762010302004944
   expected_values:
-    TOYOTA_ODO: 18756
+    TOYOTA_ODO_V2: 18756
 - response: 74F0762010302004945
   expected_values:
-    TOYOTA_ODO: 18757
+    TOYOTA_ODO_V2: 18757
 - response: 74F0762010302004946
   expected_values:
-    TOYOTA_ODO: 18758
+    TOYOTA_ODO_V2: 18758
 - response: 74F0762010302004947
   expected_values:
-    TOYOTA_ODO: 18759
+    TOYOTA_ODO_V2: 18759
 - response: 74F0762010302004948
   expected_values:
-    TOYOTA_ODO: 18760
+    TOYOTA_ODO_V2: 18760
 - response: 74F0762010302004949
   expected_values:
-    TOYOTA_ODO: 18761
+    TOYOTA_ODO_V2: 18761
 - response: 74F076201030200494A
   expected_values:
-    TOYOTA_ODO: 18762
+    TOYOTA_ODO_V2: 18762
 - response: 74F076201030200494B
   expected_values:
-    TOYOTA_ODO: 18763
+    TOYOTA_ODO_V2: 18763
 - response: 74F076201030200494C
   expected_values:
-    TOYOTA_ODO: 18764
+    TOYOTA_ODO_V2: 18764
 - response: 74F076201030200494D
   expected_values:
-    TOYOTA_ODO: 18765
+    TOYOTA_ODO_V2: 18765
 - response: 74F076201030200494E
   expected_values:
-    TOYOTA_ODO: 18766
+    TOYOTA_ODO_V2: 18766
 - response: 74F076201030200494F
   expected_values:
-    TOYOTA_ODO: 18767
+    TOYOTA_ODO_V2: 18767
 - response: 74F0762010302004950
   expected_values:
-    TOYOTA_ODO: 18768
+    TOYOTA_ODO_V2: 18768
 - response: 74F0762010302004951
   expected_values:
-    TOYOTA_ODO: 18769
+    TOYOTA_ODO_V2: 18769
 - response: 74F0762010302004952
   expected_values:
-    TOYOTA_ODO: 18770
+    TOYOTA_ODO_V2: 18770
 - response: 74F0762010302004953
   expected_values:
-    TOYOTA_ODO: 18771
+    TOYOTA_ODO_V2: 18771
 - response: 74F0762010302004954
   expected_values:
-    TOYOTA_ODO: 18772
+    TOYOTA_ODO_V2: 18772
 - response: 74F0762010302004955
   expected_values:
-    TOYOTA_ODO: 18773
+    TOYOTA_ODO_V2: 18773
 - response: 74F0762010302004956
   expected_values:
-    TOYOTA_ODO: 18774
+    TOYOTA_ODO_V2: 18774
 - response: 74F0762010302004957
   expected_values:
-    TOYOTA_ODO: 18775
+    TOYOTA_ODO_V2: 18775
 - response: 74F0762010302004958
   expected_values:
-    TOYOTA_ODO: 18776
+    TOYOTA_ODO_V2: 18776
 - response: 74F0762010302004959
   expected_values:
-    TOYOTA_ODO: 18777
+    TOYOTA_ODO_V2: 18777
 - response: 74F076201030200495A
   expected_values:
-    TOYOTA_ODO: 18778
+    TOYOTA_ODO_V2: 18778
 - response: 74F076201030200495B
   expected_values:
-    TOYOTA_ODO: 18779
+    TOYOTA_ODO_V2: 18779
 - response: 74F076201030200495C
   expected_values:
-    TOYOTA_ODO: 18780
+    TOYOTA_ODO_V2: 18780
 - response: 74F076201030200495D
   expected_values:
-    TOYOTA_ODO: 18781
+    TOYOTA_ODO_V2: 18781
 - response: 74F076201030200495E
   expected_values:
-    TOYOTA_ODO: 18782
+    TOYOTA_ODO_V2: 18782
 - response: 74F076201030200495F
   expected_values:
-    TOYOTA_ODO: 18783
+    TOYOTA_ODO_V2: 18783
 - response: 74F0762010302004960
   expected_values:
-    TOYOTA_ODO: 18784
+    TOYOTA_ODO_V2: 18784
 - response: 74F0762010302004961
   expected_values:
-    TOYOTA_ODO: 18785
+    TOYOTA_ODO_V2: 18785
 - response: 74F0762010302004962
   expected_values:
-    TOYOTA_ODO: 18786
+    TOYOTA_ODO_V2: 18786
 - response: 74F0762010302004963
   expected_values:
-    TOYOTA_ODO: 18787
+    TOYOTA_ODO_V2: 18787
 - response: 74F0762010302004964
   expected_values:
-    TOYOTA_ODO: 18788
+    TOYOTA_ODO_V2: 18788
 - response: 74F0762010302004965
   expected_values:
-    TOYOTA_ODO: 18789
+    TOYOTA_ODO_V2: 18789
 - response: 74F0762010302004966
   expected_values:
-    TOYOTA_ODO: 18790
+    TOYOTA_ODO_V2: 18790
 - response: 74F0762010302004967
   expected_values:
-    TOYOTA_ODO: 18791
+    TOYOTA_ODO_V2: 18791
 - response: 74F0762010302004968
   expected_values:
-    TOYOTA_ODO: 18792
+    TOYOTA_ODO_V2: 18792
 - response: 74F0762010302004969
   expected_values:
-    TOYOTA_ODO: 18793
+    TOYOTA_ODO_V2: 18793
 - response: 74F076201030200496A
   expected_values:
-    TOYOTA_ODO: 18794
+    TOYOTA_ODO_V2: 18794
 - response: 74F076201030200496B
   expected_values:
-    TOYOTA_ODO: 18795
+    TOYOTA_ODO_V2: 18795
 - response: 74F076201030200496C
   expected_values:
-    TOYOTA_ODO: 18796
+    TOYOTA_ODO_V2: 18796
 - response: 74F076201030200496D
   expected_values:
-    TOYOTA_ODO: 18797
+    TOYOTA_ODO_V2: 18797
 - response: 74F076201030200496E
   expected_values:
-    TOYOTA_ODO: 18798
+    TOYOTA_ODO_V2: 18798
 - response: 74F076201030200496F
   expected_values:
-    TOYOTA_ODO: 18799
+    TOYOTA_ODO_V2: 18799
 - response: 74F0762010302004970
   expected_values:
-    TOYOTA_ODO: 18800
+    TOYOTA_ODO_V2: 18800
 - response: 74F0762010302004971
   expected_values:
-    TOYOTA_ODO: 18801
+    TOYOTA_ODO_V2: 18801
 - response: 74F0762010302004972
   expected_values:
-    TOYOTA_ODO: 18802
+    TOYOTA_ODO_V2: 18802
 - response: 74F0762010302004973
   expected_values:
-    TOYOTA_ODO: 18803
+    TOYOTA_ODO_V2: 18803
 - response: 74F0762010302004974
   expected_values:
-    TOYOTA_ODO: 18804
+    TOYOTA_ODO_V2: 18804
 - response: 74F0762010302004975
   expected_values:
-    TOYOTA_ODO: 18805
+    TOYOTA_ODO_V2: 18805
 - response: 74F0762010302004976
   expected_values:
-    TOYOTA_ODO: 18806
+    TOYOTA_ODO_V2: 18806
 - response: 74F0762010302004977
   expected_values:
-    TOYOTA_ODO: 18807
+    TOYOTA_ODO_V2: 18807
 - response: 74F0762010302004978
   expected_values:
-    TOYOTA_ODO: 18808
+    TOYOTA_ODO_V2: 18808
 - response: 74F0762010302004979
   expected_values:
-    TOYOTA_ODO: 18809
+    TOYOTA_ODO_V2: 18809
 - response: 74F076201030200497A
   expected_values:
-    TOYOTA_ODO: 18810
+    TOYOTA_ODO_V2: 18810
 - response: 74F076201030200497B
   expected_values:
-    TOYOTA_ODO: 18811
+    TOYOTA_ODO_V2: 18811
 - response: 74F076201030200497C
   expected_values:
-    TOYOTA_ODO: 18812
+    TOYOTA_ODO_V2: 18812
 - response: 74F076201030200497D
   expected_values:
-    TOYOTA_ODO: 18813
+    TOYOTA_ODO_V2: 18813
 - response: 74F076201030200497E
   expected_values:
-    TOYOTA_ODO: 18814
+    TOYOTA_ODO_V2: 18814
 - response: 74F076201030200497F
   expected_values:
-    TOYOTA_ODO: 18815
+    TOYOTA_ODO_V2: 18815
 - response: 74F0762010302004980
   expected_values:
-    TOYOTA_ODO: 18816
+    TOYOTA_ODO_V2: 18816
 - response: 74F0762010302004981
   expected_values:
-    TOYOTA_ODO: 18817
+    TOYOTA_ODO_V2: 18817
 - response: 74F0762010302004982
   expected_values:
-    TOYOTA_ODO: 18818
+    TOYOTA_ODO_V2: 18818
 - response: 74F0762010302004983
   expected_values:
-    TOYOTA_ODO: 18819
+    TOYOTA_ODO_V2: 18819
 - response: 74F0762010302004984
   expected_values:
-    TOYOTA_ODO: 18820
+    TOYOTA_ODO_V2: 18820
 - response: 74F0762010302004985
   expected_values:
-    TOYOTA_ODO: 18821
+    TOYOTA_ODO_V2: 18821
 - response: 74F0762010302004986
   expected_values:
-    TOYOTA_ODO: 18822
+    TOYOTA_ODO_V2: 18822
 - response: 74F0762010302004987
   expected_values:
-    TOYOTA_ODO: 18823
+    TOYOTA_ODO_V2: 18823
 - response: 74F0762010302004988
   expected_values:
-    TOYOTA_ODO: 18824
+    TOYOTA_ODO_V2: 18824
 - response: 74F0762010302004989
   expected_values:
-    TOYOTA_ODO: 18825
+    TOYOTA_ODO_V2: 18825
 - response: 74F076201030200498A
   expected_values:
-    TOYOTA_ODO: 18826
+    TOYOTA_ODO_V2: 18826
 - response: 74F076201030200498B
   expected_values:
-    TOYOTA_ODO: 18827
+    TOYOTA_ODO_V2: 18827
 - response: 74F076201030200498C
   expected_values:
-    TOYOTA_ODO: 18828
+    TOYOTA_ODO_V2: 18828
 - response: 74F076201030200498D
   expected_values:
-    TOYOTA_ODO: 18829
+    TOYOTA_ODO_V2: 18829
 - response: 74F076201030200498E
   expected_values:
-    TOYOTA_ODO: 18830
+    TOYOTA_ODO_V2: 18830
 - response: 74F076201030200498F
   expected_values:
-    TOYOTA_ODO: 18831
+    TOYOTA_ODO_V2: 18831
 - response: 74F0762010302004990
   expected_values:
-    TOYOTA_ODO: 18832
+    TOYOTA_ODO_V2: 18832
 - response: 74F0762010302004991
   expected_values:
-    TOYOTA_ODO: 18833
+    TOYOTA_ODO_V2: 18833
 - response: 74F0762010302004992
   expected_values:
-    TOYOTA_ODO: 18834
+    TOYOTA_ODO_V2: 18834
 - response: 74F0762010302004993
   expected_values:
-    TOYOTA_ODO: 18835
+    TOYOTA_ODO_V2: 18835
 - response: 74F0762010302004994
   expected_values:
-    TOYOTA_ODO: 18836
+    TOYOTA_ODO_V2: 18836
 - response: 74F0762010302004995
   expected_values:
-    TOYOTA_ODO: 18837
+    TOYOTA_ODO_V2: 18837
 - response: 74F0762010302004996
   expected_values:
-    TOYOTA_ODO: 18838
+    TOYOTA_ODO_V2: 18838
 - response: 74F0762010302004997
   expected_values:
-    TOYOTA_ODO: 18839
+    TOYOTA_ODO_V2: 18839
 - response: 74F0762010302004998
   expected_values:
-    TOYOTA_ODO: 18840
+    TOYOTA_ODO_V2: 18840
 - response: 74F0762010302004999
   expected_values:
-    TOYOTA_ODO: 18841
+    TOYOTA_ODO_V2: 18841
 - response: 74F076201030200499A
   expected_values:
-    TOYOTA_ODO: 18842
+    TOYOTA_ODO_V2: 18842
 - response: 74F076201030200499B
   expected_values:
-    TOYOTA_ODO: 18843
+    TOYOTA_ODO_V2: 18843
 - response: 74F076201030200499C
   expected_values:
-    TOYOTA_ODO: 18844
+    TOYOTA_ODO_V2: 18844
 - response: 74F076201030200499D
   expected_values:
-    TOYOTA_ODO: 18845
+    TOYOTA_ODO_V2: 18845
 - response: 74F076201030200499E
   expected_values:
-    TOYOTA_ODO: 18846
+    TOYOTA_ODO_V2: 18846
 - response: 74F076201030200499F
   expected_values:
-    TOYOTA_ODO: 18847
+    TOYOTA_ODO_V2: 18847
 - response: 74F07620103020049A0
   expected_values:
-    TOYOTA_ODO: 18848
+    TOYOTA_ODO_V2: 18848
 - response: 74F07620103020049A1
   expected_values:
-    TOYOTA_ODO: 18849
+    TOYOTA_ODO_V2: 18849
 - response: 74F07620103020049A2
   expected_values:
-    TOYOTA_ODO: 18850
+    TOYOTA_ODO_V2: 18850
 - response: 74F07620103020049A3
   expected_values:
-    TOYOTA_ODO: 18851
+    TOYOTA_ODO_V2: 18851
 - response: 74F07620103020049A4
   expected_values:
-    TOYOTA_ODO: 18852
+    TOYOTA_ODO_V2: 18852
 - response: 74F07620103020049A5
   expected_values:
-    TOYOTA_ODO: 18853
+    TOYOTA_ODO_V2: 18853
 - response: 74F07620103020049A6
   expected_values:
-    TOYOTA_ODO: 18854
+    TOYOTA_ODO_V2: 18854
 - response: 74F07620103020049A7
   expected_values:
-    TOYOTA_ODO: 18855
+    TOYOTA_ODO_V2: 18855
 - response: 74F07620103020049A8
   expected_values:
-    TOYOTA_ODO: 18856
+    TOYOTA_ODO_V2: 18856
 - response: 74F07620103020049A9
   expected_values:
-    TOYOTA_ODO: 18857
+    TOYOTA_ODO_V2: 18857
 - response: 74F07620103020049AA
   expected_values:
-    TOYOTA_ODO: 18858
+    TOYOTA_ODO_V2: 18858
 - response: 74F07620103020049AB
   expected_values:
-    TOYOTA_ODO: 18859
+    TOYOTA_ODO_V2: 18859
 - response: 74F07620103020049AC
   expected_values:
-    TOYOTA_ODO: 18860
+    TOYOTA_ODO_V2: 18860
 - response: 74F07620103020049AD
   expected_values:
-    TOYOTA_ODO: 18861
+    TOYOTA_ODO_V2: 18861
 - response: 74F07620103020049AE
   expected_values:
-    TOYOTA_ODO: 18862
+    TOYOTA_ODO_V2: 18862
 - response: 74F07620103020049AF
   expected_values:
-    TOYOTA_ODO: 18863
+    TOYOTA_ODO_V2: 18863
 - response: 74F07620103020049B0
   expected_values:
-    TOYOTA_ODO: 18864
+    TOYOTA_ODO_V2: 18864
 - response: 74F07620103020049B1
   expected_values:
-    TOYOTA_ODO: 18865
+    TOYOTA_ODO_V2: 18865
 - response: 74F07620103020049B2
   expected_values:
-    TOYOTA_ODO: 18866
+    TOYOTA_ODO_V2: 18866
 - response: 74F07620103020049B3
   expected_values:
-    TOYOTA_ODO: 18867
+    TOYOTA_ODO_V2: 18867
 - response: 74F07620103020049B4
   expected_values:
-    TOYOTA_ODO: 18868
+    TOYOTA_ODO_V2: 18868

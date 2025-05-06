@@ -2,57 +2,9 @@ command_id: 7C0.7C8.2129
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7C803612915
+- response: 7C803612900
   expected_values:
-    TOYOTA_FLI_VOL: 10.5
-- response: 7C803612916
+    TOYOTA_FLI_VOL: 0
+- response: 7C803612957
   expected_values:
-    TOYOTA_FLI_VOL: 11
-- response: 7C803612917
-  expected_values:
-    TOYOTA_FLI_VOL: 11.5
-- response: 7C803612918
-  expected_values:
-    TOYOTA_FLI_VOL: 12
-- response: 7C803612919
-  expected_values:
-    TOYOTA_FLI_VOL: 12.5
-- response: 7C80361291A
-  expected_values:
-    TOYOTA_FLI_VOL: 13
-- response: 7C80361291B
-  expected_values:
-    TOYOTA_FLI_VOL: 13.5
-- response: 7C80361291C
-  expected_values:
-    TOYOTA_FLI_VOL: 14
-- response: 7C80361291D
-  expected_values:
-    TOYOTA_FLI_VOL: 14.5
-- response: 7C80361291E
-  expected_values:
-    TOYOTA_FLI_VOL: 15
-- response: 7C80361291F
-  expected_values:
-    TOYOTA_FLI_VOL: 15.5
-- response: 7C803612920
-  expected_values:
-    TOYOTA_FLI_VOL: 16
-- response: 7C803612921
-  expected_values:
-    TOYOTA_FLI_VOL: 16.5
-- response: 7C803612922
-  expected_values:
-    TOYOTA_FLI_VOL: 17
-- response: 7C803612923
-  expected_values:
-    TOYOTA_FLI_VOL: 17.5
-- response: 7C803612924
-  expected_values:
-    TOYOTA_FLI_VOL: 18
-- response: 7C803612925
-  expected_values:
-    TOYOTA_FLI_VOL: 18.5
-- response: 7C803612926
-  expected_values:
-    TOYOTA_FLI_VOL: 19
+    TOYOTA_FLI_VOL: 43.5

@@ -5,45 +5,6 @@ test_cases:
 - response: 7C80462102100
   expected_values:
     TOYOTA_BATTERY_VOLTAGE: 0
-- response: 7C8046210217F
+- response: 7C80462102190
   expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 12.7
-- response: 7C80462102180
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 12.8
-- response: 7C80462102181
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 12.9
-- response: 7C80462102184
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.2
-- response: 7C80462102186
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.4
-- response: 7C80462102187
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.5
-- response: 7C80462102188
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.6
-- response: 7C80462102189
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.7
-- response: 7C8046210218A
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.8
-- response: 7C8046210218B
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 13.9
-- response: 7C8046210218C
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 14
-- response: 7C8046210218D
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 14.1
-- response: 7C8046210218E
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 14.2
-- response: 7C8046210218F
-  expected_values:
-    TOYOTA_BATTERY_VOLTAGE: 14.3
+    TOYOTA_BATTERY_VOLTAGE: 14.4

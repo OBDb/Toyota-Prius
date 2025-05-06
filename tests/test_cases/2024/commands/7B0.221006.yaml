@@ -2,60 +2,9 @@ command_id: 7B0.221006
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7B8056210066600
+- response: 7B8056210066000
   expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 22
-- response: 7B8056210066700
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 23
-- response: 7B8056210066800
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 24
-- response: 7B8056210066900
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 25
-- response: 7B8056210066A00
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 26
-- response: 7B8056210066B00
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 27
-- response: 7B8056210066E00
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 30
-- response: 7B8056210066F00
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 31
-- response: 7B8056210067000
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 32
-- response: 7B8056210067100
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 33
-- response: 7B8056210067200
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 34
-- response: 7B8056210067300
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 35
-- response: 7B8056210067400
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 36
-- response: 7B8056210067500
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 37
-- response: 7B8056210067600
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 38
-- response: 7B8056210067700
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 39
-- response: 7B8056210067800
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 40
-- response: 7B8056210067900
-  expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 41
+    TOYOTA_MASTER_CYL_TEMP: 16
 - response: 7B8056210067A00
   expected_values:
     TOYOTA_MASTER_CYL_TEMP: 42

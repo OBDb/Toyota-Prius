@@ -2,15 +2,15 @@ command_id: 7C0.221022
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7C8056210220192
+- response: 7C8056210220191
   expected_values:
-    TOYOTA_FLV: 4.02
+    TOYOTA_FLV: 4.01
 - response: 7C80562102202FF
   expected_values:
     TOYOTA_FLV: 7.67
 - response: 7C8056210220300
   expected_values:
     TOYOTA_FLV: 7.68
-- response: 7C8056210221040
+- response: 7C8056210221023
   expected_values:
-    TOYOTA_FLV: 41.6
+    TOYOTA_FLV: 41.31

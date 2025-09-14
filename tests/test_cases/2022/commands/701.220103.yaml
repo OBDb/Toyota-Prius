@@ -4,20 +4,5 @@ test_cases:
     TOYOTA_ODO_V5: 75624
   response: 74F0762010302012768
 - expected_values:
-    TOYOTA_ODO_V5: 75625
-  response: 74F0762010302012769
-- expected_values:
-    TOYOTA_ODO_V5: 75626
-  response: 74F076201030201276A
-- expected_values:
-    TOYOTA_ODO_V5: 75642
-  response: 74F076201030201277A
-- expected_values:
-    TOYOTA_ODO_V5: 75678
-  response: 74F076201030201279E
-- expected_values:
-    TOYOTA_ODO_V5: 75680
-  response: 74F07620103020127A0
-- expected_values:
     TOYOTA_ODO_V5: 75681
   response: 74F07620103020127A1

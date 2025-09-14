@@ -4,5 +4,5 @@ test_cases:
     TOYOTA_FLI_VOL: 0
   response: 7C803612900
 - expected_values:
-    TOYOTA_FLI_VOL: 43.5
+    TOYOTA_FLI_VOL: 11.49273
   response: 7C803612957

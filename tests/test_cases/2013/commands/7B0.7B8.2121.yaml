@@ -2,7 +2,9 @@ command_id: 7B0.7B8.2121
 test_cases:
 - expected_values:
     TOYOTA_VSS: 0
+    TOYOTA_VSS_V3: 0
   response: 7B803612100
 - expected_values:
-    TOYOTA_VSS: 84.48
+    TOYOTA_VSS: 89.1
+    TOYOTA_VSS_V3: 84.48
   response: 7B803612142

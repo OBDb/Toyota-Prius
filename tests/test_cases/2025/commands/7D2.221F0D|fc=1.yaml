@@ -1,0 +1,8 @@
+command_id: 7D2.221F0D|fc=1
+test_cases:
+- expected_values:
+    TOYOTA_VSS_V2: 0
+  response: 7DA04621F0D00
+- expected_values:
+    TOYOTA_VSS_V2: 130
+  response: 7DA04621F0D82

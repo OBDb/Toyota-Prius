@@ -1,0 +1,18 @@
+command_id: 7D2.7DA.2210A6
+test_cases:
+- expected_values:
+    TOYOTA_M_INVRT_MAX_T: 25
+    TOYOTA_RM_INVRT_COOL_T: 22
+  response: 7DA066210A63E3B41
+- expected_values:
+    TOYOTA_M_INVRT_MAX_T: 76
+    TOYOTA_RM_INVRT_COOL_T: 48
+  response: 7DA066210A6586974
+- expected_values:
+    TOYOTA_M_INVRT_MAX_T: 79
+    TOYOTA_RM_INVRT_COOL_T: 52
+  response: 7DA066210A65C6977
+- expected_values:
+    TOYOTA_M_INVRT_MAX_T: 77
+    TOYOTA_RM_INVRT_COOL_T: 70
+  response: 7DA066210A66E6875

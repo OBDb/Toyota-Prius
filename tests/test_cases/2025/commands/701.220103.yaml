@@ -1,0 +1,17 @@
+command_id: '701.220103'
+test_cases:
+- expected_values:
+    TOYOTA_ODO_V5: 120
+  response: 74F0762010302000078
+- expected_values:
+    TOYOTA_ODO_V5: 511
+  response: 74F07620103020001FF
+- expected_values:
+    TOYOTA_ODO_V5: 512
+  response: 74F0762010302000200
+- expected_values:
+    TOYOTA_ODO_V5: 2331
+  response: 74F076201030200091B
+- expected_values:
+    TOYOTA_ODO_V5: 120
+  response: 7DA0762010302000078

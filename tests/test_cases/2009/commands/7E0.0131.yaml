@@ -1,10 +1,19 @@
 command_id: 7E0.0131
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804413112AE
-  expected_values:
-    CLR_DIST: 4782
-- response: 7E804413112F9
-  expected_values:
-    CLR_DIST: 4857
+- expected_values:
+    CLR_DIST: 6363
+  response: |-
+    01311
+    7E804413118DB
+- expected_values:
+    CLR_DIST: 19
+  response: '7E80441310013'
+- expected_values:
+    CLR_DIST: 767
+  response: 7E804413102FF
+- expected_values:
+    CLR_DIST: 768
+  response: '7E80441310300'
+- expected_values:
+    CLR_DIST: 6711
+  response: 7E80441311A37

@@ -1,4 +1,4 @@
-command_id: 7D2.221F5B|fc=1
+command_id: 7D2.7DA.221F5B|fc=1
 test_cases:
 - expected_values:
     PRIUS_SOC: 50.19608

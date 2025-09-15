@@ -1,4 +1,4 @@
-command_id: 747.22182E|fc=1
+command_id: 747.74F.22182E|fc=1
 test_cases:
 - expected_values:
     PRIUS_HVBAT_C01_V: 3.71916

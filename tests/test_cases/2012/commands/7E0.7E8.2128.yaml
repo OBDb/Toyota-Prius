@@ -1,14 +1,14 @@
 command_id: 7E0.7E8.2128
 test_cases:
 - expected_values:
-    TOYOTA_ODO: 163302
+    PRIUS_ODO: 163302
   response: 7E8056128027DE6
 - expected_values:
-    TOYOTA_ODO: 163304
+    PRIUS_ODO: 163304
   response: 7E8056128027DE8
 - expected_values:
-    TOYOTA_ODO: 163306
+    PRIUS_ODO: 163306
   response: 7E8056128027DEA
 - expected_values:
-    TOYOTA_ODO: 163307
+    PRIUS_ODO: 163307
   response: 7E8056128027DEB

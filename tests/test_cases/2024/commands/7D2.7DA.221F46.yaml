@@ -1,8 +1,8 @@
 command_id: 7D2.7DA.221F46
 test_cases:
 - expected_values:
-    TOYOTA_AAT: 16
+    PRIUS_AAT: 16
   response: 7DA04621F4638
 - expected_values:
-    TOYOTA_AAT: 40
+    PRIUS_AAT: 40
   response: 7DA04621F4650

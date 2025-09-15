@@ -1,0 +1,14 @@
+command_id: 7B0.7B8.2103
+test_cases:
+- expected_values:
+    PRIUS_TIRE_FL_SPD: 0
+    PRIUS_TIRE_FR_SPD: 0
+    PRIUS_TIRE_RL_SPD: 0
+    PRIUS_TIRE_RR_SPD: 0
+  response: 7B806610300000000
+- expected_values:
+    PRIUS_TIRE_FL_SPD: 133.12
+    PRIUS_TIRE_FR_SPD: 133.12
+    PRIUS_TIRE_RL_SPD: 133.12
+    PRIUS_TIRE_RR_SPD: 133.12
+  response: 7B806610368686868

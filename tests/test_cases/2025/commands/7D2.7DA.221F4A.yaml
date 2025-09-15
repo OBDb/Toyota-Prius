@@ -1,8 +1,8 @@
 command_id: 7D2.7DA.221F4A
 test_cases:
 - expected_values:
-    TOYOTA_ACC_PEDAL_POS_2: 31.76471
+    PRIUS_ACC_PEDAL_POS_2: 31.76471
   response: 7DA04621F4A51
 - expected_values:
-    TOYOTA_ACC_PEDAL_POS_2: 66.66667
+    PRIUS_ACC_PEDAL_POS_2: 66.66667
   response: 7DA04621F4AAA

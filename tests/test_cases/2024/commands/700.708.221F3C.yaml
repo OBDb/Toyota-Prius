@@ -1,14 +1,14 @@
 command_id: 700.708.221F3C
 test_cases:
 - expected_values:
-    TOYOTA_CAT_T_BANK_1_SENSOR_1: 45.1
+    PRIUS_CAT_T_BANK_1_SENSOR_1: 45.1
   response: 70805621F3C0353
 - expected_values:
-    TOYOTA_CAT_T_BANK_1_SENSOR_1: 87.9
+    PRIUS_CAT_T_BANK_1_SENSOR_1: 87.9
   response: 70805621F3C04FF
 - expected_values:
-    TOYOTA_CAT_T_BANK_1_SENSOR_1: 164.8
+    PRIUS_CAT_T_BANK_1_SENSOR_1: 164.8
   response: 70805621F3C0800
 - expected_values:
-    TOYOTA_CAT_T_BANK_1_SENSOR_1: 655.6
+    PRIUS_CAT_T_BANK_1_SENSOR_1: 655.6
   response: 70805621F3C1B2C

@@ -1,14 +1,14 @@
 command_id: 7D2.7DA.2215F7
 test_cases:
 - expected_values:
-    TOYOTA_12V_C: -21.28212
+    PRIUS_12V_C: -21.28212
   response: 7DA056215F76A35
 - expected_values:
-    TOYOTA_12V_C: -0.00373
+    PRIUS_12V_C: -0.00373
   response: 7DA056215F77FFF
 - expected_values:
-    TOYOTA_12V_C: 8.959999999547108e-05
+    PRIUS_12V_C: 8.959999999547108e-05
   response: 7DA056215F78000
 - expected_values:
-    TOYOTA_12V_C: 25.32207
+    PRIUS_12V_C: 25.32207
   response: 7DA056215F799EE

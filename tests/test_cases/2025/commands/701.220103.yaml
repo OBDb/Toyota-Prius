@@ -10,5 +10,5 @@ test_cases:
     PRIUS_ODO_V5: 512
   response: 74F0762010302000200
 - expected_values:
-    PRIUS_ODO_V5: 2331
-  response: 74F076201030200091B
+    PRIUS_ODO_V5: 2048
+  response: 74F0762010302000800

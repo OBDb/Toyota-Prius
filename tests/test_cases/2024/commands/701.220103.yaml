@@ -1,14 +1,14 @@
 command_id: '701.220103'
 test_cases:
 - expected_values:
-    PRIUS_ODO_V5: 18536
-  response: 74F0762010302004868
+    PRIUS_ODO_V5: 18428
+  response: 74F07620103020047FC
 - expected_values:
-    PRIUS_ODO_V5: 18687
-  response: 74F07620103020048FF
+    PRIUS_ODO_V5: 18431
+  response: 74F07620103020047FF
 - expected_values:
-    PRIUS_ODO_V5: 18688
-  response: 74F0762010302004900
+    PRIUS_ODO_V5: 18432
+  response: 74F0762010302004800
 - expected_values:
-    PRIUS_ODO_V5: 27904
-  response: 74F0762010302006D00
+    PRIUS_ODO_V5: 27996
+  response: 74F0762010302006D5C

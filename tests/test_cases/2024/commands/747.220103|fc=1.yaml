@@ -1,14 +1,14 @@
 command_id: 747.220103|fc=1
 test_cases:
 - expected_values:
-    PRIUS_ODO_V6: 18428
-  response: 74F07620103020047FC
+    PRIUS_ODO_V6: 18435
+  response: 74F0762010302004803
 - expected_values:
-    PRIUS_ODO_V6: 18431
-  response: 74F07620103020047FF
+    PRIUS_ODO_V6: 18687
+  response: 74F07620103020048FF
 - expected_values:
-    PRIUS_ODO_V6: 18432
-  response: 74F0762010302004800
+    PRIUS_ODO_V6: 18688
+  response: 74F0762010302004900
 - expected_values:
-    PRIUS_ODO_V6: 27985
-  response: 74F0762010302006D51
+    PRIUS_ODO_V6: 27904
+  response: 74F0762010302006D00

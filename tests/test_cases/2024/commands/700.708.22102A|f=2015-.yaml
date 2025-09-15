@@ -1,4 +1,4 @@
-command_id: 700.708.22102A
+command_id: 700.708.22102A|f=2015-
 test_cases:
 - expected_values:
     PRIUS_A_F_RATIO_LEARNED_HIGH_BANK_1: 4.5098

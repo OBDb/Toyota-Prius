@@ -1,14 +1,14 @@
-command_id: 7C0.221022|fc=1
+command_id: 7C0.7C8.221022|fc=1
 test_cases:
 - expected_values:
-    TOYOTA_FLV: 2.75
+    PRIUS_FLV: 2.75
   response: 7C8056210220113
 - expected_values:
-    TOYOTA_FLV: 5.11
+    PRIUS_FLV: 5.11
   response: 7C80562102201FF
 - expected_values:
-    TOYOTA_FLV: 17.92
+    PRIUS_FLV: 17.92
   response: 7C8056210220700
 - expected_values:
-    TOYOTA_FLV: 38.41
+    PRIUS_FLV: 38.41
   response: 7C8056210220F01

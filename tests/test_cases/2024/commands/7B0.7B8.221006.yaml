@@ -1,11 +1,11 @@
-command_id: 7B0.221006
+command_id: 7B0.7B8.221006
 test_cases:
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: -20
+    PRIUS_MASTER_CYL_TEMP: -20
   response: 7B8056210060078
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 16
+    PRIUS_MASTER_CYL_TEMP: 16
   response: 7B8056210066000
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 54
+    PRIUS_MASTER_CYL_TEMP: 54
   response: 7B8056210068600

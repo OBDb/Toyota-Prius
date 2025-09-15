@@ -1,14 +1,14 @@
 command_id: 7D2.7DA.220103|fc=1
 test_cases:
 - expected_values:
-    TOYOTA_ODO_V2_V2: 21509
+    PRIUS_ODO_V2_V2: 21509
   response: 7DA0762010302005405
 - expected_values:
-    TOYOTA_ODO_V2_V2: 21759
+    PRIUS_ODO_V2_V2: 21759
   response: 7DA07620103020054FF
 - expected_values:
-    TOYOTA_ODO_V2_V2: 21760
+    PRIUS_ODO_V2_V2: 21760
   response: 7DA0762010302005500
 - expected_values:
-    TOYOTA_ODO_V2_V2: 27904
+    PRIUS_ODO_V2_V2: 27904
   response: 7DA0762010302006D00

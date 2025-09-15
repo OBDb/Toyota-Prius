@@ -1,26 +1,26 @@
 command_id: 7D0.2162
 test_cases:
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D80461620109
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D80461620110
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D80461620113
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D8046162011E
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D80461620123
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D80461620124
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D8046162012A
 - expected_values:
-    TOYOTA_PARKING_BRAKE: 'Off'
+    PRIUS_PARKING_BRAKE: 'Off'
   response: 7D8046162012F

@@ -1,104 +1,104 @@
 command_id: 7D2.7DA.2210A1
 test_cases:
 - expected_values:
-    TOYOTA_RPM: -604
-    TOYOTA_TQ: -9.375
+    PRIUS_RPM: -604
+    PRIUS_TQ: -9.375
   response: |-
     7DA100C6210A17DA47F
     7DA21BF03007FB50400
 - expected_values:
-    TOYOTA_RPM: -424
-    TOYOTA_TQ: -14.125
+    PRIUS_RPM: -424
+    PRIUS_TQ: -14.125
   response: |-
     7DA100C6210A17E587F
     7DA219303007F8F0400
 - expected_values:
-    TOYOTA_RPM: -317
-    TOYOTA_TQ: -20
+    PRIUS_RPM: -317
+    PRIUS_TQ: -20
   response: |-
     7DA100C6210A17EC37F
     7DA216603007F600400
 - expected_values:
-    TOYOTA_RPM: -180
-    TOYOTA_TQ: -11.125
+    PRIUS_RPM: -180
+    PRIUS_TQ: -11.125
   response: |-
     7DA100C6210A17F4C80
     7DA210103007FA70400
 - expected_values:
-    TOYOTA_RPM: -23
-    TOYOTA_TQ: -1.25
+    PRIUS_RPM: -23
+    PRIUS_TQ: -1.25
   response: |-
     7DA100C6210A17FE980
     7DA210C03007FF60400
 - expected_values:
-    TOYOTA_RPM: -11
-    TOYOTA_TQ: 1.625
+    PRIUS_RPM: -11
+    PRIUS_TQ: 1.625
   response: |-
     7DA100C6210A17FF580
     7DA210E0300800D0400
 - expected_values:
-    TOYOTA_RPM: -1
-    TOYOTA_TQ: 0
+    PRIUS_RPM: -1
+    PRIUS_TQ: 0
   response: |-
     7DA100C6210A17FFF80
     7DA210C030080000400
 - expected_values:
-    TOYOTA_RPM: 0
-    TOYOTA_TQ: -16.125
+    PRIUS_RPM: 0
+    PRIUS_TQ: -16.125
   response: |-
     7DA100C6210A180007F
     7DA219303007F7F0400
 - expected_values:
-    TOYOTA_RPM: 0
-    TOYOTA_TQ: -10.625
+    PRIUS_RPM: 0
+    PRIUS_TQ: -10.625
   response: |-
     7DA100C6210A180007F
     7DA21B003007FAB0400
 - expected_values:
-    TOYOTA_RPM: 0
-    TOYOTA_TQ: -2
+    PRIUS_RPM: 0
+    PRIUS_TQ: -2
   response: |-
     7DA100C6210A180007F
     7DA21F303007FF00400
 - expected_values:
-    TOYOTA_RPM: 0
-    TOYOTA_TQ: -0.125
+    PRIUS_RPM: 0
+    PRIUS_TQ: -0.125
   response: |-
     7DA100C6210A1800080
     7DA210003007FFF0000
 - expected_values:
-    TOYOTA_RPM: 0
-    TOYOTA_TQ: 31.875
+    PRIUS_RPM: 0
+    PRIUS_TQ: 31.875
   response: |-
     7DA100C6210A1800081
     7DA2102010080FF0400
 - expected_values:
-    TOYOTA_RPM: 562
-    TOYOTA_TQ: 102.5
+    PRIUS_RPM: 562
+    PRIUS_TQ: 102.5
   response: |-
     7DA100C6210A1823283
     7DA214F030083340400
 - expected_values:
-    TOYOTA_RPM: 2154
-    TOYOTA_TQ: 89.125
+    PRIUS_RPM: 2154
+    PRIUS_TQ: 89.125
   response: |-
     7DA100C6210A1886A82
     7DA21B4030282C90400
 - expected_values:
-    TOYOTA_RPM: 2268
-    TOYOTA_TQ: -94.875
+    PRIUS_RPM: 2268
+    PRIUS_TQ: -94.875
   response: |-
     7DA100C6210A188DC7C
     7DA21FB03007D090400
 - expected_values:
-    TOYOTA_RPM: 8806
-    TOYOTA_TQ: -18.75
+    PRIUS_RPM: 8806
+    PRIUS_TQ: -18.75
   response: |-
     7DA100C6210A1A2667F
     7DA216D04027F6A0400
 - expected_values:
-    TOYOTA_RPM: 12050
-    TOYOTA_TQ: -17.875
+    PRIUS_RPM: 12050
+    PRIUS_TQ: -17.875
   response: |-
     7DA100C6210A1AF127F
     7DA217904027F710400

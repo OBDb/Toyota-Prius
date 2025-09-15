@@ -1,14 +1,14 @@
 command_id: '701.220103'
 test_cases:
 - expected_values:
-    TOYOTA_ODO_V5: 18428
-  response: 74F07620103020047FC
+    PRIUS_ODO_V5: 18536
+  response: 74F0762010302004868
 - expected_values:
-    TOYOTA_ODO_V5: 18431
-  response: 74F07620103020047FF
+    PRIUS_ODO_V5: 18687
+  response: 74F07620103020048FF
 - expected_values:
-    TOYOTA_ODO_V5: 18432
-  response: 74F0762010302004800
+    PRIUS_ODO_V5: 18688
+  response: 74F0762010302004900
 - expected_values:
-    TOYOTA_ODO_V5: 27904
+    PRIUS_ODO_V5: 27904
   response: 74F0762010302006D00

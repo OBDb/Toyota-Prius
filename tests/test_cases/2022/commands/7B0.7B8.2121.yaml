@@ -1,10 +1,10 @@
 command_id: 7B0.7B8.2121
 test_cases:
 - expected_values:
-    TOYOTA_VSS: 0
-    TOYOTA_VSS_V3: 0
+    PRIUS_VSS: 0
+    PRIUS_VSS_V3: 0
   response: 7B803612100
 - expected_values:
-    TOYOTA_VSS: 101.25
-    TOYOTA_VSS_V3: 96
+    PRIUS_VSS: 101.25
+    PRIUS_VSS_V3: 96
   response: 7B80361214B

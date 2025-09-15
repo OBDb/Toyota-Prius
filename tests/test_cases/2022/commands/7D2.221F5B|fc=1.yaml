@@ -1,8 +1,8 @@
 command_id: 7D2.221F5B|fc=1
 test_cases:
 - expected_values:
-    TOYOTA_SOC: 50.19608
+    PRIUS_SOC: 50.19608
   response: 7DA04621F5B80
 - expected_values:
-    TOYOTA_SOC: 74.90196
+    PRIUS_SOC: 74.90196
   response: 7DA04621F5BBF

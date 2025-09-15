@@ -1,20 +1,20 @@
 command_id: 7C0.7C8.2129
 test_cases:
 - expected_values:
-    TOYOTA_FLI_VOL: 0.5284
+    PRIUS_FLI_VOL: 0.5284
   response: 7C803612904
 - expected_values:
-    TOYOTA_FLI_VOL: 0.9247
+    PRIUS_FLI_VOL: 0.9247
   response: 7C803612907
 - expected_values:
-    TOYOTA_FLI_VOL: 1.1889
+    PRIUS_FLI_VOL: 1.1889
   response: 7C803612909
 - expected_values:
-    TOYOTA_FLI_VOL: 1.5852
+    PRIUS_FLI_VOL: 1.5852
   response: 7C80361290C
 - expected_values:
-    TOYOTA_FLI_VOL: 2.50991
+    PRIUS_FLI_VOL: 2.50991
   response: 7C803612913
 - expected_values:
-    TOYOTA_FLI_VOL: 2.64201
+    PRIUS_FLI_VOL: 2.64201
   response: 7C803612914

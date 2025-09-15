@@ -1,44 +1,44 @@
 command_id: 750.758.2116|t=96,e=2A,ta=2A,fc=1
 test_cases:
 - expected_values:
-    TOYOTA_TT_FL_V2: 19
-    TOYOTA_TT_FR_V2: 20
-    TOYOTA_TT_RR_V2: 20
+    PRIUS_TT_FL_V2: 19
+    PRIUS_TT_FR_V2: 20
+    PRIUS_TT_RR_V2: 20
   response: |-
     7582A100761163B3C00
     7582A213C0000000000
 - expected_values:
-    TOYOTA_TT_FL_V2: 20
-    TOYOTA_TT_FR_V2: 19
-    TOYOTA_TT_RR_V2: 20
+    PRIUS_TT_FL_V2: 20
+    PRIUS_TT_FR_V2: 19
+    PRIUS_TT_RR_V2: 20
   response: |-
     7582A100761163C3B00
     7582A213C0000000000
 - expected_values:
-    TOYOTA_TT_FL_V2: 20
-    TOYOTA_TT_FR_V2: 20
-    TOYOTA_TT_RR_V2: 20
+    PRIUS_TT_FL_V2: 20
+    PRIUS_TT_FR_V2: 20
+    PRIUS_TT_RR_V2: 20
   response: |-
     7582A100761163C3C00
     7582A213C0000000000
 - expected_values:
-    TOYOTA_TT_FL_V2: 20
-    TOYOTA_TT_FR_V2: 21
-    TOYOTA_TT_RR_V2: 21
+    PRIUS_TT_FL_V2: 20
+    PRIUS_TT_FR_V2: 21
+    PRIUS_TT_RR_V2: 21
   response: |-
     7582A100761163C3D00
     7582A213D0000000000
 - expected_values:
-    TOYOTA_TT_FL_V2: 20
-    TOYOTA_TT_FR_V2: 21
-    TOYOTA_TT_RR_V2: 23
+    PRIUS_TT_FL_V2: 20
+    PRIUS_TT_FR_V2: 21
+    PRIUS_TT_RR_V2: 23
   response: |-
     7582A100761163C3D00
     7582A213F0000000000
 - expected_values:
-    TOYOTA_TT_FL_V2: 21
-    TOYOTA_TT_FR_V2: 22
-    TOYOTA_TT_RR_V2: 23
+    PRIUS_TT_FL_V2: 21
+    PRIUS_TT_FR_V2: 22
+    PRIUS_TT_RR_V2: 23
   response: |-
     7582A100761163D3E00
     7582A213F0000000000

@@ -7,8 +7,8 @@ test_cases:
     PRIUS_STEERING_ANGLE: 0
   response: 7BB066210040000FF
 - expected_values:
-    PRIUS_STEERING_ANGLE: -360
-  response: 7BB06621004FF10FC
+    PRIUS_STEERING_ANGLE: -366
+  response: 7BB06621004FF0CFC
 - expected_values:
     PRIUS_STEERING_ANGLE: -1.5
   response: 7BB06621004FFFF00

@@ -13,5 +13,5 @@ test_cases:
     PRIUS_ODO_V6: 20224
   response: 74F0762010302004F00
 - expected_values:
-    PRIUS_ODO_V6: 27904
-  response: 74F0762010302006D00
+    PRIUS_ODO_V6: 28396
+  response: 74F0762010302006EEC

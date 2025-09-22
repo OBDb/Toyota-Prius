@@ -56,8 +56,10 @@ supported_commands_by_ecu:
   - 7D2.7DA.221F9A:PRIUS_HVBAT_C,PRIUS_HVBAT_V
   "7DF":
   - 7DF.010D
+  - 7DF.011F
   - 7DF.0131
   - 7DF.0142
+  - 7DF.0146
   - 7DF.015B
   - 7DF.01A6
   - 7DF.01D2
@@ -286,7 +288,9 @@ unsupported_commands_by_ecu:
   - 7D2.7DA.22182A
   "7E0":
   - 7E0.010D:VSS
+  - 7E0.011F:RUNTM
   - 7E0.0142:VPWR
+  - 7E0.0146:AAT
   - 7E0.7E8.2121:PRIUS_CC_S
   - 7E0.7E8.2128:PRIUS_ODO
   - 7E0.7E8.2151:PRIUS_EOT,PRIUS_PREV_TRIP_DST,PRIUS_VVTOT
@@ -294,17 +298,24 @@ unsupported_commands_by_ecu:
   - 7E0.7E8.2185
   "7E2":
   - 7E2.7EA.010D
+  - 7E2.7EA.011F
+  - 7E2.7EA.0146
   - 7E2.7EA.015B
   - 7E2.7EA.01A6
   "7E3":
   - 7E3.7EB.010D
+  - 7E3.7EB.011F
   - 7E3.7EB.0142
+  - 7E3.7EB.0146
   - 7E3.7EB.015B
   - 7E3.7EB.01D2
   "7E5":
   - 7E5.7ED.010D
+  - 7E5.7ED.011F
   - 7E5.7ED.0142
   "7E6":
   - 7E6.7EE.010D
+  - 7E6.7EE.011F
   - 7E6.7EE.0131
   - 7E6.7EE.0142
+  - 7E6.7EE.0146

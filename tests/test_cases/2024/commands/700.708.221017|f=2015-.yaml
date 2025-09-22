@@ -4,8 +4,8 @@ test_cases:
     PRIUS_INJ_VOL: 0
   response: '708056210170000'
 - expected_values:
-    PRIUS_INJ_VOL: 2.15969
-  response: 708056210171AFF
+    PRIUS_INJ_VOL: 1.11969
+  response: 708056210170DFF
 - expected_values:
     PRIUS_INJ_VOL: 4.57281
   response: '708056210173929'

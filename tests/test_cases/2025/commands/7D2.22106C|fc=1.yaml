@@ -17,9 +17,9 @@ test_cases:
     PRIUS_HVBAT_SOC_MIN: 37
   response: 7DA0662106C85A04A
 - expected_values:
-    PRIUS_HVBAT_SOC_MAX: 70
-    PRIUS_HVBAT_SOC_MIN: 67.5
-  response: 7DA0662106C8C8C87
+    PRIUS_HVBAT_SOC_MAX: 73
+    PRIUS_HVBAT_SOC_MIN: 72
+  response: 7DA0662106C929290
 - expected_values:
     PRIUS_HVBAT_SOC_MAX: 75.5
     PRIUS_HVBAT_SOC_MIN: 39.5

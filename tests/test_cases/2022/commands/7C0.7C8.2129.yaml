@@ -1,32 +1,8 @@
 command_id: 7C0.7C8.2129
 test_cases:
 - expected_values:
-    PRIUS_FLI_VOL: 8.85073
-  response: 7C803612943
-- expected_values:
-    PRIUS_FLI_VOL: 8.98283
-  response: 7C803612944
-- expected_values:
-    PRIUS_FLI_VOL: 9.37913
-  response: 7C803612947
-- expected_values:
-    PRIUS_FLI_VOL: 9.51123
-  response: 7C803612948
-- expected_values:
-    PRIUS_FLI_VOL: 9.77543
-  response: 7C80361294A
-- expected_values:
-    PRIUS_FLI_VOL: 9.90753
-  response: 7C80361294B
-- expected_values:
-    PRIUS_FLI_VOL: 10.03963
-  response: 7C80361294C
-- expected_values:
-    PRIUS_FLI_VOL: 10.17173
-  response: 7C80361294D
-- expected_values:
-    PRIUS_FLI_VOL: 10.43593
-  response: 7C80361294F
+    PRIUS_FLI_VOL: 7.00132
+  response: 7C803612935
 - expected_values:
     PRIUS_FLI_VOL: 10.56803
   response: 7C803612950

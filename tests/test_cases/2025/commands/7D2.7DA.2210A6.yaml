@@ -9,9 +9,9 @@ test_cases:
     PRIUS_RM_INVRT_COOL_T: 48
   response: 7DA066210A6586974
 - expected_values:
-    PRIUS_M_INVRT_MAX_T: 79
+    PRIUS_M_INVRT_MAX_T: 82
     PRIUS_RM_INVRT_COOL_T: 52
-  response: 7DA066210A65C6977
+  response: 7DA066210A65C4D7A
 - expected_values:
     PRIUS_M_INVRT_MAX_T: 77
     PRIUS_RM_INVRT_COOL_T: 70

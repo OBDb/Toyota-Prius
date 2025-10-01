@@ -4,5 +4,5 @@ test_cases:
     PRIUS_SOC: 50.19608
   response: 7DA04621F5B80
 - expected_values:
-    PRIUS_SOC: 74.90196
-  response: 7DA04621F5BBF
+    PRIUS_SOC: 77.2549
+  response: 7DA04621F5BC5

@@ -5,4 +5,7 @@ test_cases:
   response: 7D8056162010000
 - expected_values:
     PRIUS_PARKING_BRAKE: 'Off'
-  response: 7D8056162016000
+  response: 7D8056162016300
+- expected_values:
+    PRIUS_PARKING_BRAKE: 'Off'
+  response: 7D8056162095C00

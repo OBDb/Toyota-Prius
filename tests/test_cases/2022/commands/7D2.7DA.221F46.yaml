@@ -1,0 +1,32 @@
+command_id: 7D2.7DA.221F46
+test_cases:
+- expected_values:
+    PRIUS_AAT: 22
+  response: 7DA04621F463E
+- expected_values:
+    PRIUS_AAT: 23
+  response: 7DA04621F463F
+- expected_values:
+    PRIUS_AAT: 24
+  response: 7DA04621F4640
+- expected_values:
+    PRIUS_AAT: 27
+  response: 7DA04621F4643
+- expected_values:
+    PRIUS_AAT: 28
+  response: 7DA04621F4644
+- expected_values:
+    PRIUS_AAT: 29
+  response: 7DA04621F4645
+- expected_values:
+    PRIUS_AAT: 30
+  response: 7DA04621F4646
+- expected_values:
+    PRIUS_AAT: 31
+  response: 7DA04621F4647
+- expected_values:
+    PRIUS_AAT: 32
+  response: 7DA04621F4648
+- expected_values:
+    PRIUS_AAT: 33
+  response: 7DA04621F4649

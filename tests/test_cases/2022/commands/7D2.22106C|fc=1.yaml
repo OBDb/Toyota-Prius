@@ -1,22 +1,18 @@
 command_id: 7D2.22106C|fc=1
 test_cases:
 - expected_values:
-    PRIUS_HVBAT_SOC_MAX: 76.5
-    PRIUS_HVBAT_SOC_MIN: 51.5
-  response: 7DA0662106C749967
+    PRIUS_HVBAT_SOC_MAX: 70.5
+    PRIUS_HVBAT_SOC_MIN: 33.5
+  response: 7DA0662106C658D43
 - expected_values:
     PRIUS_HVBAT_SOC_MAX: 66
     PRIUS_HVBAT_SOC_MIN: 44.5
   response: 7DA0662106C768459
 - expected_values:
-    PRIUS_HVBAT_SOC_MAX: 78.5
-    PRIUS_HVBAT_SOC_MIN: 44.5
-  response: 7DA0662106C769D59
-- expected_values:
-    PRIUS_HVBAT_SOC_MAX: 78
-    PRIUS_HVBAT_SOC_MIN: 63.5
-  response: 7DA0662106C9C9C7F
-- expected_values:
     PRIUS_HVBAT_SOC_MAX: 78
     PRIUS_HVBAT_SOC_MIN: 75
   response: 7DA0662106C9C9C96
+- expected_values:
+    PRIUS_HVBAT_SOC_MAX: 79.5
+    PRIUS_HVBAT_SOC_MIN: 44.5
+  response: 7DA0662106C9F9F59

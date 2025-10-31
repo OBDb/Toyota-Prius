@@ -1,0 +1,20 @@
+command_id: 7B0.7B8.2147
+test_cases:
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 0.6
+    PRIUS_YAW_RATE: 0
+  response: 7B80761470000808006
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 1.6
+    PRIUS_YAW_RATE: 0
+  response: 7B80761470000808010
+- expected_values:
+    PRIUS_LAT_G: -0.04
+    PRIUS_LNG_G: -0.06
+    PRIUS_STEER_ANGLE: 4.4
+    PRIUS_YAW_RATE: 0
+  response: 7B8076147FEFD80802C

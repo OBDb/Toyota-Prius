@@ -4,6 +4,9 @@ test_cases:
     PRIUS_FLI_VOL: 3.56671
   response: 7C80361291B
 - expected_values:
+    PRIUS_FLI_VOL: 3.69881
+  response: 7C80361291C
+- expected_values:
     PRIUS_FLI_VOL: 3.83091
   response: 7C80361291D
 - expected_values:

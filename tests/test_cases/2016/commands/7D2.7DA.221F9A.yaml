@@ -1,0 +1,50 @@
+command_id: 7D2.7DA.221F9A
+test_cases:
+- expected_values:
+    PRIUS_HVBAT_C: -3225
+    PRIUS_HVBAT_V: 199
+  response: |-
+    7DA1009621F9A070031
+    7DA21C0820600000000
+- expected_values:
+    PRIUS_HVBAT_C: -3265.6
+    PRIUS_HVBAT_V: 205
+  response: |-
+    7DA1009621F9A070033
+    7DA2140807000000000
+- expected_values:
+    PRIUS_HVBAT_C: -3261.7
+    PRIUS_HVBAT_V: 208
+  response: |-
+    7DA1009621F9A070034
+    7DA2100809700000000
+- expected_values:
+    PRIUS_HVBAT_C: 3269.5
+    PRIUS_HVBAT_V: 210
+  response: |-
+    7DA1009621F9A070034
+    7DA21807FB700000000
+- expected_values:
+    PRIUS_HVBAT_C: -3275.4
+    PRIUS_HVBAT_V: 211
+  response: |-
+    7DA1009621F9A070034
+    7DA21C0800E00000000
+- expected_values:
+    PRIUS_HVBAT_C: -3270.5
+    PRIUS_HVBAT_V: 216
+  response: |-
+    7DA1009621F9A070036
+    7DA2100803F00000000
+- expected_values:
+    PRIUS_HVBAT_C: 3276.4
+    PRIUS_HVBAT_V: 232
+  response: |-
+    7DA1009621F9A07003A
+    7DA21007FFC00000000
+- expected_values:
+    PRIUS_HVBAT_C: 3161.5
+    PRIUS_HVBAT_V: 273
+  response: |-
+    7DA1009621F9A070044
+    7DA21407B7F00000000

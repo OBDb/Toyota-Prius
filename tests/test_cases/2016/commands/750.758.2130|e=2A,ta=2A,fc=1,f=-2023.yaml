@@ -1,0 +1,35 @@
+command_id: 750.758.2130|e=2A,ta=2A,fc=1,f=-2023
+test_cases:
+- expected_values:
+    PRIUS_TP_RL_V1: 2.18966
+  response: |-
+    7582A1007613000009C
+    7582A21000000000000
+- expected_values:
+    PRIUS_TP_FR_V1: 2.31034
+    PRIUS_TP_RL_V1: 2.24138
+    PRIUS_TP_RR_V1: 2.24138
+  response: |-
+    7582A1007613000A39F
+    7582A219F0000000000
+- expected_values:
+    PRIUS_TP_FR_V1: 2.36207
+    PRIUS_TP_RL_V1: 2.25862
+    PRIUS_TP_RR_V1: 2.25862
+  response: |-
+    7582A1007613000A6A0
+    7582A21A00000000000
+- expected_values:
+    PRIUS_TP_FR_V1: 2.5
+    PRIUS_TP_RL_V1: 2.37931
+    PRIUS_TP_RR_V1: 2.36207
+  response: |-
+    7582A1007613000AEA7
+    7582A21A60000000000
+- expected_values:
+    PRIUS_TP_FR_V1: 2.51724
+    PRIUS_TP_RL_V1: 2.37931
+    PRIUS_TP_RR_V1: 2.36207
+  response: |-
+    7582A1007613000AFA7
+    7582A21A60000000000

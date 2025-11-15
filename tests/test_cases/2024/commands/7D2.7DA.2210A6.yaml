@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2210A6
+test_cases:
+- expected_values:
+    PRIUS_M_INVRT_MAX_T: 43
+    PRIUS_RM_INVRT_COOL_T: 21
+  response: 7DA066210A63D3B53
+- expected_values:
+    PRIUS_M_INVRT_MAX_T: 22
+    PRIUS_RM_INVRT_COOL_T: 21
+  response: 7DA066210A63D3E3E
+- expected_values:
+    PRIUS_M_INVRT_MAX_T: 33
+    PRIUS_RM_INVRT_COOL_T: 33
+  response: 7DA066210A6493E49

@@ -337,12 +337,12 @@
     {"id": "PRIUS_RPM", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor RPM"},
     {"id": "PRIUS_TQ",  "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A2"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A2"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "newtonMeters" }, "name": "Rear motor torque, requested"},
     {"id": "PRIUS_RM_TQ",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Rear motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A6"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A6"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_RM_INVRT_COOL_T", "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear motor inverter, coolant temperature"},
     {"id": "PRIUS_M_INVRT_MAX_T",   "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter, maximum temperature"}

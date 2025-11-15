@@ -18,6 +18,11 @@ test_cases:
     7582A100761300000A1
     7582A21A00000000000
 - expected_values:
+    PRIUS_TP_FR_V1: 2.27586
+  response: |-
+    7582A1007613000A100
+    7582A21000000000000
+- expected_values:
     PRIUS_TP_FR_V1: 2.5
     PRIUS_TP_RL_V1: 2.37931
     PRIUS_TP_RR_V1: 2.36207

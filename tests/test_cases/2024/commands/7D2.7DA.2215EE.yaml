@@ -11,4 +11,4 @@ test_cases:
   response: 7DA056215EE2900
 - expected_values:
     PRIUS_12V_V: 14.47858
-  response: 7DA056215EE2E08
+  response: 7DA056215EE2E06

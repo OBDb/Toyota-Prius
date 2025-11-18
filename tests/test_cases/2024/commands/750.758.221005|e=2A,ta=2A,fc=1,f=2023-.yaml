@@ -1,10 +1,10 @@
 command_id: 750.758.221005|e=2A,ta=2A,fc=1,f=2023-
 test_cases:
 - expected_values:
-    PRIUS_TP_RR_V2: 2.32759
+    PRIUS_TP_RR_V2: 2.06897
   response: |-
     7582A100D6210050000
-    7582A210000000000A4
+    7582A21000000000095
     7582A22000000000000
 - expected_values:
     PRIUS_TP_RR_V2: 2.53448

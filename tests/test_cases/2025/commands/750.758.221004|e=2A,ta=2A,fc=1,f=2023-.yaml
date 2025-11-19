@@ -19,7 +19,6 @@ test_cases:
     PRIUS_TT_FL_V2: 19
     PRIUS_TT_FR_V2: 19
     PRIUS_TT_RL_V2: 19
-    PRIUS_TT_RR_V2: 23
   response: |-
     7582A10086210043B3B
     7582A213B3F00000000

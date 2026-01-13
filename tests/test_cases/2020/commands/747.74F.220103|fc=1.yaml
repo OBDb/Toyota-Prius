@@ -1,0 +1,26 @@
+command_id: 747.74F.220103|fc=1
+test_cases:
+- expected_values:
+    PRIUS_ODO_V6: 155282
+  response: 74F0762010302025E92
+- expected_values:
+    PRIUS_ODO_V6: 155360
+  response: 74F0762010302025EE0
+- expected_values:
+    PRIUS_ODO_V6: 155361
+  response: 74F0762010302025EE1
+- expected_values:
+    PRIUS_ODO_V6: 155437
+  response: 74F0762010302025F2D
+- expected_values:
+    PRIUS_ODO_V6: 155446
+  response: 74F0762010302025F36
+- expected_values:
+    PRIUS_ODO_V6: 155457
+  response: 74F0762010302025F41
+- expected_values:
+    PRIUS_ODO_V6: 155458
+  response: 74F0762010302025F42
+- expected_values:
+    PRIUS_ODO_V6: 155467
+  response: 74F0762010302025F4B

@@ -1,0 +1,26 @@
+command_id: 7D2.7DA.221F49
+test_cases:
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 15.68627
+  response: 7DA04621F4928
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 26.27451
+  response: 7DA04621F4943
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 31.37255
+  response: 7DA04621F4950
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 31.76471
+  response: 7DA04621F4951
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 33.33333
+  response: 7DA04621F4955
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 33.72549
+  response: 7DA04621F4956
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 34.5098
+  response: 7DA04621F4958
+- expected_values:
+    PRIUS_ACC_PEDAL_POS_1: 40.78431
+  response: 7DA04621F4968

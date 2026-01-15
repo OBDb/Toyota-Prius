@@ -1,0 +1,32 @@
+command_id: 7D2.7DA.220103|fc=1
+test_cases:
+- expected_values:
+    PRIUS_ODO_V2_V2: 155282
+  response: 7DA0762010302025E92
+- expected_values:
+    PRIUS_ODO_V2_V2: 155360
+  response: 7DA0762010302025EE0
+- expected_values:
+    PRIUS_ODO_V2_V2: 155361
+  response: 7DA0762010302025EE1
+- expected_values:
+    PRIUS_ODO_V2_V2: 155437
+  response: 7DA0762010302025F2D
+- expected_values:
+    PRIUS_ODO_V2_V2: 155446
+  response: 7DA0762010302025F36
+- expected_values:
+    PRIUS_ODO_V2_V2: 155457
+  response: 7DA0762010302025F41
+- expected_values:
+    PRIUS_ODO_V2_V2: 155458
+  response: 7DA0762010302025F42
+- expected_values:
+    PRIUS_ODO_V2_V2: 155467
+  response: 7DA0762010302025F4B
+- expected_values:
+    PRIUS_ODO_V2_V2: 155627
+  response: 7DA0762010302025FEB
+- expected_values:
+    PRIUS_ODO_V2_V2: 155628
+  response: 7DA0762010302025FEC

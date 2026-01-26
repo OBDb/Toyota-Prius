@@ -1,0 +1,10 @@
+command_id: 700.708.221043
+test_cases:
+- expected_values:
+    PRIUS_EWP_RPM: 1775
+    PRIUS_EWP_TARGET_VSS: 1800
+  response: '708056210434847'
+- expected_values:
+    PRIUS_EWP_RPM: 3975
+    PRIUS_EWP_TARGET_VSS: 3900
+  response: 708056210439C9F

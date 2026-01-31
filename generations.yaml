@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Toyota_Prius"
+
 generations:
   - name: "First Generation (XW10)"
     start_year: 1997

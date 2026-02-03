@@ -1,6 +1,9 @@
 command_id: 7D2.7DA.2210B2
 test_cases:
 - expected_values:
+    PRIUS_INVRT_COOLANT_T: 7
+  response: 7DA046210B22F
+- expected_values:
     PRIUS_INVRT_COOLANT_T: 33
   response: 7DA046210B249
 - expected_values:

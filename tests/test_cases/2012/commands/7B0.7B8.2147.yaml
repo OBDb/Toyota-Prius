@@ -3,27 +3,9 @@ test_cases:
 - expected_values:
     PRIUS_LAT_G: 0
     PRIUS_LNG_G: 0
-    PRIUS_STEER_ANGLE: 2.8
+    PRIUS_STEER_ANGLE: 1.1
     PRIUS_YAW_RATE: 0
-  response: 7B8076147000080801C
-- expected_values:
-    PRIUS_LAT_G: 0
-    PRIUS_LNG_G: 0
-    PRIUS_STEER_ANGLE: 4.5
-    PRIUS_YAW_RATE: 1
-  response: 7B8076147000081802D
-- expected_values:
-    PRIUS_LAT_G: 0
-    PRIUS_LNG_G: 0.08
-    PRIUS_STEER_ANGLE: -5.6
-    PRIUS_YAW_RATE: -1
-  response: 7B807614700047F7FC8
-- expected_values:
-    PRIUS_LAT_G: 0
-    PRIUS_LNG_G: -0.04
-    PRIUS_STEER_ANGLE: -72.1
-    PRIUS_YAW_RATE: -3
-  response: 7B807614700FE7D7D2F
+  response: 7B8076147000080800B
 - expected_values:
     PRIUS_LAT_G: 0
     PRIUS_LNG_G: -0.02
@@ -31,26 +13,32 @@ test_cases:
     PRIUS_YAW_RATE: 0
   response: 7B807614700FF808017
 - expected_values:
-    PRIUS_LAT_G: 0.02
-    PRIUS_LNG_G: -0.04
-    PRIUS_STEER_ANGLE: 6.3
-    PRIUS_YAW_RATE: 2
-  response: 7B807614701FE82803F
+    PRIUS_LAT_G: 0.04
+    PRIUS_LNG_G: 0.06
+    PRIUS_STEER_ANGLE: 536.2
+    PRIUS_YAW_RATE: 0
+  response: 7B807614702038094F2
 - expected_values:
-    PRIUS_LAT_G: 0.06
-    PRIUS_LNG_G: 0
-    PRIUS_STEER_ANGLE: 11.7
-    PRIUS_YAW_RATE: 3
-  response: 7B80761470300838075
+    PRIUS_LAT_G: 0.12
+    PRIUS_LNG_G: -0.34
+    PRIUS_STEER_ANGLE: 171.2
+    PRIUS_YAW_RATE: 13
+  response: 7B807614706EF8D86B0
 - expected_values:
-    PRIUS_LAT_G: -0.16
-    PRIUS_LNG_G: -0.04
-    PRIUS_STEER_ANGLE: -18.9
-    PRIUS_YAW_RATE: -5
-  response: 7B8076147F8FE7B7F43
+    PRIUS_LAT_G: -0.2
+    PRIUS_LNG_G: 0.32
+    PRIUS_STEER_ANGLE: -51.5
+    PRIUS_YAW_RATE: -9
+  response: 7B8076147F610777DFD
 - expected_values:
     PRIUS_LAT_G: -0.08
-    PRIUS_LNG_G: 0.02
-    PRIUS_STEER_ANGLE: -10.5
-    PRIUS_YAW_RATE: -3
-  response: 7B8076147FC017D7F97
+    PRIUS_LNG_G: 0.04
+    PRIUS_STEER_ANGLE: -291
+    PRIUS_YAW_RATE: 0
+  response: 7B8076147FC028074A2
+- expected_values:
+    PRIUS_LAT_G: -0.02
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 0
+    PRIUS_YAW_RATE: 0
+  response: 7B8076147FF00808000

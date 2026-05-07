@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.2128
 test_cases:
 - expected_values:
+    PRIUS_ODO: 100146
+  response: '7E8056128018732'
+- expected_values:
     PRIUS_ODO: 163302
   response: 7E8056128027DE6
 - expected_values:

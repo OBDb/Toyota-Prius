@@ -12,3 +12,12 @@ test_cases:
 - expected_values:
     PRIUS_ODO_V2_V2: 112994
   response: 7DA076201030201B962
+- expected_values:
+    PRIUS_ODO_V2_V2: 115696
+  response: 7DA076201030201C3F0
+- expected_values:
+    PRIUS_ODO_V2_V2: 115699
+  response: 7DA076201030201C3F3
+- expected_values:
+    PRIUS_ODO_V2_V2: 115717
+  response: 7DA076201030201C405

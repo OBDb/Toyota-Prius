@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221F9A
+test_cases:
+- expected_values:
+    PRIUS_HVBAT_C: 2.2
+    PRIUS_HVBAT_V: 220
+  response: |-
+    7DA1009621F9A0E0037
+    7DA2100001600000000
+- expected_values:
+    PRIUS_HVBAT_C: 1.5
+    PRIUS_HVBAT_V: 221
+  response: |-
+    7DA1009621F9A0E0037
+    7DA2140000F00000000

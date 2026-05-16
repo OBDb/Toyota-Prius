@@ -1,0 +1,11 @@
+command_id: 750.758.221005|e=2A,ta=2A,fc=1,f=2023-
+test_cases:
+- expected_values:
+    PRIUS_TP_FL_V2: 2.37931
+    PRIUS_TP_FR_V2: 2.36207
+    PRIUS_TP_RL_V2: 2.39655
+    PRIUS_TP_RR_V2: 2.39655
+  response: |-
+    7582A100D62100500A7
+    7582A2100A600A800A8
+    7582A22000000000000

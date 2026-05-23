@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221F5B|fc=1
+test_cases:
+- expected_values:
+    PRIUS_SOC: 55.29412
+  response: 7DA04621F5B8D
+- expected_values:
+    PRIUS_SOC: 59.21569
+  response: 7DA04621F5B97
+- expected_values:
+    PRIUS_SOC: 59.60784
+  response: 7DA04621F5B98
+- expected_values:
+    PRIUS_SOC: 60
+  response: 7DA04621F5B99

@@ -1,0 +1,62 @@
+command_id: 7D2.7DA.2210A1
+test_cases:
+- expected_values:
+    PRIUS_RPM: -1
+    PRIUS_TQ: -6.375
+  response: |-
+    7DA100C6210A17FFF7F
+    7DA21C602007FCD0400
+- expected_values:
+    PRIUS_RPM: -1
+    PRIUS_TQ: -6.125
+  response: |-
+    7DA100C6210A17FFF7F
+    7DA21CB02007FCF0400
+- expected_values:
+    PRIUS_RPM: -1
+    PRIUS_TQ: 0
+  response: |-
+    7DA100C6210A17FFF80
+    7DA2100020080000400
+- expected_values:
+    PRIUS_RPM: 0
+    PRIUS_TQ: -0.125
+  response: |-
+    7DA100C6210A1800080
+    7DA210002007FFF0400
+- expected_values:
+    PRIUS_RPM: 1
+    PRIUS_TQ: -0.375
+  response: |-
+    7DA100C6210A1800180
+    7DA210002007FFD0000
+- expected_values:
+    PRIUS_RPM: 1782
+    PRIUS_TQ: 57.875
+  response: |-
+    7DA100C6210A186F681
+    7DA21DC020081CF0400
+- expected_values:
+    PRIUS_RPM: 2503
+    PRIUS_TQ: -1.375
+  response: |-
+    7DA100C6210A189C77F
+    7DA21F102007FF50400
+- expected_values:
+    PRIUS_RPM: 2827
+    PRIUS_TQ: 22.875
+  response: |-
+    7DA100C6210A18B0B80
+    7DA21B5020280B70400
+- expected_values:
+    PRIUS_RPM: 3114
+    PRIUS_TQ: 24.375
+  response: |-
+    7DA100C6210A18C2A80
+    7DA21BF020280C30400
+- expected_values:
+    PRIUS_RPM: 5415
+    PRIUS_TQ: -6.375
+  response: |-
+    7DA100C6210A195277F
+    7DA21CB03027FCD0400

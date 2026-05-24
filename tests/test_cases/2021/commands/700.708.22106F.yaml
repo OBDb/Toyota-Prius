@@ -1,0 +1,14 @@
+command_id: 700.708.22106F
+test_cases:
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 0
+  response: 7080562106F0000
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 9.99859
+  response: 7080562106F0400
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 19.99718
+  response: 7080562106F0800
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 22.63353
+  response: 7080562106F090E

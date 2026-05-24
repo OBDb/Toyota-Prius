@@ -1,0 +1,30 @@
+command_id: 700.708.221043
+test_cases:
+- expected_values:
+    PRIUS_EWP_RPM: 0
+    PRIUS_EWP_TARGET_VSS: 0
+  response: '708056210430000'
+- expected_values:
+    PRIUS_EWP_RPM: 1775
+    PRIUS_EWP_TARGET_VSS: 1825
+  response: '708056210434947'
+- expected_values:
+    PRIUS_EWP_RPM: 1800
+    PRIUS_EWP_TARGET_VSS: 1825
+  response: '708056210434948'
+- expected_values:
+    PRIUS_EWP_RPM: 1825
+    PRIUS_EWP_TARGET_VSS: 1875
+  response: 708056210434B49
+- expected_values:
+    PRIUS_EWP_RPM: 1950
+    PRIUS_EWP_TARGET_VSS: 2000
+  response: 70805621043504E
+- expected_values:
+    PRIUS_EWP_RPM: 1975
+    PRIUS_EWP_TARGET_VSS: 2000
+  response: 70805621043504F
+- expected_values:
+    PRIUS_EWP_RPM: 2150
+    PRIUS_EWP_TARGET_VSS: 2000
+  response: '708056210435056'

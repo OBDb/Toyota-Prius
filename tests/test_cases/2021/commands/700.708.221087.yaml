@@ -1,0 +1,20 @@
+command_id: 700.708.221087
+test_cases:
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 0
+  response: '708056210870000'
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 10.06694
+  response: '708056210870407'
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 10.28175
+  response: 70805621087041D
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 10.43798
+  response: 70805621087042D
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 19.73355
+  response: '7080562108707E5'
+- expected_values:
+    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 20.10459
+  response: 70805621087080B

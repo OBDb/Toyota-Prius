@@ -1,0 +1,20 @@
+command_id: 700.708.221017|f=2015-
+test_cases:
+- expected_values:
+    PRIUS_INJ_VOL: 0
+  response: '708056210170000'
+- expected_values:
+    PRIUS_INJ_VOL: 1.50438
+  response: 7080562101712CE
+- expected_values:
+    PRIUS_INJ_VOL: 1.51156
+  response: '7080562101712E5'
+- expected_values:
+    PRIUS_INJ_VOL: 1.59312
+  response: 7080562101713EA
+- expected_values:
+    PRIUS_INJ_VOL: 2.01062
+  response: '708056210171922'
+- expected_values:
+    PRIUS_INJ_VOL: 2.96938
+  response: 70805621017251E

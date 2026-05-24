@@ -1,0 +1,23 @@
+command_id: 7D2.221F0D|fc=1
+test_cases:
+- expected_values:
+    PRIUS_VSS_V2: 0
+  response: 7DA04621F0D00
+- expected_values:
+    PRIUS_VSS_V2: 5
+  response: 7DA04621F0D05
+- expected_values:
+    PRIUS_VSS_V2: 26
+  response: 7DA04621F0D1A
+- expected_values:
+    PRIUS_VSS_V2: 28
+  response: 7DA04621F0D1C
+- expected_values:
+    PRIUS_VSS_V2: 31
+  response: 7DA04621F0D1F
+- expected_values:
+    PRIUS_VSS_V2: 38
+  response: 7DA04621F0D26
+- expected_values:
+    PRIUS_VSS_V2: 42
+  response: 7DA04621F0D2A

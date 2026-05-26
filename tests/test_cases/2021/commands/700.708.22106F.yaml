@@ -1,0 +1,32 @@
+command_id: 700.708.22106F
+test_cases:
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 0
+  response: 7080562106F0000
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 9.99859
+  response: 7080562106F0400
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 19.99718
+  response: 7080562106F0800
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 22.63353
+  response: 7080562106F090E
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 29.72237
+  response: 7080562106F0BE4
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 36.24489
+  response: 7080562106F0E80
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 36.89909
+  response: 7080562106F0EC3
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 38.21727
+  response: 7080562106F0F4A
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 39.14487
+  response: 7080562106F0FA9
+- expected_values:
+    PRIUS_INTAKE_VVT_TARGET_ANGLE_B1: 39.99436
+  response: 7080562106F1000

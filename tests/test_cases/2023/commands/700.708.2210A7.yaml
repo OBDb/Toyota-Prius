@@ -1,0 +1,8 @@
+command_id: 700.708.2210A7
+test_cases:
+- expected_values:
+    PRIUS_MIS_1: 0
+    PRIUS_MIS_2: 0
+    PRIUS_MIS_3: 0
+    PRIUS_MIS_4: 0
+  response: 708076210A700000000

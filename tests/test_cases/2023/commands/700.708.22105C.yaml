@@ -1,0 +1,6 @@
+command_id: 700.708.22105C
+test_cases:
+- expected_values:
+    PRIUS_KNOCK_CORRECT_LEARNED_VALUE: 14.21875
+    PRIUS_KNOCK_FEEDBACK_VALUE: -3
+  response: 7080762105C81C77FA0

@@ -1,0 +1,90 @@
+command_id: 7B0.7B8.2147
+test_cases:
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -8
+    PRIUS_YAW_RATE: -1
+  response: |-
+    7B81009614700007F7F
+    7B821B0000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -89.3
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B8100961470000807C
+    7B8218300FC00000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -24.4
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B8100961470000807F
+    7B8210C00F900000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -1.7
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B8100961470000807F
+    7B821EF000100000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -1.6
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B8100961470000807F
+    7B821F0000100000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: -0.06
+    PRIUS_STEER_ANGLE: -38.7
+    PRIUS_YAW_RATE: -2
+  response: |-
+    7B81009614700FD7E7E
+    7B8217D00FF00000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: -0.02
+    PRIUS_STEER_ANGLE: -20.9
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B81009614700FF807F
+    7B8212F00FC00000000
+- expected_values:
+    PRIUS_LAT_G: 0.02
+    PRIUS_LNG_G: -0.06
+    PRIUS_STEER_ANGLE: -497.9
+    PRIUS_YAW_RATE: 11
+  response: |-
+    7B81009614701FD8B6C
+    7B8218D000400000000
+- expected_values:
+    PRIUS_LAT_G: 0.12
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 508.4
+    PRIUS_YAW_RATE: 37
+  response: |-
+    7B8100961470600A593
+    7B821DC000200000000
+- expected_values:
+    PRIUS_LAT_G: -0.16
+    PRIUS_LNG_G: -0.04
+    PRIUS_STEER_ANGLE: -224.7
+    PRIUS_YAW_RATE: -24
+  response: |-
+    7B810096147F8FE6877
+    7B82139000000000000
+- expected_values:
+    PRIUS_LAT_G: -0.02
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -12.6
+    PRIUS_YAW_RATE: -3
+  response: |-
+    7B810096147FF007D7F
+    7B82182000000000000

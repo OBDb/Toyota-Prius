@@ -1,0 +1,11 @@
+command_id: 700.708.222848
+test_cases:
+- expected_values:
+    PRIUS_EOP_CONTROL_VALVE: 0
+  response: '708056228480000'
+- expected_values:
+    PRIUS_EOP_CONTROL_VALVE: 641.54784
+  response: 7080562284820D9
+- expected_values:
+    PRIUS_EOP_CONTROL_VALVE: 781.54549
+  response: '708056228482804'

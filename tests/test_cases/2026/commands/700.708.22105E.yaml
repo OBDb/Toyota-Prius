@@ -1,0 +1,32 @@
+command_id: 700.708.22105E
+test_cases:
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 20
+  response: 7080462105E3C
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 22
+  response: 7080462105E3E
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 23
+  response: 7080462105E3F
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 24
+  response: '7080462105E40'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 26
+  response: '7080462105E42'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 27
+  response: '7080462105E43'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 28
+  response: '7080462105E44'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 30
+  response: '7080462105E46'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 31
+  response: '7080462105E47'
+- expected_values:
+    PRIUS_ECU_INTERNAL_T: 32
+  response: '7080462105E48'

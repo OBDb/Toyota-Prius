@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221F05
+test_cases:
+- expected_values:
+    PRIUS_COOL_T: 19
+  response: 7DA04621F053B
+- expected_values:
+    PRIUS_COOL_T: 85
+  response: 7DA04621F057D

@@ -1,0 +1,49 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1,f=2023-
+test_cases:
+- expected_values:
+    PRIUS_TT_FL_V2: 22
+    PRIUS_TT_FR_V2: 22
+    PRIUS_TT_RL_V2: 22
+    PRIUS_TT_RR_V2: 22
+  response: |-
+    7582A10086210043E3E
+    7582A213E3E00000000
+- expected_values:
+    PRIUS_TT_FL_V2: 25
+    PRIUS_TT_FR_V2: 20
+    PRIUS_TT_RL_V2: 25
+    PRIUS_TT_RR_V2: 20
+  response: |-
+    7582A1008621004413C
+    7582A21413C00000000
+- expected_values:
+    PRIUS_TT_FL_V2: 25
+    PRIUS_TT_FR_V2: 22
+    PRIUS_TT_RL_V2: 26
+    PRIUS_TT_RR_V2: 23
+  response: |-
+    7582A1008621004413E
+    7582A21423F00000000
+- expected_values:
+    PRIUS_TT_FL_V2: 25
+    PRIUS_TT_FR_V2: 23
+    PRIUS_TT_RL_V2: 26
+    PRIUS_TT_RR_V2: 24
+  response: |-
+    7582A1008621004413F
+    7582A21424000000000
+- expected_values:
+    PRIUS_TT_FL_V2: 26
+    PRIUS_TT_FR_V2: 25
+    PRIUS_TT_RL_V2: 27
+    PRIUS_TT_RR_V2: 26
+  response: |-
+    7582A10086210044241
+    7582A21434200000000
+- expected_values:
+    PRIUS_TT_FL_V2: 31
+    PRIUS_TT_FR_V2: 19
+    PRIUS_TT_RL_V2: 31
+  response: |-
+    7582A1008621004473B
+    7582A21470000000000

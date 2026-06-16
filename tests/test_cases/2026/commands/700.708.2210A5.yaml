@@ -1,0 +1,32 @@
+command_id: 700.708.2210A5
+test_cases:
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A5000000
+    7082100210000000000
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A5000000
+    7082100800000000000
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A5000000
+    70821009F0000000000
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A5000000
+    7082100D00000000000
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A50000E4
+    7082100CD0000000000
+- expected_values:
+    PRIUS_MISFIRE_COUNT: 0
+  response: |-
+    70810086210A5000100
+    7082100350000000000

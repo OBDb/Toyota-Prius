@@ -1,0 +1,17 @@
+command_id: 7C0.7C8.221022|fc=1
+test_cases:
+- expected_values:
+    PRIUS_FLV: 41.94
+  response: 7C8056210221062
+- expected_values:
+    PRIUS_FLV: 41.95
+  response: 7C8056210221063
+- expected_values:
+    PRIUS_FLV: 41.96
+  response: 7C8056210221064
+- expected_values:
+    PRIUS_FLV: 41.97
+  response: 7C8056210221065
+- expected_values:
+    PRIUS_FLV: 41.98
+  response: 7C8056210221066

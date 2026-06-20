@@ -1,0 +1,14 @@
+command_id: 700.708.221F3E
+test_cases:
+- expected_values:
+    PRIUS_CAT_T_BANK_1_SENSOR_2: 36.4
+  response: 70805621F3E02FC
+- expected_values:
+    PRIUS_CAT_T_BANK_1_SENSOR_2: 497.5
+  response: 70805621F3E14FF
+- expected_values:
+    PRIUS_CAT_T_BANK_1_SENSOR_2: 497.6
+  response: 70805621F3E1500
+- expected_values:
+    PRIUS_CAT_T_BANK_1_SENSOR_2: 574.6
+  response: 70805621F3E1802

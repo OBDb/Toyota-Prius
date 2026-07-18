@@ -4,5 +4,5 @@ test_cases:
     PRIUS_VSS_V2: 0
   response: 7DA04621F0D00
 - expected_values:
-    PRIUS_VSS_V2: 90
-  response: 7DA04621F0D5A
+    PRIUS_VSS_V2: 93
+  response: 7DA04621F0D5D

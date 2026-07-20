@@ -4,5 +4,96 @@ test_cases:
     PRIUS_FLI_VOL: 0
   response: 7C803612900
 - expected_values:
-    PRIUS_FLI_VOL: 9.90753
-  response: 7C80361294B
+    PRIUS_FLI_VOL: 3.83091
+  response: |-
+    7C80361291D
+    7C81009611200000001
+    7C82100000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.96301
+  response: |-
+    7C80361291E
+    7C80361291E
+- expected_values:
+    PRIUS_FLI_VOL: 4.09511
+  response: |-
+    7C80361291F
+    7C80361291F
+- expected_values:
+    PRIUS_FLI_VOL: 4.22721
+  response: |-
+    7C803612920
+    7C803612920
+- expected_values:
+    PRIUS_FLI_VOL: 5.94452
+  response: |-
+    7C80361292D
+    7C81009611200000007
+    7C82100000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 5.94452
+  response: |-
+    7C80361292D
+    7C81009611200800005
+    7C82102000200000000
+- expected_values:
+    PRIUS_FLI_VOL: 6.86922
+  response: |-
+    7C803612934
+    7C81009611200000001
+    7C82111020200000000
+- expected_values:
+    PRIUS_FLI_VOL: 7.00132
+  response: |-
+    7C803612935
+    7C81009611200000007
+    7C82112000200000000
+- expected_values:
+    PRIUS_FLI_VOL: 8.58653
+  response: |-
+    7C803612941
+    7C803612941
+- expected_values:
+    PRIUS_FLI_VOL: 8.98283
+  response: |-
+    7C803612944
+    7C803612944
+- expected_values:
+    PRIUS_FLI_VOL: 8.98283
+  response: |-
+    7C803612944
+    7C81009611200800007
+    7C82110000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 10.83223
+  response: 7C803612952
+- expected_values:
+    PRIUS_FLI_VOL: 3.83091
+  response: |-
+    7C81009611200000001
+    7C80361291D
+- expected_values:
+    PRIUS_FLI_VOL: 4.22721
+  response: |-
+    7C81009611200000001
+    7C803612920
+- expected_values:
+    PRIUS_FLI_VOL: 4.09511
+  response: |-
+    7C81009611200000007
+    7C80361291F
+- expected_values:
+    PRIUS_FLI_VOL: 7.92602
+  response: |-
+    7C81009611200800007
+    7C80361293C
+- expected_values:
+    PRIUS_FLI_VOL: 7.66182
+  response: |-
+    7C82110000000000000
+    7C80361293A
+- expected_values:
+    PRIUS_FLI_VOL: 8.58653
+  response: |-
+    7C82110000000000000
+    7C803612941

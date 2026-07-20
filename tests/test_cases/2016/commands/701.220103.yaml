@@ -1,0 +1,5 @@
+command_id: '701.220103'
+test_cases:
+- expected_values:
+    PRIUS_ODO_V5: 199704
+  response: 7080762010301030C18

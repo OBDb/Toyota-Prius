@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2215F7
+test_cases:
+- expected_values:
+    PRIUS_12V_C: -9.58625
+  response: 7DA056215F7762F
+- expected_values:
+    PRIUS_12V_C: 8.959999999547108e-05
+  response: 7DA056215F78000
+- expected_values:
+    PRIUS_12V_C: 0.97284
+  response: 7DA056215F780FF
+- expected_values:
+    PRIUS_12V_C: 17.60112
+  response: 7DA056215F79206

@@ -4,5 +4,175 @@ test_cases:
     PRIUS_FLI_VOL: 0
   response: 7C803612900
 - expected_values:
-    PRIUS_FLI_VOL: 9.90753
-  response: 7C80361294B
+    PRIUS_FLI_VOL: 0.9247
+  response: |-
+    7C803612907
+    7C81009611200000007
+    7C82100000000000000
+    7C803612907
+- expected_values:
+    PRIUS_FLI_VOL: 1.0568
+  response: |-
+    7C803612908
+    7C803612908
+- expected_values:
+    PRIUS_FLI_VOL: 1.0568
+  response: |-
+    7C803612908
+    7C81009611200800007
+    7C82110000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 1.1889
+  response: |-
+    7C803612909
+    7C803612909
+    7C81009611200800007
+    7C82100000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 1.1889
+  response: |-
+    7C803612909
+    7C803612909
+    7C81009611200800007
+    7C82112000200000000
+- expected_values:
+    PRIUS_FLI_VOL: 1.1889
+  response: |-
+    7C803612909
+    7C81009611200800007
+    7C82100000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.17041
+  response: |-
+    7C803612918
+    7C803612918
+    7C81009611200000007
+    7C82102020200000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.17041
+  response: |-
+    7C803612918
+    7C81009611200000007
+    7C82100000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.17041
+  response: |-
+    7C803612918
+    7C81009611200000007
+    7C82100020000000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.30251
+  response: |-
+    7C803612919
+    7C81009611200000007
+    7C82112000200000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.96301
+  response: |-
+    7C80361291E
+    7C80361291E
+    7C81009611200800007
+    7C82110000000000000
+- expected_values:
+    PRIUS_FLI_VOL: 4.09511
+  response: |-
+    7C80361291F
+    7C80361291F
+- expected_values:
+    PRIUS_FLI_VOL: 4.22721
+  response: |-
+    7C803612920
+    7C803612920
+- expected_values:
+    PRIUS_FLI_VOL: 8.19022
+  response: |-
+    7C80361293E
+    7C81009611200800001
+    7C82110000000000000
+    7C80361293E
+- expected_values:
+    PRIUS_FLI_VOL: 8.71863
+  response: |-
+    7C803612942
+    7C81009611200000001
+    7C82110020000000000
+    7C803612942
+- expected_values:
+    PRIUS_FLI_VOL: 10.56803
+  response: |-
+    7C803612950
+    7C803612950
+- expected_values:
+    PRIUS_FLI_VOL: 10.56803
+  response: |-
+    7C803612950
+    7C803612950
+    7C81009611200000001
+    7C82100020000000000
+- expected_values:
+    PRIUS_FLI_VOL: 10.83223
+  response: 7C803612952
+- expected_values:
+    PRIUS_FLI_VOL: 10.83223
+  response: |-
+    7C803612952
+    7C803612952
+- expected_values:
+    PRIUS_FLI_VOL: 10.83223
+  response: |-
+    7C803612952
+    7C81009611200000001
+    7C82101020200000000
+- expected_values:
+    PRIUS_FLI_VOL: 3.83091
+  response: |-
+    7C81009611200000001
+    7C80361291D
+- expected_values:
+    PRIUS_FLI_VOL: 4.22721
+  response: |-
+    7C81009611200000001
+    7C803612920
+- expected_values:
+    PRIUS_FLI_VOL: 10.30383
+  response: |-
+    7C81009611200000001
+    7C82100020000000000
+    7C80361294E
+- expected_values:
+    PRIUS_FLI_VOL: 4.09511
+  response: |-
+    7C81009611200000007
+    7C80361291F
+- expected_values:
+    PRIUS_FLI_VOL: 8.32232
+  response: |-
+    7C81009611200800001
+    7C80361293F
+- expected_values:
+    PRIUS_FLI_VOL: 8.71863
+  response: |-
+    7C81009611200800007
+    7C82110000000000000
+    7C803612942
+- expected_values:
+    PRIUS_FLI_VOL: 4.62351
+  response: |-
+    7C81009611200800007
+    7C82112000200000000
+    7C803612923
+- expected_values:
+    PRIUS_FLI_VOL: 3.30251
+  response: |-
+    7C82100000000000000
+    7C803612919
+- expected_values:
+    PRIUS_FLI_VOL: 4.88771
+  response: |-
+    7C82111000200000000
+    7C803612925
+- expected_values:
+    PRIUS_FLI_VOL: 10.83223
+  response: |-
+    7C82111000200000000
+    7C803612952

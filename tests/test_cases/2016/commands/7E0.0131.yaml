@@ -1,0 +1,13 @@
+command_id: 7E0.0131
+test_cases:
+- expected_values:
+    CLR_DIST: 8059
+  response: |-
+    7E803410400
+    7E804410C0000
+    7E803410F56
+    7E806412481FE6C1C
+    7E8074187010C9A0000
+    7E8034130A8
+    7E803410D03
+    7E80441311F7B

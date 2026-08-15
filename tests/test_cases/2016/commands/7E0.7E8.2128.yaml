@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2128
+test_cases:
+- expected_values:
+    PRIUS_ODO: 122353
+  response: 7E805612801DDF1

@@ -1,0 +1,40 @@
+command_id: 7E0.0105
+test_cases:
+- expected_values:
+    ECT: 66
+  response: |-
+    7E80341056A
+    7E803410D09
+    7E804414D0000
+    7E8044110002B
+    7E80441210000
+    7E8034130DE
+    7E8074187010C9C0000
+    7E803410400
+    7E804414E53C0
+    7E803410D09
+    7E803410F5F
+    7E80441447F91
+- expected_values:
+    ECT: 75
+  response: |-
+    7E803410573
+    7E804410C0000
+- expected_values:
+    ECT: 72
+  response: |-
+    7E803410F55
+    7E80441448013
+    7E803410570
+    7E804410C155F
+- expected_values:
+    ECT: 83
+  response: |-
+    7E804410C0000
+    7E803410D0A
+    7E80341057B
+    7E8064124928079B6
+    7E8044110002B
+    7E803410400
+    7E803410F52
+    7E80441448013

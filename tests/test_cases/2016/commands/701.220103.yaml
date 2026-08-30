@@ -1,0 +1,28 @@
+command_id: '701.220103'
+test_cases:
+- expected_values:
+    PRIUS_ODO_V5: 200269
+  response: |-
+    70003220103
+    7080762010301030E4D
+- expected_values:
+    PRIUS_ODO_V5: 200410
+  response: |-
+    70003220103
+    7080762010301030EDA
+- expected_values:
+    PRIUS_ODO_V5: 201106
+  response: |-
+    70003220103
+    7080762010301031192
+- expected_values:
+    PRIUS_ODO_V5: 201120
+  response: |-
+    70003220103
+    70807620103010311A0
+- expected_values:
+    PRIUS_ODO_V5: 199704
+  response: 7080762010301030C18
+- expected_values:
+    PRIUS_ODO_V5: 201434
+  response: 70807620103010312DA

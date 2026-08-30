@@ -9,6 +9,14 @@ test_cases:
     7582A10086220210201
     7582A21040300000000
 - expected_values:
+    PRIUS_TID_1: FR
+    PRIUS_TID_2: RL
+    PRIUS_TID_3: FL
+    PRIUS_TID_4: RR
+  response: |-
+    7582A10086220210203
+    7582A21010400000000
+- expected_values:
     PRIUS_TID_1: RR
     PRIUS_TID_2: RL
     PRIUS_TID_3: FR

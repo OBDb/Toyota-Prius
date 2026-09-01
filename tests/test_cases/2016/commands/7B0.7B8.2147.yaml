@@ -35,6 +35,14 @@ test_cases:
 - expected_values:
     PRIUS_LAT_G: 0
     PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 9.5
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B81009614700008080
+    7B8215F000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
     PRIUS_STEER_ANGLE: -483.6
     PRIUS_YAW_RATE: 7
   response: |-
@@ -56,14 +64,6 @@ test_cases:
   response: |-
     7B81009614700018080
     7B82108000100000000
-- expected_values:
-    PRIUS_LAT_G: 0
-    PRIUS_LNG_G: 0.02
-    PRIUS_STEER_ANGLE: 6.3
-    PRIUS_YAW_RATE: 0
-  response: |-
-    7B81009614700018080
-    7B8213F000000000000
 - expected_values:
     PRIUS_LAT_G: 0
     PRIUS_LNG_G: -0.12

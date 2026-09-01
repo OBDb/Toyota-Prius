@@ -1,0 +1,32 @@
+command_id: 7C0.7C8.221021
+test_cases:
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 0
+  response: 7C80462102100
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 12.8
+  response: 7C80462102180
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 13.6
+  response: 7C80462102188
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 13.8
+  response: 7C8046210218A
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 13.9
+  response: 7C8046210218B
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 14
+  response: 7C8046210218C
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 14.1
+  response: 7C8046210218D
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 14.2
+  response: 7C8046210218E
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 14.3
+  response: 7C8046210218F
+- expected_values:
+    PRIUS_BATTERY_VOLTAGE: 14.4
+  response: 7C80462102190

@@ -1,0 +1,29 @@
+command_id: 7B0.7B8.221006
+test_cases:
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 19
+  response: 7B8056210066300
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 20
+  response: 7B8056210066400
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 21
+  response: 7B8056210066500
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 22
+  response: 7B8056210066600
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 23
+  response: 7B8056210066700
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 25
+  response: 7B8056210066900
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 26
+  response: 7B8056210066A00
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 29
+  response: 7B8056210066D00
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 30
+  response: 7B8056210066E00

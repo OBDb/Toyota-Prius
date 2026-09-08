@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.220103|fc=1
+test_cases:
+- expected_values:
+    PRIUS_ODO_V2_V2: 175
+  response: 7DA07620103020000AF
+- expected_values:
+    PRIUS_ODO_V2_V2: 189
+  response: 7DA07620103020000BD

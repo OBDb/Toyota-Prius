@@ -71,7 +71,7 @@
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "10CD"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
-    {"id": "PRIUS_LFP", "path": "Fuel", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Low fuel pressure sensor"}
+    {"id": "PRIUS_LFP", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Low fuel pressure sensor"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F3C"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [

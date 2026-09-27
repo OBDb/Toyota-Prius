@@ -1,6 +1,8 @@
 { "ecu": [
     { "hdr": "750", "eax": "2A", "type": "tpms" },
-    { "hdr": "7E0",              "type": "engine" }
+    { "hdr": "7E0",              "type": "engine" },
+    { "hdr": "7E2",              "type": "hybridControl" },
+    { "hdr": "7E3",              "type": "battery" }
   ],
   "commands": [
 { "hdr": "700", "rax": "708", "cmd": {"22": "1017"}, "freq": 0.25, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },

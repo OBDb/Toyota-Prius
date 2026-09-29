@@ -1,0 +1,14 @@
+command_id: 7C0.7C8.2129
+test_cases:
+- expected_values:
+    PRIUS_FLI_VOL: 3.56671
+  response: '7C8 03 61 29 1B '
+- expected_values:
+    PRIUS_FLI_VOL: 8.58653
+  response: '7C8 03 61 29 41 '
+- expected_values:
+    PRIUS_FLI_VOL: 0
+  response: 7C803612900
+- expected_values:
+    PRIUS_FLI_VOL: 11.49273
+  response: 7C803612957

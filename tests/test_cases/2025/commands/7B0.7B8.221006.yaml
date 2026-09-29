@@ -1,0 +1,8 @@
+command_id: 7B0.7B8.221006
+test_cases:
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 16
+  response: 7B8056210066000
+- expected_values:
+    PRIUS_MASTER_CYL_TEMP: 61
+  response: 7B8056210068D00

@@ -1,0 +1,75 @@
+command_id: 7B0.7B8.2147
+test_cases:
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 5.3
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B81009614700008080
+    7B82135000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0.02
+    PRIUS_STEER_ANGLE: -1.4
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B8100961470001807F
+    7B821F2000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0.02
+    PRIUS_STEER_ANGLE: 0
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B81009614700018080
+    7B82100000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0.02
+    PRIUS_STEER_ANGLE: 1.4
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7B81009614700018080
+    7B8210E000000000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: -0.04
+    PRIUS_STEER_ANGLE: -115.9
+    PRIUS_YAW_RATE: -3
+  response: |-
+    7B81009614700FE7D7B
+    7B8217900FD00000000
+- expected_values:
+    PRIUS_LAT_G: 0.06
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: 432.3
+    PRIUS_YAW_RATE: 18
+  response: |-
+    7B81009614703009290
+    7B821E3000000000000
+- expected_values:
+    PRIUS_LAT_G: -0.08
+    PRIUS_LNG_G: 0.04
+    PRIUS_STEER_ANGLE: -242.6
+    PRIUS_YAW_RATE: -15
+  response: |-
+    7B810096147FC027176
+    7B82186000300000000
+- expected_values:
+    PRIUS_LAT_G: -0.02
+    PRIUS_LNG_G: 0
+    PRIUS_STEER_ANGLE: -498
+    PRIUS_YAW_RATE: -14
+  response: |-
+    7B810096147FF00726C
+    7B8218C000100000000
+- expected_values:
+    PRIUS_LAT_G: 0
+    PRIUS_LNG_G: 0.02
+    PRIUS_STEER_ANGLE: 0
+    PRIUS_YAW_RATE: 0
+  response: |-
+    7EE03410D00
+    7B81009614700018080
+    7B82100000000000000

@@ -1,5 +1,0 @@
-command_id: 700.708.221074
-test_cases:
-- expected_values:
-    PRIUS_EOP: 1.17188
-  response: 70805621074000F

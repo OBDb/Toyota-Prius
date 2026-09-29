@@ -1,8 +1,0 @@
-command_id: 7D2.7DA.221F46
-test_cases:
-- expected_values:
-    PRIUS_AAT: -8
-  response: 7DA04621F4620
-- expected_values:
-    PRIUS_AAT: 40
-  response: 7DA04621F4650

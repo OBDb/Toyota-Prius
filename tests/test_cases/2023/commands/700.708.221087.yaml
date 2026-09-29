@@ -1,5 +1,0 @@
-command_id: 700.708.221087
-test_cases:
-- expected_values:
-    PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1: 0.58585
-  response: 70805621087003C

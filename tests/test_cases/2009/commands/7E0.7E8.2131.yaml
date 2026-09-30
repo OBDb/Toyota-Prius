@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2131
+test_cases:
+- expected_values:
+    PRIUS_VALVEMATIC_CURRENT: 62.50977
+  response: '7E80461311901'
+- expected_values:
+    PRIUS_VALVEMATIC_CURRENT: 62.51953
+  response: '7E80461311902'

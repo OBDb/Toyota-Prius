@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.210D
+test_cases:
+- expected_values:
+    PRIUS_VSS_21: 0
+  response: 7E803610D00
+- expected_values:
+    PRIUS_VSS_21: 30
+  response: 7E803610D1E
+- expected_values:
+    PRIUS_VSS_21: 39
+  response: 7E803610D27
+- expected_values:
+    PRIUS_VSS_21: 41
+  response: 7E803610D29
+- expected_values:
+    PRIUS_VSS_21: 44
+  response: 7E803610D2C

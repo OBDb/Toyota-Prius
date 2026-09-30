@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.210E
+test_cases:
+- expected_values:
+    PRIUS_SPARKADV_21: 5
+  response: 7E803610E8A
+- expected_values:
+    PRIUS_SPARKADV_21: 20.5
+  response: 7E803610EA9
+- expected_values:
+    PRIUS_SPARKADV_21: 21.5
+  response: 7E803610EAB

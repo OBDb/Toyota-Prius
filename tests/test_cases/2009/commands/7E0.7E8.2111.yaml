@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.2111
+test_cases:
+- expected_values:
+    PRIUS_THROTTLE_21: 14.5098
+  response: '7E803611125'
+- expected_values:
+    PRIUS_THROTTLE_21: 28.23529
+  response: '7E803611148'
+- expected_values:
+    PRIUS_THROTTLE_21: 29.41176
+  response: 7E80361114B

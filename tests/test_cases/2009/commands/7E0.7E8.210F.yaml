@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.210F
+test_cases:
+- expected_values:
+    PRIUS_IAT_21: 28
+  response: 7E803610F44
+- expected_values:
+    PRIUS_IAT_21: 30
+  response: 7E803610F46
+- expected_values:
+    PRIUS_IAT_21: 31
+  response: 7E803610F47

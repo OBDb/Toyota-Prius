@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.213E
+test_cases:
+- expected_values:
+    PRIUS_CAT_T_B1S2_V2: 352.9
+  response: 7E804613E0F59
+- expected_values:
+    PRIUS_CAT_T_B1S2_V2: 372.8
+  response: 7E804613E1020
+- expected_values:
+    PRIUS_CAT_T_B1S2_V2: 396.6
+  response: 7E804613E110E
+- expected_values:
+    PRIUS_CAT_T_B1S2_V2: 416.2
+  response: 7E804613E11D2
+- expected_values:
+    PRIUS_CAT_T_B1S2_V2: 417.5
+  response: 7E804613E11DF

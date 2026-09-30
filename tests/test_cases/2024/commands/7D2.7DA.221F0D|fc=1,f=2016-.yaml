@@ -1,0 +1,13 @@
+command_id: 7D2.7DA.221F0D|fc=1,f=2016-
+test_cases:
+- expected_values:
+    PRIUS_VSS_V2: 0
+  response: 7DA04621F0D00
+- expected_values:
+    PRIUS_VSS_V2: 131
+  response: 7DA04621F0D83
+- expected_values:
+    PRIUS_VSS_V2: 0
+  response: |-
+    7E803410400
+    7DA04621F0D00

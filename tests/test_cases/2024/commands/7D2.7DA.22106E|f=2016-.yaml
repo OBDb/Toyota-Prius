@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.22106E|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_AC_POWER_CONS: 0
+  response: 7DA0462106E00
+- expected_values:
+    PRIUS_AC_POWER_CONS: 0.25
+  response: 7DA0462106E05
+- expected_values:
+    PRIUS_AC_POWER_CONS: 0.3
+  response: 7DA0462106E06
+- expected_values:
+    PRIUS_AC_POWER_CONS: 0.35
+  response: 7DA0462106E07

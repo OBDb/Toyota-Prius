@@ -1,0 +1,20 @@
+command_id: 7D2.7DA.221112|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.08111
+  response: 7DA056211123D8B
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.09942
+  response: 7DA056211123D91
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.27032
+  response: 7DA056211123DC9
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.27337
+  response: 7DA056211123DCA
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.29779
+  response: 7DA056211123DD2
+- expected_values:
+    PRIUS_INVERTER_WATER_PMP: 48.30084
+  response: 7DA056211123DD3

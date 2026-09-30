@@ -1,0 +1,8 @@
+command_id: 700.708.22106C
+test_cases:
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 55267
+  response: 7080562106CD7E3
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 55268
+  response: 7080562106CD7E4

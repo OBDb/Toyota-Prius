@@ -1,0 +1,8 @@
+command_id: 700.708.221F46
+test_cases:
+- expected_values:
+    PRIUS_AMBIENT_T: 22
+  response: 70804621F463E
+- expected_values:
+    PRIUS_AMBIENT_T: 23
+  response: 70804621F463F

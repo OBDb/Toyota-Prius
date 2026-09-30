@@ -1,0 +1,8 @@
+command_id: 700.708.221088
+test_cases:
+- expected_values:
+    PRIUS_EXHAUST_VVT_ANGLE_B1: 0
+  response: '708056210880000'
+- expected_values:
+    PRIUS_EXHAUST_VVT_ANGLE_B1: 27.95504
+  response: 708056210880B2F

@@ -1,0 +1,6 @@
+command_id: 7D2.7DA.22106A|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_REAR_MOTOR: 0
+    PRIUS_REAR_MOTOR_REGENERATIVE: 0
+  response: 7DA0762106A80008000

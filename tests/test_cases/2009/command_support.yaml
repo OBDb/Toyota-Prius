@@ -40,12 +40,22 @@ supported_commands_by_ecu:
   - 7E0.0104:LOAD_PCT
   - 7E0.0105:ECT
   - 7E0.0106:SHRTFT1
+  - 7E0.010C:RPM
   - 7E0.010D:VSS
   - 7E0.0110:MAF
   - 7E0.0124:LAMBDA11_VOLT,O2S11_VOLT
   - 7E0.0131:CLR_DIST
+  - 7E0.0143:LOAD_ABS
   - 7E0.0144:EQ_RAT
   - 7E0.7E8.2121:PRIUS_CC_S
+  "7E2":
+  - 7E2.21C3
+  - 7E2.21C4
+  - 7E2.21D3
+  "7E3":
+  - 7E3.21CE
+  - 7E3.21CF
+  - 7E3.21D0
 unsupported_commands_by_ecu:
   "6F1":
   - 6F1.221700

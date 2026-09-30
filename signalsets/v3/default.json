@@ -5,9 +5,29 @@
     { "hdr": "7E3",              "type": "battery" }
   ],
   "commands": [
+{ "hdr": "700", "rax": "708", "cmd": {"22": "0103"}, "freq": 30, "dbgfilter": { "to": 2015, "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_ENG_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1002"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_12V_V_700", "path": "Battery", "fmt": { "len": 16, "max": 79, "mul": 12.207, "div": 10000, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1017"}, "freq": 0.25, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_INJ_VOL", "path": "Engine", "fmt": { "len": 16, "max": 20.4, "div": 3200, "unit": "liters" }, "name": "Injection volume"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1018"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJECTOR_PORT", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "milliseconds" }, "name": "Injector port"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1019"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJECTION", "path": "Engine", "name": "Injection", "fmt": {"len": 8, "map": {
+          "1": { "description": "Direct", "value": "DIRECT" },
+          "2": { "description": "Both",   "value": "BOTH" }
+        }}
+    }
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "102A"}, "freq": 1, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
@@ -17,10 +37,23 @@
     {"id": "PRIUS_A_F_RATIO_LEARNED_MID_2_BANK_1", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learned mid 2, bank 1"},
     {"id": "PRIUS_A_F_RATIO_LEARNED_HIGH_BANK_1",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learned high, bank 1"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1041"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ECT_IGN",  "path": "Engine", "fmt": {          "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, at ignition"},
+    {"id": "PRIUS_ECT_INIT", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, initial"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1043"}, "freq": 0.25, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_EWP_TARGET_VSS", "path": "Engine", "fmt": {          "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Electric water pump target speed"},
     {"id": "PRIUS_EWP_RPM",        "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Electric water pump RPM"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1046"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_COOLING_FAN_DUTY_RATIO", "path": "Engine", "fmt": { "len": 8, "max": 127.5, "mul": 127.5, "div": 255, "unit": "percent" }, "name": "Cooling fan duty ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1059"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_ACCEL_PEDAL", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 1.42, "add": -28.873, "unit": "percent" }, "name": "Accelerator pedal"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "105C"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
@@ -35,6 +68,14 @@
   "signals": [
     {"id": "PRIUS_EXHAUST_VVT_OCV_CONTROL_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 400, "mul": 400, "div": 65535, "unit": "percent" }, "name": "Exhaust VVT oil control valve control duty"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "106A"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FUEL_PUMP_DUTY_RATIO", "path": "Fuel", "fmt": { "len": 16, "max": 3996, "mul": 0.0609756098, "unit": "kilopascal" }, "name": "Fuel pump duty ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "106C"}, "freq": 30,
+  "signals": [
+    {"id": "PRIUS_DIST_SINCE_BAT_DISC", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since last battery cable disconnection"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "106F"}, "freq": 0.25, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_INTAKE_VVT_TARGET_ANGLE_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Intake VVT target angle B1"}
@@ -45,7 +86,11 @@
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1074"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
-    {"id": "PRIUS_EOP", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "kilopascal" }, "name": "Engine Oil Pressure"}
+    {"id": "PRIUS_EOP", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1075"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_IWP_SPEED", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Intercooler water pump speed, raw count"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1078"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
@@ -54,9 +99,53 @@
     {"id": "PRIUS_IDLE_SAC_CYL_3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 3"},
     {"id": "PRIUS_IDLE_SAC_CYL_4", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 4"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "107B"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_EOT_700", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1084"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ROUGH_IDLE_CYL_1", "path": "Engine", "fmt": {           "len": 8, "max": 255, "unit": "degrees" }, "name": "Rough idle, cylinder 1"},
+    {"id": "PRIUS_ROUGH_IDLE_CYL_2", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "degrees" }, "name": "Rough idle, cylinder 2"},
+    {"id": "PRIUS_ROUGH_IDLE_CYL_3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "degrees" }, "name": "Rough idle, cylinder 3"},
+    {"id": "PRIUS_ROUGH_IDLE_CYL_4", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "degrees" }, "name": "Rough idle, cylinder 4"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1087"}, "freq": 0.25, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Intake VVT change angle bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1088"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EXHAUST_VVT_ANGLE_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT change angle, bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1089"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_EXHAUST_VVT_HOLD_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 399.9, "mul": 399.9, "div": 65535, "unit": "percent" }, "name": "Exhaust VVT hold learn value, bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108A"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VVT_IE_DUTY_RATIO_1",              "path": "ECU", "fmt": {           "len": 15, "max": -0.0531, "min": -200, "mul": 399.9, "div": 65535, "add": -200, "unit": "percent" }, "name": "VVT-ie duty ratio bank 1"},
+    {"id": "PRIUS_VVT_IE_MOTOR_DIRECTION_FORWARD_1", "path": "ECU", "fmt": {"bix": 15, "len": 1,  "max": 1,                                                             "unit": "offon"   }, "name": "VVT-ie motor direction: forward bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108D"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Intake VVT most over-retarded learn value, bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108F"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_EXHAUST_VVT_OVER_ADV_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT timing most over-advanced learn value, bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "109A"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_FFT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel filter temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "10A2"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_AF_LEARN_IDLE_PORT_B1", "path": "Engine", "fmt": {           "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value idle, bank 1"},
+    {"id": "PRIUS_AF_LEARN_LOW_PORT_B1",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value low, bank 1"},
+    {"id": "PRIUS_AF_LEARN_MID1_PORT_B1", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value mid.1, bank 1"},
+    {"id": "PRIUS_AF_LEARN_MID2_PORT_B1", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value mid.2, bank 1"},
+    {"id": "PRIUS_AF_LEARN_HIGH_PORT_B1", "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value high, bank 1"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "10A5"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
@@ -79,31 +168,335 @@
   "signals": [
     {"id": "PRIUS_LFP", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Low fuel pressure sensor"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1105"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_PM_ACCUMULATION_RAT_1", "path": "Engine", "fmt": { "len": 8, "max": 15, "mul": 2, "unit": "percent" }, "name": "PM accumulation ratio - bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112B"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_FEEDBACK_1", "path": "Engine", "fmt": {           "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 1"},
+    {"id": "PRIUS_INJ_FEEDBACK_2", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 2"},
+    {"id": "PRIUS_INJ_FEEDBACK_3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 3"},
+    {"id": "PRIUS_INJ_FEEDBACK_4", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 4"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_VOLUME_TGT", "path": "Engine", "fmt": { "len": 16, "max": 15, "mul": 19531, "div": 1000000, "unit": "unknown" }, "name": "Injection volume - target"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112F"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_VOLUME_TOT", "path": "Engine", "fmt": { "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume total"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1131"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_CYL_1_INJ_VOLUME", "path": "Engine", "fmt": {           "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 1 injection volume"},
+    {"id": "PRIUS_CYL_2_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 2 injection volume"},
+    {"id": "PRIUS_CYL_3_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 3 injection volume"},
+    {"id": "PRIUS_CYL_4_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 4 injection volume"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "113C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FUEL_P_1", "path": "Fuel", "fmt": {           "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 1"},
+    {"id": "PRIUS_FUEL_P_2", "path": "Fuel", "fmt": {"bix": 16, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 2"},
+    {"id": "PRIUS_FUEL_P_3", "path": "Fuel", "fmt": {"bix": 32, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 3"},
+    {"id": "PRIUS_FUEL_P_4", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 4"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "113E"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_FUEL_T_1", "path": "Fuel", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 1"},
+    {"id": "PRIUS_FUEL_T_2", "path": "Fuel", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 2"},
+    {"id": "PRIUS_FUEL_T_3", "path": "Fuel", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 3"},
+    {"id": "PRIUS_FUEL_T_4", "path": "Fuel", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 4"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1141"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_FUEL_RETURN_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel return temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "118B"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_VOLUME_1", "path": "Engine", "fmt": {           "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 1"},
+    {"id": "PRIUS_INJ_VOLUME_2", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 2"},
+    {"id": "PRIUS_INJ_VOLUME_3", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 3"},
+    {"id": "PRIUS_INJ_VOLUME_5", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 5"},
+    {"id": "PRIUS_INJ_VOLUME_6", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 6"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "119C"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_INTERCOOLER_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intercooler coolant temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "11AF"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_2ND_TRUBOCHARGER_OUTLET_P", "path": "Battery", "fmt": { "len": 16, "max": 300, "div": 100, "unit": "kilopascal" }, "name": "2nd turbocharger outlet pressure"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "11B8"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_FEEDBACK_1_700", "path": "Engine", "fmt": {           "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 1"},
+    {"id": "PRIUS_INJ_FEEDBACK_2_700", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 2"},
+    {"id": "PRIUS_INJ_FEEDBACK_3_700", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 3"},
+    {"id": "PRIUS_INJ_FEEDBACK_4_700", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 4"},
+    {"id": "PRIUS_INJ_FEEDBACK_5",     "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 5"},
+    {"id": "PRIUS_INJ_FEEDBACK_6",     "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 19.8418, "min": -19.9981, "mul": 332, "div": 2125, "add": -19.9981176471, "unit": "unknown" }, "name": "Injection feedback value 6"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "11C4"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FUEL_P_1_700", "path": "Fuel", "fmt": {           "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 1"},
+    {"id": "PRIUS_FUEL_P_2_700", "path": "Fuel", "fmt": {"bix": 16, "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 2"},
+    {"id": "PRIUS_FUEL_P_3_700", "path": "Fuel", "fmt": {"bix": 32, "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 3"},
+    {"id": "PRIUS_FUEL_P_4_700", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 4"},
+    {"id": "PRIUS_FUEL_P_5",     "path": "Fuel", "fmt": {"bix": 64, "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 5"},
+    {"id": "PRIUS_FUEL_P_6",     "path": "Fuel", "fmt": {"bix": 80, "len": 16, "max": 300, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 6"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "11C5"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_FUEL_T_1_700", "path": "Fuel", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 1"},
+    {"id": "PRIUS_FUEL_T_2_700", "path": "Fuel", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 2"},
+    {"id": "PRIUS_FUEL_T_3_700", "path": "Fuel", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 3"},
+    {"id": "PRIUS_FUEL_T_4_700", "path": "Fuel", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 4"},
+    {"id": "PRIUS_FUEL_T_5",     "path": "Fuel", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 5"},
+    {"id": "PRIUS_FUEL_T_6",     "path": "Fuel", "fmt": {"bix": 40, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 6"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "11CD"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_1ST_TRUBOCHARGER_P", "path": "Battery", "fmt": {           "len": 16, "max": 300, "div": 100, "unit": "kilopascal" }, "name": "1st turbocharger outlet pressure, control valve"},
+    {"id": "PRIUS_2ND_TRUBOCHARGER_P", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 300, "div": 100, "unit": "kilopascal" }, "name": "2nd turbocharger outlet pressure, control valve"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15E5"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_BAT_STAT_FULL_CHG", "path": "Battery", "fmt": { "len": 8, "max": 32512.5, "mul": 255, "div": 2, "unit": "ampereHours" }, "name": "Battery status of full charge"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15E7"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_DARK_CURRENT_BAT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Dark current of battery"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15E8"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_CHG_INTEGRATED",           "path": "Battery", "fmt": {           "len": 32, "max": 429496729.5,              "div": 10,              "unit": "ampereHours" }, "name": "Charging integrated current of aux. battery"},
+    {"id": "PRIUS_DISCHARGING",              "path": "Battery", "fmt": {"bix": 32, "len": 32, "max": 429496729.5,              "div": 10,              "unit": "ampereHours" }, "name": "Discharging integrated current of aux. battery"},
+    {"id": "PRIUS_AUX_BAT_CAP_AFTER_IG_ON",  "path": "Battery", "fmt": {"bix": 64, "len": 8,  "max": 127,         "min": -128,            "add": -128, "unit": "ampereHours" }, "name": "Aux. battery capacity after IG ON"},
+    {"id": "PRIUS_AUX_BAT_CAP_AFTER_IG_OFF", "path": "Battery", "fmt": {"bix": 72, "len": 8,  "max": 127,         "min": -128,            "add": -128, "unit": "ampereHours" }, "name": "Aux. battery capacity after IG OFF"},
+    {"id": "PRIUS_INTEGRATED_ENG_RUN",       "path": "Engine",  "fmt": {"bix": 80, "len": 16, "max": 65535,                                            "unit": "hours"       }, "name": "Integrated engine run time"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15EE"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_V_BATSENS", "path": "Battery", "fmt": { "len": 16, "max": 79.9979, "mul": 13333, "div": 10922500, "unit": "volts" }, "name": "Voltage of battery sensor"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15F0"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_SLEEP_TIME_BATSENS", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "hours" }, "name": "Sleep time of battery sensor"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15F6"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_INITIAL_ENG_BAT_V_LO", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Initial engine battery voltage lower limit"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15F7"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_BAT_CURRENT_700", "path": "Battery", "fmt": { "len": 16, "max": 124.9, "min": -125, "mul": 49, "div": 12850, "add": -125, "unit": "amps" }, "name": "Battery current"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15F8"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_BAT_T_700", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Battery temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15FA"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ALT_DUTY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 399, "div": 164, "unit": "percent" }, "name": "Alternator output duty cycle"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1620"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_AT_LOCK_UP_STATE", "path": "Transmission", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Lock up state"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1621"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1622"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_TRANS_SHIFT_ST_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 15.999, "mul": 5333, "div": 21845000, "unit": "scalar" }, "name": "Transmission shift state ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1627"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ATF_T_PAN_V3", "path": "Transmission", "fmt": { "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, pan var.3", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1628"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_TRANS_FLUID_POST_T_3", "path": "Transmission", "fmt": { "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid post-converter temperature, variant 3"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1638"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ATF_TEMP_700", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 30,
+  "signals": [
+    {"id": "PRIUS_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F3C"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_CAT_T_BANK_1_SENSOR_1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F3D"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_CAT_T_BANK_2_SENS_1", "path": "Engine", "fmt": { "len": 16, "max": 11756.3, "min": -40, "mul": 9, "div": 50, "add": -40, "unit": "fahrenheit" }, "name": "Catalyst temperature bank 2 sensor 1"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F3E"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_CAT_T_BANK_1_SENSOR_2", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F3F"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_CAT_T_BANK_2_SENS_2", "path": "Engine", "fmt": { "len": 16, "max": 11756.3, "min": -40, "mul": 9, "div": 50, "add": -40, "unit": "fahrenheit" }, "name": "Catalyst temperature bank 2 sensor 2"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F46"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_AMBIENT_T", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient temperature"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F5C"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
     {"id": "PRIUS_EOT_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variation 2"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F6D"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_HFP_TARGET",        "path": "Fuel", "fmt": {"bix": 8,  "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, target"},
+    {"id": "PRIUS_HFP_ACTUAL",        "path": "Fuel", "fmt": {"bix": 24, "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, actual"},
+    {"id": "PRIUS_LOW_FUEL_PRESSURE", "path": "Fuel", "fmt": {"bix": 64, "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Low fuel pressure"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F77"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_IAT_B1S1", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 1"},
+    {"id": "PRIUS_IAT_B1S2", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 2"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1FF8"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_BAT_T_700_2", "path": "Battery", "fmt": { "len": 16, "max": 11756.3, "min": -40, "mul": 9, "div": 50, "add": -40, "unit": "fahrenheit" }, "name": "Battery temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "2820"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INTERCOOLER_WATER", "path": "Engine", "fmt": { "len": 16, "max": 300, "mul": 80, "div": 13107, "unit": "percent" }, "name": "Intercooler water pump"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "2827"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ELECTRIC_WATER_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 10200, "mul": 40, "unit": "rpm" }, "name": "Electric water pump"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "2829"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ELECTRIC_THERMOSTAT_DUTY_RATIO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Electric thermostat duty ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "282C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_COOLANT_VALVE_1_CLOSE", "path": "Engine", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Coolant water route switching valve 1, closed?"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "2843"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VVT_IE_OPENING_ANGLE_BANK_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Variable valve timing opening angle bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "2847"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_COOLANT_VALVE_2_CLOSE", "path": "Engine", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Coolant water route switching valve 2, closed?"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "2848"}, "freq": 0.5, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
     {"id": "PRIUS_EOP_CONTROL_VALVE", "path": "Engine", "fmt": { "len": 16, "max": 4999, "mul": 762.93, "div": 10000, "unit": "milliamps" }, "name": "Engine oil pressure control valve"}
   ]},
-{ "hdr": "701", "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "F19D"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ENG_FUEL_RATE", "path": "Fuel", "fmt": {           "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Engine fuel rate"},
+    {"id": "PRIUS_VEH_FUEL_RATE", "path": "Fuel", "fmt": {"bix": 16, "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Vehicle fuel rate"}
+  ]},
+{ "hdr": "701", "rax": "709", "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
   "signals": [
     {"id": "PRIUS_ODO_V5", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2016, "years": [2018], "from": 2027 },
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1614"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_NC1_SPD", "path": "Movement", "fmt": { "len": 16, "max": 10000, "unit": "rpm" }, "name": "NC1 speed"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1616"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_NSS_SPD", "path": "Movement", "fmt": { "len": 16, "max": 10000, "unit": "rpm" }, "name": "Secondary speed"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1618"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_NO_SPD", "path": "Movement", "fmt": { "len": 16, "max": 10000, "unit": "rpm" }, "name": "NO speed"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "161A"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_NT_SPD", "path": "Movement", "fmt": { "len": 16, "max": 10000, "unit": "rpm" }, "name": "NT speed"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1620"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_LOCK_UP_STATE", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Lock up state"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1622"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_TRANS_SHIFT_ST_RAT_701", "path": "Transmission", "fmt": { "len": 16, "max": 15.999, "mul": 5333, "div": 21845000, "unit": "scalar" }, "name": "Transmission shift state ratio"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1627"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_TF1_PAN", "path": "Engine", "fmt": { "len": 16, "max": 350, "min": -40, "mul": 0.00703125, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid pan temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1628"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_TF2_CONV", "path": "Engine", "fmt": { "len": 16, "max": 350, "min": -40, "mul": 0.00703125, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid post-converter temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "162B"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ATF_THERMAL_DEGRAD_EST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Automatic transmission fluid thermal degradation estimate"}
+  ]},
+{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1634"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SYNCHRONIZE_STROKE", "path": "Engine", "fmt": { "len": 16, "max": 256, "mul": 256, "div": 65535, "unit": "millimeters" }, "name": "Synchronize stroke sensor position"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2017 }, "dbgfilter": { "years": [2018], "from": 2027 },
   "signals": [
     {"id": "PRIUS_ODO_V6", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "182E"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2027 },
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_AC_POWER_CONS_747", "path": "Engine", "fmt": { "len": 8, "max": -12500, "min": -12500, "div": 2000, "add": -12500, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1802"}, "freq": 1, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_1_FAN_747", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 127, "div": 2, "unit": "percent" }, "name": "Hybrid battery 1 fan"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "180B"}, "freq": 5, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_IAT_1", "path": "Battery", "fmt": {           "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery intake air temperature 1"},
+    {"id": "PRIUS_HYBRID_BAT_IAT_2", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery intake air temperature 2"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_BAT_T_01", "path": "Battery", "fmt": {            "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 01"},
+    {"id": "PRIUS_BAT_T_02", "path": "Battery", "fmt": {"bix": 16,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 02"},
+    {"id": "PRIUS_BAT_T_03", "path": "Battery", "fmt": {"bix": 32,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 03"},
+    {"id": "PRIUS_BAT_T_04", "path": "Battery", "fmt": {"bix": 48,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 04"},
+    {"id": "PRIUS_BAT_T_05", "path": "Battery", "fmt": {"bix": 64,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 05"},
+    {"id": "PRIUS_BAT_T_06", "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 06"},
+    {"id": "PRIUS_BAT_T_07", "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 07"},
+    {"id": "PRIUS_BAT_T_08", "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 08"},
+    {"id": "PRIUS_BAT_T_09", "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 09"},
+    {"id": "PRIUS_BAT_T_10", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 10"},
+    {"id": "PRIUS_BAT_T_11", "path": "Battery", "fmt": {"bix": 160, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 11"},
+    {"id": "PRIUS_BAT_T_12", "path": "Battery", "fmt": {"bix": 176, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 12"},
+    {"id": "PRIUS_BAT_T_13", "path": "Battery", "fmt": {"bix": 192, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 13"},
+    {"id": "PRIUS_BAT_T_14", "path": "Battery", "fmt": {"bix": 208, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 14"},
+    {"id": "PRIUS_BAT_T_15", "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 15"},
+    {"id": "PRIUS_BAT_T_16", "path": "Battery", "fmt": {"bix": 240, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 16"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1819"}, "freq": 1, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_BLOCK_1_V", "path": "Battery", "fmt": {           "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 1 average voltage"},
+    {"id": "PRIUS_HYBRID_BAT_BLOCK_2_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 2 average voltage"},
+    {"id": "PRIUS_HYBRID_BAT_BLOCK_3_V", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 3 average voltage"},
+    {"id": "PRIUS_HYBRID_BAT_BLOCK_4_V", "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 4 average voltage"},
+    {"id": "PRIUS_HYBRID_BAT_BLOCK_5_V", "path": "Battery", "fmt": {"bix": 64, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 5 average voltage"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1824"}, "freq": 5, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_BAT_HEATER_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Battery heater temperature"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1825"}, "freq": 5, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_HEATER_T_2", "path": "Battery", "fmt": { "len": 8, "max": 401, "min": -58, "mul": 9, "div": 5, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery heater temperature 2"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "182E"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
     {"id": "PRIUS_HVBAT_C01_V", "path": "Battery.Cells", "fmt": {             "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #01 voltage"},
     {"id": "PRIUS_HVBAT_C02_V", "path": "Battery.Cells", "fmt": {"bix": 16,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #02 voltage"},
@@ -202,6 +595,26 @@
     {"id": "PRIUS_HVBAT_C95_V", "path": "Battery.Cells", "fmt": {"bix": 1504, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #95 voltage"},
     {"id": "PRIUS_HVBAT_C96_V", "path": "Battery.Cells", "fmt": {"bix": 1520, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #96 voltage"}
   ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1F5B"}, "freq": 1, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Hybrid battery SOC"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1F9A"}, "freq": 1, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 6553, "div": 10, "unit": "amps" }, "name": "Hybrid battery current"}
+  ]},
+{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "F19A"}, "freq": 5, "filter": { "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_V_747", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 1020, "mul": 4, "unit": "volts" }, "name": "Hybrid battery voltage"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "fcm1": true, "dbg": true, "cmd": {"21": "15"}, "freq": 15,
+  "signals": [
+    {"id": "PRIUS_TIRE_P_1_SET_2", "path": "Tires", "fmt": {           "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 1, set 2"},
+    {"id": "PRIUS_TIRE_P_2_SET_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 2, set 2"},
+    {"id": "PRIUS_TIRE_P_3_SET_2", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 3, set 2"},
+    {"id": "PRIUS_TIRE_P_4_SET_2", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 4, set 2"},
+    {"id": "PRIUS_TIRE_P_5_SET_2", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 5, set 2"}
+  ]},
 { "hdr": "750", "rax": "758", "eax": "2A", "fcm1": true, "cmd": {"21": "16"}, "freq": 1, "filter": { "to": 2023 }, "dbgfilter": { "to": 2015, "years": [2018, 2020], "from": 2023 },
   "signals": [
     {"id": "PRIUS_TT_FL_V1",    "path": "Tires", "fmt": {           "len": 8, "max": 150, "min": -20, "add": -40, "unit": "celsius" }, "name": "Front left tire temperature"},
@@ -212,11 +625,11 @@
   ]},
 { "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"21": "30"}, "freq": 2.5, "filter": { "to": 2023 }, "dbgfilter": { "to": 2015, "years": [2018], "from": 2023 },
   "signals": [
-    {"id": "PRIUS_TP_FL_V1",    "path": "Tires", "fmt": {           "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "PRIUS_TP_FR_V1",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "PRIUS_TP_RL_V1",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "PRIUS_TP_RR_V1",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "PRIUS_TP_SPARE_V1", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Spare tire pressure"}
+    {"id": "PRIUS_TP_FL_V1",    "path": "Tires", "fmt": {           "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "PRIUS_TP_FR_V1",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "PRIUS_TP_RL_V1",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "PRIUS_TP_RR_V1",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "PRIUS_TP_SPARE_V1", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Spare tire pressure"}
   ]},
 { "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5, "filter": { "from": 2023 }, "dbgfilter": { "from": 2027 },
   "signals": [
@@ -265,6 +678,11 @@
         }}
     }
   ]},
+{ "hdr": "780", "rax": "788", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_BUCKLE_RS", "path": "Seatbelts", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "Buckle switch, right side"},
+    {"id": "PRIUS_BUCKLE_LS", "path": "Seatbelts", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Buckle switch, left side"}
+  ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "03"}, "freq": 0.25, "dbgfilter": { "to": 2009, "years": [2018], "from": 2023 },
   "signals": [
     {"id": "PRIUS_TIRE_FR_SPD", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
@@ -272,134 +690,717 @@
     {"id": "PRIUS_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "PRIUS_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "05"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_DECEL",   "path": "Orientation", "fmt": {          "len": 8, "max": 18.18, "min": -18.18, "mul": 36.36, "div": 255, "add": -18.18, "unit": "metersPerSecondSquared" }, "name": "Deceleration"},
+    {"id": "PRIUS_DECEL_2", "path": "Orientation", "fmt": {"bix": 8, "len": 8, "max": 18.18, "min": -18.18, "mul": 36.36, "div": 255, "add": -18.18, "unit": "metersPerSecondSquared" }, "name": "Deceleration 2"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "06"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_YAW_1", "path": "Orientation", "fmt": {          "len": 8, "max": 127, "min": -128, "add": -128, "unit": "scalar" }, "name": "Yaw rate, sensor 1"},
+    {"id": "PRIUS_YAW_2", "path": "Orientation", "fmt": {"bix": 8, "len": 8, "max": 127, "min": -128, "add": -128, "unit": "scalar" }, "name": "Yaw rate, sensor 2"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "07"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_WHEEL_CYLINDER_PRESSURE", "path": "Tires", "fmt": { "len": 8, "max": 5, "div": 51, "unit": "volts" }, "name": "Wheel cylinder pressure"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "1D"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_RESERVOIR_WARNING_SW", "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Reservoir warning"},
+    {"id": "PRIUS_MAIN_IDLE_SW",         "path": "Control", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Main idle"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "1F"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_STOP_LIGHT_SW",    "path": "Lights",  "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Stop light"},
+    {"id": "PRIUS_PARKING_BRAKE_SW", "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "cmd": {"21": "21"}, "freq": 0.2, "dbgfilter": { "to": 2009, "years": [2015, 2016, 2017, 2018, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "PRIUS_VSS", "path": "Movement", "fmt": { "len": 8, "max": 323.85, "mul": 1.35, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "3C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_STOP_LIGHT_RELAY", "path": "Lights", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Stop light relay"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "3D"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_ABS_WARN",   "path": "Control", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Anti-lock brake warning light"},
+    {"id": "PRIUS_BRAKE_WARN", "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake warning light"},
+    {"id": "PRIUS_SLIP_WARN",  "path": "Control", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Slip indicator light"},
+    {"id": "PRIUS_BUZZER",     "path": "Control", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Buzzer"},
+    {"id": "PRIUS_ECB_WARN",   "path": "Control", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Electronically controlled brake warning light"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "42"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_FR_WHEEL_ACCELERATION", "path": "Movement", "fmt": {           "len": 8, "max": 199.27, "min": -200.83, "mul": 1.56906, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Front right wheel acceleration"},
+    {"id": "PRIUS_FL_WHEEL_ACCELERATION", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 199.27, "min": -200.83, "mul": 1.56906, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Front left wheel acceleration"},
+    {"id": "PRIUS_RR_WHEEL_ACCELERATION", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 199.27, "min": -200.83, "mul": 1.56906, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Rear right wheel acceleration"},
+    {"id": "PRIUS_RL_WHEEL_ACCELERATION", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 199.27, "min": -200.83, "mul": 1.56906, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Rear left wheel acceleration"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "46"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_ZP_DEC",  "path": "Orientation", "fmt": {           "len": 8, "max": 2.54, "min": -2.56, "div": 50,              "sign": true, "unit": "gravity" }, "name": "Zero point of deceleration"},
+    {"id": "PRIUS_ZP_DEC2", "path": "Orientation", "fmt": {"bix": 8,  "len": 8, "max": 2.54, "min": -2.56, "div": 50,              "sign": true, "unit": "gravity" }, "name": "Zero point of deceleration 2"},
+    {"id": "PRIUS_ZP_YAW",  "path": "Orientation", "fmt": {"bix": 16, "len": 8, "max": 127,  "min": -128,             "add": -128,               "unit": "scalar"  }, "name": "Zero point of yaw rate, degrees/sec"}
+  ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "dbgfilter": { "to": 2009, "years": [2018], "from": 2023 },
   "signals": [
     {"id": "PRIUS_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
     {"id": "PRIUS_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
-    {"id": "PRIUS_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (degrees/sec)"},
-    {"id": "PRIUS_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",         "description": "Positive = counter-clockwise, negative = clockwise."}
+    {"id": "PRIUS_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value, degrees/sec"},
+    {"id": "PRIUS_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",        "description": "Positive = counter-clockwise, negative = clockwise."}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "48"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FR_REGEN_REQUEST",   "path": "Battery", "fmt": {           "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Regenerative request"},
+    {"id": "PRIUS_FR_REGEN_OPERATION", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Regenerative operation"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "58"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_REGEN_COOPERATION", "path": "Battery", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Regenerative braking cooperation"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "5A"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_TRC_TRAC__CTRL",        "path": "Tires",   "fmt": {           "len": 1, "max": 1, "unit": "offon" }, "name": "Traction control, status"},
+    {"id": "PRIUS_TRC_TRAC__ENGINE_CTRL", "path": "Tires",   "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "offon" }, "name": "Traction control, engine status"},
+    {"id": "PRIUS_TRC_TRAC__BRAKE_CTRL",  "path": "Control", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Traction control, brake status"},
+    {"id": "PRIUS_FR_WHEEL_VSC_CTRL",     "path": "Tires",   "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel vehicle stability control status"},
+    {"id": "PRIUS_FL_WHEEL_VSC_CTRL",     "path": "Tires",   "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front left wheel vehicle stability control status"},
+    {"id": "PRIUS_RR_WHEEL_VSC_CTRL",     "path": "Tires",   "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel vehicle stability control status"},
+    {"id": "PRIUS_RL_WHEEL_VSC_CTRL",     "path": "Tires",   "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel vehicle stability control status"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "5F"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FR_WHEEL_ABS_CTRL", "path": "Tires", "fmt": {           "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel ABS status"},
+    {"id": "PRIUS_FL_WHEEL_ABS_CTRL", "path": "Tires", "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front left wheel ABS status"},
+    {"id": "PRIUS_RR_WHEEL_ABS_CTRL", "path": "Tires", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel ABS status"},
+    {"id": "PRIUS_RL_WHEEL_ABS_CTRL", "path": "Tires", "fmt": {"bix": 3,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel ABS status"},
+    {"id": "PRIUS_RR_WHEEL_EBD_CTRL", "path": "Tires", "fmt": {"bix": 6,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel EBS status",    "description": "Electronic brakeforce distribution"},
+    {"id": "PRIUS_RL_WHEEL_EBD_CTRL", "path": "Tires", "fmt": {"bix": 7,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel EBS status",     "description": "Electronic brakeforce distribution"},
+    {"id": "PRIUS_BA_CTRL_STATUS",    "path": "Tires", "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake assist status"},
+    {"id": "PRIUS_PBA_CTRL_STATUS",   "path": "Tires", "fmt": {"bix": 12, "len": 1, "max": 1, "unit": "offon" }, "name": "Predictive brake assist status"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "A1"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_ZERO_POINT_OF_YAW_RATE", "path": "Orientation", "fmt": { "len": 8, "max": 127, "min": -128, "add": -128, "unit": "scalar" }, "name": "Zero point of yaw rate"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "A3"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SLA_SOLENOID_CURRENT", "path": "Battery", "fmt": {           "len": 8, "max": 255, "unit": "milliamps" }, "name": "Main relay a, solenoid current"},
+    {"id": "PRIUS_SLR_SOLENOID_CURRENT", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "milliamps" }, "name": "Main relay r solenoid current"},
+    {"id": "PRIUS_SSC_SOLENOID_CURRENT", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "milliamps" }, "name": "Service contactor solenoid current"},
+    {"id": "PRIUS_SCC_SOLENOID_CURRENT", "path": "Battery", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "milliamps" }, "name": "Charge contactor current"},
+    {"id": "PRIUS_SMC_SOLENOID_CURRENT", "path": "Battery", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "milliamps" }, "name": "Main connector solenoid current"},
+    {"id": "PRIUS_SRC_SOLENOID_CURRENT", "path": "Battery", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "milliamps" }, "name": "Relay control solenoid current"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "A6"}, "freq": 60,
+  "signals": [
+    {"id": "PRIUS_INSPECTION_MODE", "path": "Details", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Inspection mode"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "BC"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_HAZARD_SWITCH_HISTORY", "path": "Lights", "name": "Hazard switch history", "fmt": {"bix": 2, "len": 1, "map": {
+          "0": { "description": "Incomplete", "value": "INCOMPLETE" },
+          "1": { "description": "Complete",   "value": "COMPLETE" }
+        }}
+    }
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "BE"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FR_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {           "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right wheel speed?"},
+    {"id": "PRIUS_FL_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left wheel speed?"},
+    {"id": "PRIUS_RR_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right wheel speed?"},
+    {"id": "PRIUS_RL_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 3,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left wheel speed?"},
+    {"id": "PRIUS_YAW_RATE_OPEN_ERROR",    "path": "Orientation", "fmt": {"bix": 5,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Yaw rate, error?"},
+    {"id": "PRIUS_DECELERATION_OPEN",      "path": "Orientation", "fmt": {"bix": 6,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Deceleration open"},
+    {"id": "PRIUS_MASTER_CYLINDER_OPEN",   "path": "Engine",      "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Master cylinder open"},
+    {"id": "PRIUS_STROKE_OPEN",            "path": "Engine",      "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "noyes" }, "name": "Stroke open"},
+    {"id": "PRIUS_FR_WHEEL_CYLINDER_OPEN", "path": "Tires",       "fmt": {"bix": 12, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right wheel cylinder open"},
+    {"id": "PRIUS_ACCUMULATOR_OPEN",       "path": "Engine",      "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "Accumulator open"},
+    {"id": "PRIUS_HV_COMM_OPEN",           "path": "Engine",      "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hydraulic valve, communication open"}
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
-    {"id": "PRIUS_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master Cylinder Sensor Temperature"}
+    {"id": "PRIUS_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
   ]},
 { "hdr": "7B3", "rax": "7BB", "cmd": {"22": "1004"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
-    {"id": "PRIUS_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering Angle"}
+    {"id": "PRIUS_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering angle"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "12"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_TAIL_CANCEL_LIGHT",       "path": "Lights", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Tail cancel SW"},
+    {"id": "PRIUS_P_SEATBELT_BUCKLE_LIGHT", "path": "Lights", "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "offon" }, "name": "P-seatbelt buckle SW"},
+    {"id": "PRIUS_CHECK_ENGINE_LIGHT",      "path": "Lights", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "offon" }, "name": "Check engine SW"},
+    {"id": "PRIUS_EOP_LIGHT",               "path": "Lights", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "offon" }, "name": "Oil pressure switch"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "13"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_BAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "21"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_VSS_7C0", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "23"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ECT_7C0", "path": "Engine", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 5, "dbgfilter": { "to": 2009, "years": [2018], "from": 2023 },
   "signals": [
-    {"id": "PRIUS_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 21, "mul": 500, "div": 3785, "unit": "gallons" }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"}
+    {"id": "PRIUS_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 21, "mul": 500, "div": 3785, "unit": "gallons" }, "name": "Fuel level, volume", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "41"}, "freq": 30,
+  "signals": [
+    {"id": "PRIUS_OIL_CHANGE_ODO", "path": "Fluids", "fmt": { "len": 8, "max": 41038.272, "mul": 2514600, "div": 15625, "unit": "kilometers" }, "name": "Distance since oil change"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "68"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_RHEOSTAT", "path": "Lights", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Rheostat", "description": "Higher values are brighter"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "A1"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_KEY_REMIND_SOUND", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Key remind sound"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "A7"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SEAT_BELT_BEEP_DRIVER",    "path": "Seatbelts", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Seat belt beep, driver"},
+    {"id": "PRIUS_SEAT_BELT_BEEP_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Seat belt beep, passenger"},
+    {"id": "PRIUS_SEAT_BELT_BEEP_REMINDER",  "path": "Seatbelts", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Seat belt beep, reminder"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "AC"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_REVERSE_BEEP", "path": "Seatbelts", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "onoff" }, "name": "Reverse beep"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
-    {"id": "PRIUS_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ Battery Voltage"}
+    {"id": "PRIUS_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ battery voltage"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "fcm1": true, "cmd": {"22": "1022"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
   "signals": [
     {"id": "PRIUS_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7D0", "cmd": {"21": "62"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2015, 2018, 2019], "from": 2023 },
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "21"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_CABIN_T", "path": "Climate", "fmt": { "len": 8, "max": 57.25, "min": -6.5, "mul": 63.75, "div": 255, "add": -6.5, "unit": "celsius" }, "name": "Cabin temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "22"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_AAT_7C4", "path": "Climate", "fmt": { "len": 8, "max": 65.95, "min": -23.3, "mul": 89.25, "div": 255, "add": -23.3, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "24"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SOLAR_DRIVER", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Solar sensor, driver side"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "26"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ECT", "path": "Engine", "fmt": { "len": 8, "max": 90.55, "min": 1.3, "mul": 89.25, "div": 255, "add": 1.3, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "29"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_T_DRIVER", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "celsius" }, "name": "Set temperature, driver side"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "3C"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_BLOWER_MOTOR_SPEED_LEVEL", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Blower motor speed level"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "3D"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ADJUSTED_AMBIENT_T", "path": "Climate", "fmt": { "len": 8, "max": 50.8, "min": -30.8, "mul": 81.6, "div": 255, "add": -30.8, "unit": "celsius" }, "name": "Adjusted ambient temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "41"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_AIR_MIX_SERVO_TARG_D", "path": "Engine", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo target pulse, driver"},
+    {"id": "PRIUS_AIR_MIX_SERVO_ACT_D",  "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo, actual pulse, d"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "43"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_AIR_OUTLET_SERVO_PULSE_D",      "path": "Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air outlet servo pulse, driver"},
+    {"id": "PRIUS_AIR_OUTLET_SERVO_ACTU_PULSE_D", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air outlet servo actual pulse, driver"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "44"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_AIR_INLET_DAMPER_TARGET_PULSE", "path": "Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper target pulse"},
+    {"id": "PRIUS_AIR_INLET_DAMPER_ACTUAL_PULSE", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper actual pulse"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "49"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_COMP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Compressor speed"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "4A"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_COMP_TGT_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Compressor, target speed"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "4B"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_EVAP_FIN_THERMISTOR", "path": "Climate", "fmt": { "len": 8, "max": 59.55, "min": -29.7, "mul": 89.25, "div": 255, "add": -29.7, "unit": "celsius" }, "name": "Evaporator fin thermistor"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "4C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EVAP_TARGET_T", "path": "Climate", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "scalar" }, "name": "Evaporator target temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "53"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_REGULATOR_P", "path": "Engine", "fmt": { "len": 8, "max": 3294, "min": -456.68, "mul": 375105, "div": 25500, "add": -456.68, "unit": "kilopascal" }, "name": "Regulator pressure"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "AF"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_GLASS_T", "path": "Engine", "fmt": { "len": 16, "max": 621, "min": -557, "mul": 9, "div": 500, "add": -557.8, "unit": "fahrenheit" }, "name": "Glass temperature"}
+  ]},
+{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "B1"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_GLASS_HUMIDITY", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 20, "div": 13107, "unit": "percent" }, "name": "Glass humidity"}
+  ]},
+{ "hdr": "7D0", "rax": "7D8", "cmd": {"21": "62"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2015, 2018, 2019], "from": 2023 },
   "signals": [
     {"id": "PRIUS_PARKING_BRAKE", "path": "Control", "name": "Parking brake", "fmt": {"len": 8, "map": {
-          "1":   { "description": "", "value": "Off" },
-          "3":   { "description": "", "value": "On" },
-          "5":   { "description": "", "value": "Off" },
-          "7":   { "description": "", "value": "On" },
-          "9":   { "description": "", "value": "Off" },
-          "11":  { "description": "", "value": "On" },
-          "16":  { "description": "", "value": "Off" },
-          "48":  { "description": "", "value": "On" },
-          "144": { "description": "", "value": "Off" },
-          "176": { "description": "", "value": "On" },
-          "208": { "description": "", "value": "Off" },
-          "240": { "description": "", "value": "On" }
+          "1":   { "description": "",    "value": "Off" },
+          "3":   { "description": "",    "value": "On" },
+          "5":   { "description": "",    "value": "Off" },
+          "7":   { "description": "",    "value": "On" },
+          "9":   { "description": "",    "value": "Off" },
+          "11":  { "description": "",    "value": "On" },
+          "16":  { "description": "",    "value": "Off" },
+          "25":  { "description": "Off", "value": "OFF" },
+          "27":  { "description": "On",  "value": "ON" },
+          "48":  { "description": "",    "value": "On" },
+          "144": { "description": "",    "value": "Off" },
+          "176": { "description": "",    "value": "On" },
+          "208": { "description": "",    "value": "Off" },
+          "240": { "description": "",    "value": "On" }
         }}
     }
   ]},
-{ "hdr": "7D2", "fcm1": true, "cmd": {"22": "106C"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2018], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2016 },
   "signals": [
-    {"id": "PRIUS_HVBAT_SOC_MAX", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge (max)"},
-    {"id": "PRIUS_HVBAT_SOC_MIN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge (min)"}
+    {"id": "PRIUS_KEY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Key cycle"}
   ]},
-{ "hdr": "7D2", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "dbgfilter": { "to": 2015, "years": [2018], "from": 2027 },
-  "signals": [
-    {"id": "PRIUS_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
-  ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1075"}, "freq": 0.1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1002"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_AUX_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 79.95, "mul": 61, "div": 50000, "unit": "volts" }, "name": "Aux battery voltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1039"}, "freq": 0.25, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_FRONT_REAR_MOTOR_TQ", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32.76, "min": -32.76, "div": 1000, "add": -32.768, "unit": "scalar" }, "name": "Front/rear motor torque ratio"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1040"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1069"}, "freq": 0.25, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_MOTOR_REGENERATIVE",       "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque, requested"},
+    {"id": "PRIUS_MOTOR_REGENERATIVE_BREAK", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "106A"}, "freq": 0.25, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_REAR_MOTOR",              "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque, requested"},
+    {"id": "PRIUS_REAR_MOTOR_REGENERATIVE", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106C"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018], "from": 2027 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_SOC_MAX", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, maximum"},
+    {"id": "PRIUS_HVBAT_SOC_MIN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, minimum"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_AC_POWER_CONS", "path": "Engine", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1075"}, "freq": 0.1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_FR_WHEEL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
     {"id": "PRIUS_FL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "PRIUS_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "PRIUS_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A1"}, "freq": 0.25, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "107E"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_12V_BAT_V_BEFORE_SMR", "path": "Battery", "fmt": { "len": 8, "max": 11.56, "mul": 61, "div": 50000, "add": 11.25, "unit": "volts" }, "name": "12V battery voltage before system main relay"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A1"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_RPM", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor RPM"},
     {"id": "PRIUS_TQ",  "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A2"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A2"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
-    {"id": "PRIUS_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "newtonMeters" }, "name": "Rear motor torque, requested"},
+    {"id": "PRIUS_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Rear motor speed"},
     {"id": "PRIUS_RM_TQ",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Rear motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A6"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A4"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_GEN_INVERTER_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A5"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_MOTOR_INVERTER_T",     "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature"},
+    {"id": "PRIUS_MOTOR_INVERTER_T_ON",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature after ignition on"},
+    {"id": "PRIUS_MAX_MOTOR_INVERTER_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Maximum motor inverter temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A6"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_RM_INVRT_COOL_T", "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear motor inverter, coolant temperature"},
     {"id": "PRIUS_M_INVRT_MAX_T",   "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter, maximum temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B2"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A7"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_BOOSTING_CONV_T_HI", "path": "Transmission", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, upper"},
+    {"id": "PRIUS_BOOSTING_CONV_T_LO", "path": "Transmission", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, lower"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A8"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_GEN_INVERTER_T_7D2",      "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"},
+    {"id": "PRIUS_GEN_INVERTER_T_AFTER_ON", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature after ignition on"},
+    {"id": "PRIUS_MAX_GEN_INVERTER_T",      "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Maximum generator inverter temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10B0"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_VL_V_BEFORE_BOOSTING", "path": "Battery", "fmt": {           "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vl-voltage before boosting"},
+    {"id": "PRIUS_VH_V_AFTER_BOOSTING",  "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vh-voltage after boosting"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B2"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15EE"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1112"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_INVERTER_WATER_PMP", "path": "Engine", "fmt": { "len": 16, "max": 199, "mul": 15259, "div": 5000000, "unit": "percent" }, "name": "Inverter water pump duty"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111C"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_DC_DC_CONV_OUTPUT", "path": "Transmission", "fmt": { "len": 8, "max": 199, "mul": 25, "div": 32, "unit": "amps" }, "name": "DC-DC converter output current"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111D"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_DC_DC_CONV_LOW_SIDE_V", "path": "Battery", "fmt": { "len": 8, "max": 19.92, "mul": 1953, "div": 25000, "unit": "volts" }, "name": "DC-DC converter low side voltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111E"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_DC_DC_CONV_HIGH_SIDE_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter high side voltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111F"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_DC_DC_CONV_TGT_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter, target voltage before charging"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15EE"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_12V_V", "path": "Battery", "fmt": { "len": 8, "max": 80.2, "mul": 0.31448, "add": 0.0125, "unit": "volts" }, "name": "12V battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F7"}, "freq": 0.5, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F7"}, "freq": 0.5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_12V_C", "path": "Battery", "fmt": { "len": 16, "max": 124, "min": -125, "mul": 38.147, "div": 10000, "add": -125, "unit": "amps" }, "name": "12V battery current"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F8"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F8"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_12V_T", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "12V battery temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F05"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1609"}, "freq": 1, "filter": { "from": 2016 },
   "signals": [
-    {"id": "PRIUS_COOL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
+    {"id": "PRIUS_HVBAT_CHRG_V", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "volts" }, "name": "HV battery charge voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1802"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_AUXILIARY_BAT",    "path": "Battery", "fmt": {           "len": 8, "max": -12451, "min": -12500, "mul": 2525, "div": 13107, "add": -12500, "unit": "amps"    }, "name": "Auxiliary battery current"},
+    {"id": "PRIUS_HYBRID_BAT_1_FAN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 127,                                "div": 2,                    "unit": "percent" }, "name": "Hybrid battery 1 fan"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_T_1", "path": "Battery", "fmt": {           "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery temperature 1"},
+    {"id": "PRIUS_HYBRID_BAT_T_2", "path": "Battery", "fmt": {"bix": 16, "len": 8,  "max": 401, "min": -58, "mul": 9,   "div": 5,     "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery temperature 2"},
+    {"id": "PRIUS_HYBRID_BAT_T_3", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery temperature 3"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1829"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_MAX_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery maximum temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "182A"}, "freq": 1, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_MIN_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery minimum temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F05"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
+  "signals": [
+    {"id": "PRIUS_COOL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmax": 215, "unit": "celsius" }, "name": "Coolant temperature"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018], "from": 2027 },
+  "signals": [
+    {"id": "PRIUS_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1F42"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_12V_BAT_V_SMOOTHED", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "12V battery voltage smoothed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_AAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F49"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F49"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_ACC_PEDAL_POS_1", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 1"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F4A"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F4A"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_ACC_PEDAL_POS_2", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 2"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2018], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018], "from": 2027 },
   "signals": [
     {"id": "PRIUS_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F9A"}, "freq": 0.5, "dbgfilter": { "to": 2015, "years": [2018, 2019], "from": 2027 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F9A"}, "freq": 0.5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
     {"id": "PRIUS_HVBAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 1023,                   "mul": 156.25, "div": 10000,               "unit": "volts" }, "name": "HV battery voltage"},
     {"id": "PRIUS_HVBAT_C", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,    "sign": true, "unit": "amps"  }, "name": "HV battery current"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "F19A"}, "freq": 5, "filter": { "from": 2016 },
+  "signals": [
+    {"id": "PRIUS_HYBRID_BAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 1020, "mul": 4, "unit": "volts" }, "name": "Hybrid battery voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_LOAD",    "path": "Engine",   "fmt": {           "len": 8,  "max": 100,                  "mul": 100, "div": 255,             "unit": "percent"           }, "name": "Calculated load",            "suggestedMetric": "engineLoad"},
+    {"id": "PRIUS_MAF",     "path": "Engine",   "fmt": {"bix": 24, "len": 16, "max": 655.35,                           "div": 100,             "unit": "gramsPerSecond"    }, "name": "Mass air flow",              "suggestedMetric": "massAirFlow"},
+    {"id": "PRIUS_IAT",     "path": "Engine",   "fmt": {"bix": 40, "len": 8,  "max": 215,      "min": -40,                         "add": -40, "unit": "celsius"           }, "name": "Intake air temperature"},
+    {"id": "PRIUS_BARO",    "path": "Engine",   "fmt": {"bix": 48, "len": 8,  "max": 255,                                                      "unit": "kilopascal"        }, "name": "Barometric pressure"},
+    {"id": "PRIUS_ECT_7E0", "path": "Engine",   "fmt": {"bix": 56, "len": 8,  "max": 215,      "min": -40,                         "add": -40, "unit": "celsius"           }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"},
+    {"id": "PRIUS_RPM_7E0", "path": "Movement", "fmt": {"bix": 64, "len": 16, "max": 16383.75,                         "div": 4,               "unit": "rpm"               }, "name": "Engine speed",               "suggestedMetric": "engineSpeed"},
+    {"id": "PRIUS_VSS_7E0", "path": "Movement", "fmt": {"bix": 80, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Vehicle speed",              "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SHORT_FT_B1", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Short term fuel trim, bank 1", "suggestedMetric": "shortTermFuelTrim"},
+    {"id": "PRIUS_LONG_FT_B1",  "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Long term fuel trim, bank 1"},
+    {"id": "PRIUS_SHORT_FT_B2", "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Short term fuel trim, bank 2", "suggestedMetric": "shortTermFuelTrim"},
+    {"id": "PRIUS_LONG_FT_B2",  "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Long term fuel trim, bank 2"},
+    {"id": "PRIUS_IGN_ADVANCE", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 63.5,  "min": -64,              "div": 2,   "add": -64,  "unit": "degrees" }, "name": "Ignition timing advance"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_LAMBDA_TARGET",  "path": "Fuel",   "fmt": {            "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Target air-fuel equivalence ratio"},
+    {"id": "PRIUS_AF_LAMBDA_B1S1", "path": "Engine", "fmt": {"bix": 16,  "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Air-fuel equivalence ratio, bank 1 sensor 1", "suggestedMetric": "o2Lambda"},
+    {"id": "PRIUS_AFS_V_B1S1",     "path": "Engine", "fmt": {"bix": 32,  "len": 16, "max": 7.99,                "mul": 7.99, "div": 65535,              "unit": "volts"     }, "name": "Air-fuel sensor voltage, bank 1 sensor 1"},
+    {"id": "PRIUS_AFS_I_B1S1",     "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 127.99, "min": -128,              "div": 256,   "add": -128, "unit": "milliamps" }, "name": "Air-fuel sensor current, bank 1 sensor 1"},
+    {"id": "PRIUS_O2S_B1S2",       "path": "Engine", "fmt": {"bix": 144, "len": 8,  "max": 1.275,               "mul": 5,    "div": 1000,               "unit": "volts"     }, "name": "Oxygen sensor voltage, bank 1 sensor 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "05"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_CAT_T_B1S1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 1"},
+    {"id": "PRIUS_CAT_T_B1S2", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_MIL",                            "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "MIL"},
+    {"id": "PRIUS_NUMBER_OF_EMISSION_DTC",         "path": "DTCs", "fmt": {"bix": 1,  "len": 7,  "max": 127,   "unit": "scalar"     }, "name": "Number of emission DTC"},
+    {"id": "PRIUS_COMPLETE_PARTS_MONITOR_AVAIL",   "path": "DTCs", "fmt": {"bix": 13, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Complete parts monitor available?"},
+    {"id": "PRIUS_FUEL_SYSTEM_MONITOR_AVAIL",      "path": "DTCs", "fmt": {"bix": 14, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Fuel system monitor available?"},
+    {"id": "PRIUS_MISFIRE_MONITOR_AVAIL",          "path": "DTCs", "fmt": {"bix": 15, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Misfire monitor available?"},
+    {"id": "PRIUS_EGR_VVT_MONITOR_AVAIL",          "path": "DTCs", "fmt": {"bix": 16, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "EGR/VVT monitor available?"},
+    {"id": "PRIUS_O2S_A_FS_HEATER_MONITOR_AVAIL",  "path": "DTCs", "fmt": {"bix": 17, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "O2S heater monitor available?"},
+    {"id": "PRIUS_O2S_A_FS_MONITOR_AVAIL",         "path": "DTCs", "fmt": {"bix": 18, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "O2S monitor available?"},
+    {"id": "PRIUS_A_C_MONITOR_AVAIL",              "path": "DTCs", "fmt": {"bix": 19, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "A/C monitor available?"},
+    {"id": "PRIUS_2ND_AIR_MONITOR_AVAIL",          "path": "DTCs", "fmt": {"bix": 20, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "2nd air monitor available?"},
+    {"id": "PRIUS_EVAP_MONITOR_AVAIL",             "path": "DTCs", "fmt": {"bix": 21, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "EVAP monitor available?"},
+    {"id": "PRIUS_HEATED_CATALYST_MONITOR_AVAIL",  "path": "DTCs", "fmt": {"bix": 22, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Heated catalyst monitor available?"},
+    {"id": "PRIUS_CATALYST_MONITOR_AVAIL",         "path": "DTCs", "fmt": {"bix": 23, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Catalyst monitor available?"},
+    {"id": "PRIUS_EGR_VVT_MONITOR_INCMPL",         "path": "DTCs", "fmt": {"bix": 24, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "EGR/VVT monitor incomplete?"},
+    {"id": "PRIUS_O2S_A_FS_HEATER_MONITOR_INCMPL", "path": "DTCs", "fmt": {"bix": 25, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "O2S heater monitor incomplete?"},
+    {"id": "PRIUS_O2S_A_FS_MONITOR_INCMPL",        "path": "DTCs", "fmt": {"bix": 26, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "O2S monitor incomplete?"},
+    {"id": "PRIUS_A_C_MONITOR_INCMPL",             "path": "DTCs", "fmt": {"bix": 27, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "A/C monitor incomplete?"},
+    {"id": "PRIUS_2ND_AIR_MONITOR_INCMPL",         "path": "DTCs", "fmt": {"bix": 28, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "2nd air monitor incomplete?"},
+    {"id": "PRIUS_EVAP_MONITOR_ICMPL",             "path": "DTCs", "fmt": {"bix": 29, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "EVAP monitor_icmpl"},
+    {"id": "PRIUS_HEATED_CATALYST_MONITOR_INCMPL", "path": "DTCs", "fmt": {"bix": 30, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Heated catalyst monitor incomplete?"},
+    {"id": "PRIUS_CATALYST_MONITOR_INCMPL",        "path": "DTCs", "fmt": {"bix": 31, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Catalyst monitor incomplete?"},
+    {"id": "PRIUS_MILON_RUN_DISTANCE",             "path": "DTCs", "fmt": {"bix": 48, "len": 16, "max": 65535, "unit": "kilometers" }, "name": "MIL ON run distance"},
+    {"id": "PRIUS_RUNNING_TIME_FROM_MIL_ON",       "path": "DTCs", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "minutes"    }, "name": "Running time from MIL ON"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_LTFT1_21", "path": "Engine", "fmt": { "len": 8, "max": 99.15, "min": -100, "mul": 0.7809803922, "add": -100, "unit": "percent" }, "name": "Long-term fuel trim, bank 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0D"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VSS_21", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0E"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_SPARKADV_21", "path": "Engine", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "degrees" }, "name": "Ignition advance"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0F"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_IAT_21", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "10"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_MAF_21", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "gramsPerSecond" }, "name": "Mass air flow"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "11"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_THROTTLE_21", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Throttle position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_O2S11_V", "path": "Engine", "fmt": { "len": 8, "max": 1.27, "mul": 0.0049960784, "unit": "volts" }, "name": "Oxygen sensor voltage, bank 1 sensor 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2004, "years": [2006], "from": 2011 },
   "signals": [
     {"id": "PRIUS_CC_S", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "28"}, "freq": 5, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "24"}, "freq": 5,
   "signals": [
-    {"id": "PRIUS_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "PRIUS_COMMUNICATION_WITH_HV",     "path": "Climate", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with HV"},
+    {"id": "PRIUS_COMMUNICATION_WITH_BRAKE",  "path": "Control", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with brake"},
+    {"id": "PRIUS_COMM_WITH_AIR_CONDITIONER", "path": "Climate", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with air conditioner"},
+    {"id": "PRIUS_COMM_WITH_VALVEMATIC_COMM", "path": "Climate", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "scalar" }, "name": "Communication with valvematic"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "25"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_POWER_STEERING_SIGNAL",                   "path": "Control", "fmt": {"bix": 4,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Power steering"},
+    {"id": "PRIUS_STOP_LIGHT_SWITCH",                       "path": "Lights",  "fmt": {"bix": 5,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Stop light"},
+    {"id": "PRIUS_CRUISE_CONTROL_LIVE_BRAKE_CANCEL_SWITCH", "path": "Control", "fmt": {"bix": 6,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Cruise control live brake cancel"},
+    {"id": "PRIUS_STARTER_SIGNAL",                          "path": "Control", "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "scalar" }, "name": "Starter signal"},
+    {"id": "PRIUS_STARTER_CONTROL",                         "path": "Control", "fmt": {"bix": 12, "len": 1, "max": 1, "unit": "scalar" }, "name": "Starter control"},
+    {"id": "PRIUS_ELECTRICAL_LOAD_SIGNAL_1",                "path": "Control", "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "scalar" }, "name": "Electrical load signal 1"},
+    {"id": "PRIUS_ELECTRICAL_LOAD_SIGNAL_2",                "path": "Control", "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "scalar" }, "name": "Electrical load signal 2"},
+    {"id": "PRIUS_SHIFT_SW_STATUS_P_RANGE",                 "path": "Control", "fmt": {"bix": 24, "len": 1, "max": 1, "unit": "scalar" }, "name": "Shift SW status, parking"},
+    {"id": "PRIUS_SHIFT_SW_STATUS_R_RANGE",                 "path": "Control", "fmt": {"bix": 25, "len": 1, "max": 1, "unit": "scalar" }, "name": "Shift SW status, reverse"},
+    {"id": "PRIUS_SHIFT_SW_STATUS_N_RANGE",                 "path": "Control", "fmt": {"bix": 26, "len": 1, "max": 1, "unit": "scalar" }, "name": "Shift SW status, neutral"},
+    {"id": "PRIUS_SHIFT_SW_STATUS_D_RANGE",                 "path": "Control", "fmt": {"bix": 27, "len": 1, "max": 1, "unit": "scalar" }, "name": "Shift SW status, drive"},
+    {"id": "PRIUS_SPORTS_MODE_SELECTION_SW",                "path": "Control", "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "scalar" }, "name": "Sports mode selection"},
+    {"id": "PRIUS_SPORTS_SHIFT_UP_SW",                      "path": "Control", "fmt": {"bix": 33, "len": 1, "max": 1, "unit": "scalar" }, "name": "Sports shift up"},
+    {"id": "PRIUS_SPORTS_SHIFT_DOWN_SW",                    "path": "Control", "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Sports shift down"},
+    {"id": "PRIUS_PATTERN_SWITCH_PWR_M",                    "path": "Control", "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "scalar" }, "name": "Pattern switch"},
+    {"id": "PRIUS_NEUTRAL_POSITION_SW_SIGNAL",              "path": "Control", "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "scalar" }, "name": "Neutral position"},
+    {"id": "PRIUS_TC_TERMINAL",                             "path": "Control", "fmt": {"bix": 61, "len": 1, "max": 1, "unit": "scalar" }, "name": "TC"},
+    {"id": "PRIUS_A_C_COMPRESSOR",                          "path": "Control", "fmt": {"bix": 64, "len": 1, "max": 1, "unit": "offon"  }, "name": "A/C compressor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "28"}, "freq": 5, "filter": { "from": 2010 }, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
+  "signals": [
+    {"id": "PRIUS_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "nullmax": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "2E"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EVAP_PURGE_DUTY_7E0", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Evaporative purge duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "31"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VALVEMATIC_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 5, "div": 512, "unit": "degrees" }, "name": "Valvematic current angle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "37"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_INITIAL_ECT",            "path": "Engine", "fmt": {            "len": 8,  "max": 119.3,  "min": -40,   "mul": 531,  "div": 850,   "add": -40,   "unit": "scalar"     }, "name": "Initial engine coolant temperature"},
+    {"id": "PRIUS_INITIAL_IAT",            "path": "Engine", "fmt": {"bix": 8,   "len": 8,  "max": 119,    "min": -40,   "mul": 5,    "div": 8,     "add": -40,   "unit": "celsius"    }, "name": "Initial intake air temperature"},
+    {"id": "PRIUS_KNOCK_CORRECT_LEARN",    "path": "Engine", "fmt": {"bix": 16,  "len": 16, "max": 1023,   "min": -1024,              "div": 32,    "add": -1024, "unit": "degrees"    }, "name": "Knock correct learn value"},
+    {"id": "PRIUS_KNOCK_ADJUST_7E0",       "path": "Engine", "fmt": {"bix": 32,  "len": 16, "max": 1024,   "min": -1024, "mul": 2048, "div": 65535, "add": -1024, "unit": "degrees"    }, "name": "Knock adjust"},
+    {"id": "PRIUS_KNOCK_FEEDBACK_7E0",     "path": "Engine", "fmt": {"bix": 48,  "len": 16, "max": 1024,   "min": -1024, "mul": 2048, "div": 65535, "add": -1024, "unit": "degrees"    }, "name": "Knock feedback"},
+    {"id": "PRIUS_EVAP_PURGE_FLOW",        "path": "Engine", "fmt": {"bix": 64,  "len": 16, "max": 399.99,               "mul": 25,   "div": 4096,                "unit": "percent"    }, "name": "Evaporative purge flow"},
+    {"id": "PRIUS_IG_OFF_ELAPSED_TIME",    "path": "Engine", "fmt": {"bix": 80,  "len": 16, "max": 655350,               "mul": 10,                               "unit": "minutes"    }, "name": "IG OFF elapsed time"},
+    {"id": "PRIUS_DIST_BATT_CABLE",        "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 65535,                                                         "unit": "kilometers" }, "name": "Dist battery cable disconnect"},
+    {"id": "PRIUS_IMMOBILIZER_ON",         "path": "Engine", "fmt": {"bix": 120, "len": 1,  "max": 1,                                                             "unit": "scalar"     }, "name": "Immobilizer communication on"},
+    {"id": "PRIUS_FUEL_CUT_7E0",           "path": "Fuel",   "fmt": {"bix": 121, "len": 1,  "max": 1,                                                             "unit": "offon"      }, "name": "Fuel cut"},
+    {"id": "PRIUS_CLOSED_THROTTLE_POS_ON", "path": "Engine", "fmt": {"bix": 125, "len": 1,  "max": 1,                                                             "unit": "scalar"     }, "name": "Closed throttle position switch on"},
+    {"id": "PRIUS_FC_TAU_ON",              "path": "Engine", "fmt": {"bix": 127, "len": 1,  "max": 1,                                                             "unit": "scalar"     }, "name": "Fuel cut TAU on"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "39"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_ACIS_VSV_ON",           "path": "Engine",       "fmt": {"bix": 3,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Acoustic control induction system vacuum switching valve on"},
+    {"id": "PRIUS_EVAP_PURGE_VSV_ON",     "path": "Engine",       "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "scalar" }, "name": "Evaporative purge vacuum switching valve on"},
+    {"id": "PRIUS_FUEL_PMP_SPD_STAT_ON",  "path": "Fuel",         "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "scalar" }, "name": "Fuel pump/speed status on"},
+    {"id": "PRIUS_VARIABLE_VLV_TIM_1_ON", "path": "Engine",       "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "scalar" }, "name": "Variable valve timing control status 1 on"},
+    {"id": "PRIUS_TQ_CONV_TE1_ON",        "path": "Transmission", "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "scalar" }, "name": "Torque converter and TE1 on"},
+    {"id": "PRIUS_ELEC_FAN_MOTOR_ON",     "path": "Engine",       "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Electric fan motor on"},
+    {"id": "PRIUS_ACC_RELAY_ON",          "path": "Engine",       "fmt": {"bix": 46, "len": 1, "max": 1, "unit": "scalar" }, "name": "Accessory relay on"},
+    {"id": "PRIUS_STARTER_RELAY_ON",      "path": "Engine",       "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "scalar" }, "name": "Starter relay on"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "3A"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VALVEMATIC_TGT_ANG", "path": "Engine", "fmt": {           "len": 16, "max": 639.9, "mul": 5,  "div": 512,   "unit": "degrees" }, "name": "Valvematic, target angle"},
+    {"id": "PRIUS_PURGE_CUT_VSV_DUTY", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 399.9, "mul": 25, "div": 4096,  "unit": "percent" }, "name": "Purge cut vacuum switching valve duty"},
+    {"id": "PRIUS_F_HEATER_DUTY_B1S1", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 399.9, "mul": 25, "div": 4096,  "unit": "percent" }, "name": "A/F heater duty bank 1 sensor 1"},
+    {"id": "PRIUS_O2_HEATER_CURR_VAL", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4.999,            "div": 13107, "unit": "amps"    }, "name": "O2 heater current val bank 1 sensor 2"},
+    {"id": "PRIUS_O2_HEATER_B1S2",     "path": "Engine", "fmt": {"bix": 68, "len": 1,  "max": 1,                              "unit": "scalar"  }, "name": "O2 heater b1s2_active"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "3C"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_VOL_CYL_1", "path": "Engine", "fmt": {           "len": 16, "max": 0.002,                          "div": 32000000,             "unit": "liters"       }, "name": "Injection volume per 10 injections, cylinder 1"},
+    {"id": "PRIUS_INJ_DUR_CYL_1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 65.535,                         "div": 1000,                 "unit": "milliseconds" }, "name": "Injection duration for cylinder 1"},
+    {"id": "PRIUS_TOT_FT_1",      "path": "Engine", "fmt": {"bix": 32, "len": 8,  "max": 49.6,   "min": -50, "mul": 100, "div": 256,      "add": -50, "unit": "percent"      }, "name": "Total fuel trim, bank 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "3E"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_CAT_T_B1S2_V2", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2, variant 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "41"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_THROTTLE_SENS_OPEN_1",      "path": "Engine",   "fmt": {            "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle sensor open position 1"},
+    {"id": "PRIUS_THROTTLE_SENS_OPEN_2",      "path": "Engine",   "fmt": {"bix": 8,   "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle sensor open position 2"},
+    {"id": "PRIUS_ACCEL_FULLY_CLOSE_1",       "path": "Movement", "fmt": {"bix": 16,  "len": 8,  "max": 124.5,  "mul": 125, "div": 256,  "unit": "degrees" }, "name": "Accelerator fully close learn 1"},
+    {"id": "PRIUS_ACCEL_FULLY_CLOSE_2",       "path": "Movement", "fmt": {"bix": 24,  "len": 8,  "max": 124.5,  "mul": 125, "div": 256,  "unit": "degrees" }, "name": "Accelerator fully close learn 2"},
+    {"id": "PRIUS_THROTTLE_POS_COMMAND",      "path": "Engine",   "fmt": {"bix": 32,  "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle position command"},
+    {"id": "PRIUS_ACCEL_POS",                 "path": "Movement", "fmt": {"bix": 40,  "len": 16, "max": 399.9,  "mul": 25,  "div": 4096, "unit": "percent" }, "name": "Accelerator position"},
+    {"id": "PRIUS_BM_V",                      "path": "Battery",  "fmt": {"bix": 56,  "len": 16, "max": 79.998, "mul": 5,   "div": 4096, "unit": "volts"   }, "name": "+BM voltage"},
+    {"id": "PRIUS_ACCEL_SENS_OUT_1",          "path": "Movement", "fmt": {"bix": 72,  "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Accelerator sensor out, number 1"},
+    {"id": "PRIUS_ACCEL_SENS_OUT_2",          "path": "Movement", "fmt": {"bix": 80,  "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Accelerator sensor out, number 2"},
+    {"id": "PRIUS_THROTTLE_POS_NUMBER_1",     "path": "Engine",   "fmt": {"bix": 88,  "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle position, number 1"},
+    {"id": "PRIUS_THROTTLE_POS_NUMBER_2",     "path": "Engine",   "fmt": {"bix": 96,  "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle position, number 2"},
+    {"id": "PRIUS_THROTTLE_REQUIRE_POS",      "path": "Engine",   "fmt": {"bix": 104, "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle require position"},
+    {"id": "PRIUS_THROTTLE_FULLY_CLOSE",      "path": "Engine",   "fmt": {"bix": 112, "len": 8,  "max": 4.98,   "mul": 5,   "div": 256,  "unit": "volts"   }, "name": "Throttle fully close learn"},
+    {"id": "PRIUS_THROTTLE_MOTOR_DUTY_OPEN",  "path": "Engine",   "fmt": {"bix": 120, "len": 8,  "max": 255,                             "unit": "percent" }, "name": "Throttle motor duty, open"},
+    {"id": "PRIUS_THROTTLE_MOTOR_DUTY_CLOSE", "path": "Engine",   "fmt": {"bix": 128, "len": 8,  "max": 255,                             "unit": "percent" }, "name": "Throttle motor duty, close"},
+    {"id": "PRIUS_THROTTLE_MOTOR",            "path": "Engine",   "fmt": {"bix": 136, "len": 8,  "max": 19.9,   "mul": 5,   "div": 64,   "unit": "amps"    }, "name": "Throttle motor current"},
+    {"id": "PRIUS_SYSTEM_GUARD_ON",           "path": "Engine",   "fmt": {"bix": 144, "len": 1,  "max": 1,                               "unit": "scalar"  }, "name": "System guard on"},
+    {"id": "PRIUS_OPEN_SIDE_ON",              "path": "Engine",   "fmt": {"bix": 145, "len": 1,  "max": 1,                               "unit": "scalar"  }, "name": "Open side malfunction on"},
+    {"id": "PRIUS_ACTUATOR_POWER_SUP_ON",     "path": "Engine",   "fmt": {"bix": 146, "len": 1,  "max": 1,                               "unit": "scalar"  }, "name": "Actuator power supply on"},
+    {"id": "PRIUS_ACCEL_IDLE_POS_ON",         "path": "Movement", "fmt": {"bix": 148, "len": 1,  "max": 1,                               "unit": "scalar"  }, "name": "Accelerator idle position on"},
+    {"id": "PRIUS_THROTTLE_IDLE_POS_ON",      "path": "Engine",   "fmt": {"bix": 149, "len": 1,  "max": 1,                               "unit": "scalar"  }, "name": "Throttle idle position on"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "42"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_BAT_CURRENT",         "path": "Battery", "fmt": {           "len": 16, "max": 124.9,  "min": -125, "mul": 50, "div": 13107, "add": -125, "unit": "amps"    }, "name": "Battery current"},
+    {"id": "PRIUS_BAT_T",               "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 6513.5,                                                    "unit": "celsius" }, "name": "Battery temperature"},
+    {"id": "PRIUS_ALT_VOL_NON_ACTIVE",  "path": "Engine",  "fmt": {"bix": 32, "len": 16, "max": 79.998,              "mul": 5,  "div": 4096,               "unit": "volts"   }, "name": "Alt voltage - non active test"},
+    {"id": "PRIUS_ALT_VOL_ACTIVE_TEST", "path": "Engine",  "fmt": {"bix": 48, "len": 16, "max": 79.998,              "mul": 5,  "div": 4096,               "unit": "volts"   }, "name": "Alt voltage - active test"},
+    {"id": "PRIUS_ALTERNATOR_OUTPUT",   "path": "Engine",  "fmt": {"bix": 64, "len": 16, "max": 399.9,               "mul": 25, "div": 4096,               "unit": "percent" }, "name": "Alternator output duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "44"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_VARIABLE_VLV_TIM_AIM_1", "path": "Engine", "fmt": {           "len": 16, "max": 399, "mul": 1333,         "div": 218450, "unit": "percent" }, "name": "Variable valve timing aim angle 1"},
+    {"id": "PRIUS_VARIABLE_VLV_TIM_OIL_1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 399, "mul": 0.0061020829,                "unit": "percent" }, "name": "Variable valve timing oil control valve duty 1"},
+    {"id": "PRIUS_VARIABLE_VLV_TIM_1",     "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 639, "mul": 0.0097642481,                "unit": "degrees" }, "name": "Variable valve timing change angle 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "45"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_MISFIRE_RPM_7E0",           "path": "Engine",          "fmt": {"bix": 8,  "len": 8,  "max": 6375,               "mul": 25,                          "unit": "rpm"     }, "name": "Misfire RPM"},
+    {"id": "PRIUS_MISFIRE_LOAD_7E0",          "path": "Engine.Misfires", "fmt": {"bix": 16, "len": 8,  "max": 3.98,               "mul": 4,  "div": 256,              "unit": "scalar"  }, "name": "Misfire load"},
+    {"id": "PRIUS_CYL1_MISFIRE_CNT",          "path": "Engine.Misfires", "fmt": {"bix": 24, "len": 8,  "max": 255,                                                    "unit": "scalar"  }, "name": "Cylinder #1 misfire count"},
+    {"id": "PRIUS_CYL2_MISFIRE_CNT",          "path": "Engine.Misfires", "fmt": {"bix": 32, "len": 8,  "max": 255,                                                    "unit": "scalar"  }, "name": "Cylinder #2 misfire count"},
+    {"id": "PRIUS_CYL3_MISFIRE_CNT",          "path": "Engine.Misfires", "fmt": {"bix": 40, "len": 8,  "max": 255,                                                    "unit": "scalar"  }, "name": "Cylinder #3 misfire count"},
+    {"id": "PRIUS_CYL4_MISFIRE_CNT",          "path": "Engine.Misfires", "fmt": {"bix": 48, "len": 8,  "max": 255,                                                    "unit": "scalar"  }, "name": "Cylinder #4 misfire count"},
+    {"id": "PRIUS_ALL_CYLINDERS_MISFIRE_CNT", "path": "Engine.Misfires", "fmt": {"bix": 56, "len": 8,  "max": 255,                                                    "unit": "scalar"  }, "name": "All cylinders misfire count"},
+    {"id": "PRIUS_IGNITION_TRIG_CNT",         "path": "Control",         "fmt": {"bix": 64, "len": 16, "max": 65535,                                                  "unit": "scalar"  }, "name": "Ignition trigger count"},
+    {"id": "PRIUS_MISFIRE_MARGIN_7E0",        "path": "Engine.Misfires", "fmt": {"bix": 80, "len": 8,  "max": 127,   "min": -128,                        "add": -128, "unit": "percent" }, "name": "Misfire margin"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "47"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EGR_STEP_POSITION", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Exhaust gas recirculation step position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "49"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_REQ_ENG_TQ",           "path": "Engine",   "fmt": {           "len": 16, "max": 16383,                                     "div": 4,                 "unit": "scalar"       }, "name": "Requested engine torque"},
+    {"id": "PRIUS_HIGH_V_TGT_RPM",       "path": "Movement", "fmt": {"bix": 16, "len": 8,  "max": 6375,                 "mul": 25,                                     "unit": "rpm"          }, "name": "High voltage, target engine speed"},
+    {"id": "PRIUS_ACT_ENG_TQ",           "path": "Engine",   "fmt": {"bix": 24, "len": 16, "max": 32767, "min": -32768,                                 "add": -32768, "unit": "newtonMeters" }, "name": "Actual engine torque"},
+    {"id": "PRIUS_ENG_RUN_TIME_UP_255",  "path": "Engine",   "fmt": {"bix": 40, "len": 8,  "max": 255,                                                                 "unit": "seconds"      }, "name": "Engine run time, up to 255 sec. only"},
+    {"id": "PRIUS_REQ_ENG_RUN_TIME",     "path": "Engine",   "fmt": {"bix": 48, "len": 8,  "max": 25.5,                                      "div": 10,                "unit": "seconds"      }, "name": "Request engine run time"},
+    {"id": "PRIUS_JUDGE_TIME_ENG_IGN",   "path": "Engine",   "fmt": {"bix": 56, "len": 8,  "max": 25.5,                                      "div": 10,                "unit": "seconds"      }, "name": "Judge time engine ignition"},
+    {"id": "PRIUS_JUDGE_TIME_ENG",       "path": "Engine",   "fmt": {"bix": 64, "len": 8,  "max": 25.5,                                      "div": 10,                "unit": "seconds"      }, "name": "Judge time engine output"},
+    {"id": "PRIUS_IDLE_SPD_CTRL_L_S",    "path": "Engine",   "fmt": {"bix": 72, "len": 16, "max": 79.99,                "mul": 0.0012206912,                           "unit": "scalar"       }, "name": "Idle speed control learning value, l/s"},
+    {"id": "PRIUS_ENG_INDEPENDENT_CTRL", "path": "Engine",   "fmt": {"bix": 88, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Engine independent control"},
+    {"id": "PRIUS_REQ_WARM_UP",          "path": "Engine",   "fmt": {"bix": 89, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Request warm-up"},
+    {"id": "PRIUS_RACING_OPERATION",     "path": "Engine",   "fmt": {"bix": 90, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Racing operation"},
+    {"id": "PRIUS_ENG_INDEPENDENT",      "path": "Engine",   "fmt": {"bix": 91, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Engine independent"},
+    {"id": "PRIUS_F_C_ENG_STOP_REQ",     "path": "Engine",   "fmt": {"bix": 92, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Fuel cut for engine stop request"},
+    {"id": "PRIUS_IDLE_SPD_CTRL",        "path": "Engine",   "fmt": {"bix": 93, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Idle speed control learning"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
@@ -407,12 +1408,143 @@
     {"id": "PRIUS_VVTOT",         "path": "Engine", "fmt": {"bix": 56, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Variable valve timing oil temperature"},
     {"id": "PRIUS_EOT",           "path": "Engine", "fmt": {"bix": 72, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Engine oil temperature"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "52"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_IDLE_SPARK_ADVN_CTRL_1", "path": "Engine",   "fmt": {           "len": 8,  "max": 15.93,                              "div": 16,               "unit": "degrees" }, "name": "Idle spark advance control 1"},
+    {"id": "PRIUS_IDLE_SPARK_ADVN_CTRL_2", "path": "Engine",   "fmt": {"bix": 8,  "len": 8,  "max": 15.93,                              "div": 16,               "unit": "degrees" }, "name": "Idle spark advance control 2"},
+    {"id": "PRIUS_IDLE_SPARK_ADVN_CTRL_3", "path": "Engine",   "fmt": {"bix": 16, "len": 8,  "max": 15.93,                              "div": 16,               "unit": "degrees" }, "name": "Idle spark advance control 3"},
+    {"id": "PRIUS_IDLE_SPARK_ADVN_CTRL_4", "path": "Engine",   "fmt": {"bix": 24, "len": 8,  "max": 15.93,                              "div": 16,               "unit": "degrees" }, "name": "Idle spark advance control 4"},
+    {"id": "PRIUS_MIN_RPM",                "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 51199,                  "mul": 25,  "div": 32,               "unit": "rpm"     }, "name": "Minimum engine speed"},
+    {"id": "PRIUS_ENG_STALL_CTRL_FB",      "path": "Engine",   "fmt": {"bix": 48, "len": 16, "max": 39.99,      "min": -40, "mul": 5,   "div": 4096, "add": -40, "unit": "scalar"  }, "name": "Engine stall control FB flow"},
+    {"id": "PRIUS_FUEL_CUT_TIME",          "path": "Fuel",     "fmt": {"bix": 64, "len": 16, "max": 68734.9511,             "mul": 537, "div": 512,              "unit": "scalar"  }, "name": "Fuel cut time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "54"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_RPM_CYL_1",      "path": "Movement", "fmt": {           "len": 16, "max": 51199, "mul": 25, "div": 32, "unit": "rpm" }, "name": "Engine speed of cylinder 1"},
+    {"id": "PRIUS_RPM_CYL_2",      "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 51199, "mul": 25, "div": 32, "unit": "rpm" }, "name": "Engine speed of cylinder 2"},
+    {"id": "PRIUS_RPM_CYL_3",      "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 51199, "mul": 25, "div": 32, "unit": "rpm" }, "name": "Engine speed of cylinder 3"},
+    {"id": "PRIUS_RPM_CYL_4",      "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 51199, "mul": 25, "div": 32, "unit": "rpm" }, "name": "Engine speed of cylinder 4"},
+    {"id": "PRIUS_AV_RPM_ALL_CYL", "path": "Movement", "fmt": {"bix": 64, "len": 16, "max": 51199, "mul": 25, "div": 32, "unit": "rpm" }, "name": "Average engine speed of all cylinders", "suggestedMetric": "engineSpeed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "81"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_SPD_NT",      "path": "Engine",  "fmt": {           "len": 8,  "max": 12750, "mul": 50,               "unit": "rpm"   }, "name": "Turbine speed"},
+    {"id": "PRIUS_NT_SENS_V",   "path": "Battery", "fmt": {"bix": 8,  "len": 16, "max": 4.999,            "div": 13107, "unit": "volts" }, "name": "Turbine speed sensor voltage"},
+    {"id": "PRIUS_SPD_NIN",     "path": "Engine",  "fmt": {"bix": 24, "len": 8,  "max": 12750, "mul": 50,               "unit": "rpm"   }, "name": "Input shaft speed"},
+    {"id": "PRIUS_SPD_NOUT",    "path": "Engine",  "fmt": {"bix": 32, "len": 8,  "max": 12750, "mul": 50,               "unit": "rpm"   }, "name": "Output shaft speed"},
+    {"id": "PRIUS_NOUT_SENS_V", "path": "Battery", "fmt": {"bix": 40, "len": 16, "max": 4.999,            "div": 13107, "unit": "volts" }, "name": "Output speed sensor voltage"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "82"}, "freq": 1,
   "signals": [
-    {"id": "PRIUS_ATF_PAN_T", "path": "Transmission", "fmt": {           "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature (pan)"},
-    {"id": "PRIUS_ATF_TQC_T", "path": "Transmission", "fmt": {"bix": 16, "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature (torque converter)"}
+    {"id": "PRIUS_ATF_PAN_T", "path": "Transmission", "fmt": {           "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature, pan"},
+    {"id": "PRIUS_ATF_TQC_T", "path": "Transmission", "fmt": {"bix": 16, "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature, torque converter"}
   ]},
-{ "hdr": "7E2", "dbg": true, "cmd": {"21": "C3"}, "freq": 0.25, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "83"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_TRANS_OIL_PRESS",    "path": "Transmission", "fmt": {"bix": 1, "len": 1,  "max": 1,                             "unit": "scalar" }, "name": "Transmission oil pressure calibration, complete"},
+    {"id": "PRIUS_G_SENS_CALIBRATION", "path": "Engine",       "fmt": {"bix": 2, "len": 1,  "max": 1,                             "unit": "scalar" }, "name": "G sensor calibration, complete"},
+    {"id": "PRIUS_G_SENS_LEARNING",    "path": "Engine",       "fmt": {"bix": 8, "len": 16, "max": 79.998, "mul": 5, "div": 4096, "unit": "volts"  }, "name": "G sensor learning value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "85"}, "freq": 0.4,
+  "signals": [
+    {"id": "PRIUS_GEAR",       "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear"},
+    {"id": "PRIUS_TQC_LOCKUP", "path": "Transmission", "fmt": {"bix": 8, "len": 1, "max": 1,  "unit": "offon"  }, "name": "Torque converter lock-up", "description": "Engages a clutch inside the torque converter to create a direct connection between the engine and transmission, reducing slippage and improving efficiency."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B2"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_KNOCK_ADJUST",   "path": "Engine", "fmt": {           "len": 16, "max": 1984, "min": -64, "mul": 2048, "div": 65535, "add": -64, "unit": "degrees" }, "name": "Knock adjust"},
+    {"id": "PRIUS_KNOCK_FEEDBACK", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 1984, "min": -64, "mul": 2048, "div": 65535, "add": -64, "unit": "degrees" }, "name": "Knock feedback"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "BD"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_TRANS_OUT_RPM", "path": "Engine", "fmt": { "len": 8, "max": 12750, "mul": 50, "unit": "rpm" }, "name": "Transmission output shaft speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "BE"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_CVT_OIL_P", "path": "Engine", "fmt": { "len": 8, "max": 10200, "mul": 40, "unit": "kilopascal" }, "name": "Continuously variable transmission oil pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "C1"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_CYLINDER_NUMBER", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 255,                            "unit": "scalar" }, "name": "Cylinder number"},
+    {"id": "PRIUS_DESTINATION",     "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 255,                            "unit": "scalar" }, "name": "Destination"},
+    {"id": "PRIUS_MODEL_YEAR",      "path": "Engine", "fmt": {"bix": 128, "len": 8, "max": 2155, "min": 1900, "add": 1900, "unit": "scalar" }, "name": "Model year"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "CD"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_ICE_ACT_TQ", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "mul": 1.000051319, "add": -128.006569, "unit": "newtonMeters" }, "name": "ICE, actual torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D3"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"},
+    {"id": "PRIUS_CRUISE_CTRL_ON",  "path": "Engine",   "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "offon"             }, "name": "Cruise control on"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ATF_T_V_14", "path": "Transmission", "fmt": {           "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 14"},
+    {"id": "PRIUS_ATF_T_V_21", "path": "Transmission", "fmt": {"bix": 24, "len": 8,  "max": 215,     "min": -40,             "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 21"},
+    {"id": "PRIUS_ATF_T_V_5",  "path": "Transmission", "fmt": {"bix": 32, "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 5"},
+    {"id": "PRIUS_ATF_T_V_8",  "path": "Transmission", "fmt": {"bix": 48, "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "DA"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_GEAR_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "DD"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_CVT_LEARNED", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "yesno" }, "name": "Continuously variable transmission learning complete"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "E1"}, "freq": 3600,
+  "signals": [
+    {"id": "PRIUS_CODES_INCLUDE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Codes, include history"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "E3"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_CHECK_MODE_ON",        "path": "Engine", "fmt": {           "len": 1, "max": 1, "unit": "scalar" }, "name": "Check mode on"},
+    {"id": "PRIUS_SPD_TEST_RESULT",      "path": "Engine", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Vehicle speed sensor test result, incomplete"},
+    {"id": "PRIUS_MIS_TEST_RESULT",      "path": "Engine", "fmt": {"bix": 5,  "len": 1, "max": 1, "unit": "scalar" }, "name": "Misfire test result, incomplete"},
+    {"id": "PRIUS_OXS1_FS2_TEST_RESULT", "path": "Engine", "fmt": {"bix": 7,  "len": 1, "max": 1, "unit": "offon"  }, "name": "OXS1, A/FS2 test result, incomplete"},
+    {"id": "PRIUS_F_TEST_RESULTS_1",     "path": "Engine", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "scalar" }, "name": "A/F test results 1, incomplete"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "E4"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_INJ_PW", "path": "Engine", "fmt": { "len": 8, "max": 32.6, "mul": 163, "div": 1275, "unit": "milliseconds" }, "name": "Injector pulse width"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "E6"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_IDLE_CTRL", "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Idle control"},
+    {"id": "PRIUS_AC_COMP",   "path": "Engine", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Air conditioning compressor"},
+    {"id": "PRIUS_FUEL_CUT",  "path": "Fuel",   "fmt": {"bix": 9, "len": 1, "max": 1, "unit": "offon" }, "name": "Fuel cut"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "E7"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EGR_STEP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Exhaust gas recirculation valve step"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "ED"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_EGR_T", "path": "Engine", "fmt": { "len": 8, "max": 159, "mul": 53, "div": 85, "unit": "celsius" }, "name": "Exhaust gas recirculation temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "F3"}, "freq": 1,
+  "signals": [
+    {"id": "PRIUS_FUEL_INJ_TIM", "path": "Fuel",   "fmt": {           "len": 8, "max": 32.64, "mul": 16, "div": 125, "unit": "milliseconds" }, "name": "Fuel injection timing"},
+    {"id": "PRIUS_INJ_WIDTH",    "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 32.64, "mul": 16, "div": 125, "unit": "milliseconds" }, "name": "Injector pulse width"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "82"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ATF_T_V_10_7E1", "path": "Transmission", "fmt": {           "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 10"},
+    {"id": "PRIUS_ATF_T_V_11",     "path": "Transmission", "fmt": {"bix": 16, "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 11"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
+  "signals": [
+    {"id": "PRIUS_ATF_T_V_14_7E1", "path": "Transmission", "fmt": {           "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 14"},
+    {"id": "PRIUS_ATF_T_V_21_7E1", "path": "Transmission", "fmt": {"bix": 24, "len": 8,  "max": 215,     "min": -40,             "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 21"},
+    {"id": "PRIUS_ATF_T_V_9",      "path": "Transmission", "fmt": {"bix": 32, "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 9"},
+    {"id": "PRIUS_ATF_T_V_12",     "path": "Transmission", "fmt": {"bix": 48, "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 12"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "DA"}, "freq": 0.25,
+  "signals": [
+    {"id": "PRIUS_TQ_CONV_TURBINE_WHL", "path": "Tires", "fmt": { "len": 8, "max": 6, "mul": 12750, "unit": "rpm" }, "name": "Torque converter turbine wheel speed"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "C3"}, "freq": 0.25, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_MG2_RPM",       "path": "Engine",       "fmt": {            "len": 16, "max": 49152,    "min": -16383,                          "add": -16383, "unit": "rpm"          }, "name": "Motor generator 2 speed"},
     {"id": "PRIUS_MG2_TQ",        "path": "Engine",       "fmt": {"bix": 16,  "len": 16, "max": 7691.875, "min": -500,                 "div": 8,  "add": -500,   "unit": "newtonMeters" }, "name": "Motor generator 2 torque"},
@@ -439,7 +1571,7 @@
     {"id": "PRIUS_SELECT_SUB_V",  "path": "Transmission", "fmt": {"bix": 272, "len": 8,  "max": 5,                                     "div": 51,                "unit": "volts"        }, "name": "Shift select sensor sub voltage"},
     {"id": "PRIUS_SHIFT_POS_V",   "path": "Transmission", "fmt": {"bix": 280, "len": 8,  "max": 5,                                     "div": 51,                "unit": "volts"        }, "name": "Shift position sensor voltage"}
   ]},
-{ "hdr": "7E2", "dbg": true, "cmd": {"21": "C4"}, "freq": 0.25, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "C4"}, "freq": 0.25, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_LOADING",          "path": "Engine",  "fmt": {            "len": 1, "max": 1,                                                         "unit": "offon"        }, "name": "Loading condition"},
     {"id": "PRIUS_DRIVE_PATTERN_3",  "path": "Engine",  "fmt": {"bix": 5,   "len": 1, "max": 1,                                                         "unit": "offon"        }, "name": "Driving pattern 3"},
@@ -473,7 +1605,7 @@
     {"id": "PRIUS_BOOST_RATIO",      "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 99.96,               "mul": 0.392,                         "unit": "percent"      }, "name": "Boost converter pressure ratio"},
     {"id": "PRIUS_AC_PWR",           "path": "Climate", "fmt": {"bix": 120, "len": 8, "max": 5,                                 "div": 51,              "unit": "kilowatts"    }, "name": "Air conditioning power consumption"}
   ]},
-{ "hdr": "7E2", "dbg": true, "cmd": {"21": "D3"}, "freq": 1, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "D3"}, "freq": 1, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_CRUISE_SPD",      "path": "Control",      "fmt": {           "len": 8, "max": 255,                "unit": "kilometersPerHour" }, "name": "Cruise control set speed"},
     {"id": "PRIUS_CRUISE_THROTTLE", "path": "Control",      "fmt": {"bix": 8,  "len": 8, "max": 100, "mul": 0.3922, "unit": "percent"           }, "name": "Cruise control throttle opening"},
@@ -489,7 +1621,7 @@
     {"id": "PRIUS_STOP_SW2_SUB",    "path": "Control",      "fmt": {"bix": 30, "len": 1, "max": 1,                  "unit": "offon"             }, "name": "Stop light switch 2, sub processor"},
     {"id": "PRIUS_STOP_SW1_SUB",    "path": "Control",      "fmt": {"bix": 31, "len": 1, "max": 1,                  "unit": "offon"             }, "name": "Stop light switch 1, sub processor"}
   ]},
-{ "hdr": "7E3", "dbg": true, "cmd": {"21": "CE"}, "freq": 1, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E3", "rax": "7EB", "dbg": true, "cmd": {"21": "CE"}, "freq": 1, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_HVBAT_SOC",        "path": "Battery", "fmt": {            "len": 8,  "max": 127.5,                  "div": 2,                   "unit": "percent" }, "name": "HV battery charge",           "suggestedMetric": "stateOfCharge"},
     {"id": "PRIUS_HVBAT_I",          "path": "Battery", "fmt": {"bix": 8,   "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "amps"    }, "name": "HV battery current",          "suggestedMetric": "tractionBatteryCurrent"},
@@ -508,7 +1640,7 @@
     {"id": "PRIUS_HVBAT_BLOCK_13_V", "path": "Battery", "fmt": {"bix": 216, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "volts"   }, "name": "HV battery block 13 voltage"},
     {"id": "PRIUS_HVBAT_BLOCK_14_V", "path": "Battery", "fmt": {"bix": 232, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "volts"   }, "name": "HV battery block 14 voltage"}
   ]},
-{ "hdr": "7E3", "dbg": true, "cmd": {"21": "CF"}, "freq": 5, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E3", "rax": "7EB", "dbg": true, "cmd": {"21": "CF"}, "freq": 5, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_HVBAT_INTAKE_T",   "path": "Battery", "fmt": {            "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "celsius"   }, "name": "HV battery intake air temperature"},
     {"id": "PRIUS_HVBAT_FAN_V",      "path": "Battery", "fmt": {"bix": 16,  "len": 8,  "max": 25.4,   "min": -25.6,   "div": 5,   "add": -25.6,   "unit": "volts"     }, "name": "HV battery fan motor voltage"},
@@ -521,7 +1653,7 @@
     {"id": "PRIUS_HVBAT_T_2",        "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "celsius"   }, "name": "HV battery temperature 2"},
     {"id": "PRIUS_HVBAT_T_3",        "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "celsius"   }, "name": "HV battery temperature 3"}
   ]},
-{ "hdr": "7E3", "dbg": true, "cmd": {"21": "D0"}, "freq": 30, "filter": { "from": 2004, "to": 2009 },
+{ "hdr": "7E3", "rax": "7EB", "dbg": true, "cmd": {"21": "D0"}, "freq": 30, "filter": { "from": 2004, "to": 2009 },
   "signals": [
     {"id": "PRIUS_HVBAT_BLOCKS",          "path": "Battery", "fmt": {            "len": 8,  "max": 255,                                                "unit": "scalar"    }, "name": "HV battery block count"},
     {"id": "PRIUS_HVBAT_LOW_TIME",        "path": "Battery", "fmt": {"bix": 8,   "len": 16, "max": 65535,                                              "unit": "seconds"   }, "name": "HV battery low charge time"},

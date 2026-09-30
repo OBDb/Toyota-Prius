@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.2142
+test_cases:
+- expected_values:
+    PRIUS_BAT_CURRENT: -78.80713
+  response: 7E80461422F4D
+- expected_values:
+    PRIUS_BAT_CURRENT: -73.21851
+  response: '7E80461423506'
+- expected_values:
+    PRIUS_BAT_CURRENT: -72.84848
+  response: '7E80461423567'

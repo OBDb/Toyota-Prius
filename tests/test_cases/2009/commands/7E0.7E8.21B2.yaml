@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.21B2
+test_cases:
+- expected_values:
+    PRIUS_KNOCK_ADJUST: 23.59509
+    PRIUS_KNOCK_FEEDBACK: -2.99907
+  response: 7E80661B20AF307A0
+- expected_values:
+    PRIUS_KNOCK_ADJUST: 24.5951
+    PRIUS_KNOCK_FEEDBACK: -2.74907
+  response: 7E80661B20B1307A8
+- expected_values:
+    PRIUS_KNOCK_ADJUST: 24.7826
+    PRIUS_KNOCK_FEEDBACK: -4.18659
+  response: 7E80661B20B19077A

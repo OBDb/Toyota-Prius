@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.2110
+test_cases:
+- expected_values:
+    PRIUS_MAF_21: 0.07
+  response: '7E80461100007'
+- expected_values:
+    PRIUS_MAF_21: 0.14
+  response: 7E8046110000E
+- expected_values:
+    PRIUS_MAF_21: 19.2
+  response: '7E80461100780'
+- expected_values:
+    PRIUS_MAF_21: 19.28
+  response: '7E80461100788'
+- expected_values:
+    PRIUS_MAF_21: 21.5
+  response: '7E80461100866'

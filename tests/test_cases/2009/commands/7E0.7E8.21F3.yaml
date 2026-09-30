@@ -1,0 +1,18 @@
+command_id: 7E0.7E8.21F3
+test_cases:
+- expected_values:
+    PRIUS_FUEL_INJ_TIM: 3.456
+    PRIUS_INJ_WIDTH: 2.176
+  response: 7E80661F31BCC1180
+- expected_values:
+    PRIUS_FUEL_INJ_TIM: 3.584
+    PRIUS_INJ_WIDTH: 10.88
+  response: 7E80661F31C90557D
+- expected_values:
+    PRIUS_FUEL_INJ_TIM: 3.712
+    PRIUS_INJ_WIDTH: 6.784
+  response: 7E80661F31D193581
+- expected_values:
+    PRIUS_FUEL_INJ_TIM: 3.712
+    PRIUS_INJ_WIDTH: 7.04
+  response: 7E80661F31DEC3780

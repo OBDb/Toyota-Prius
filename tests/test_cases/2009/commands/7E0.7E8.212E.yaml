@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.212E
+test_cases:
+- expected_values:
+    PRIUS_EVAP_PURGE_DUTY_7E0: 0
+  response: 7E803612E00
+- expected_values:
+    PRIUS_EVAP_PURGE_DUTY_7E0: 18.82353
+  response: 7E803612E30
+- expected_values:
+    PRIUS_EVAP_PURGE_DUTY_7E0: 19.21569
+  response: 7E803612E31
+- expected_values:
+    PRIUS_EVAP_PURGE_DUTY_7E0: 20
+  response: 7E803612E33

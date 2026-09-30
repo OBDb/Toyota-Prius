@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.213C
+test_cases:
+- expected_values:
+    PRIUS_INJ_VOL_CYL_1: 0.00019
+  response: 7E804613C17E0
+- expected_values:
+    PRIUS_INJ_VOL_CYL_1: 0.0002
+  response: 7E804613C18F3
+- expected_values:
+    PRIUS_INJ_VOL_CYL_1: 0.0002
+  response: 7E804613C1905
+- expected_values:
+    PRIUS_INJ_VOL_CYL_1: 0.0002
+  response: 7E804613C1965
+- expected_values:
+    PRIUS_INJ_VOL_CYL_1: 0.0002
+  response: 7E804613C1990

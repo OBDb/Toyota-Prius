@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2144
+test_cases:
+- expected_values:
+    PRIUS_VARIABLE_VLV_TIM_AIM_1: 198.58618
+  response: 7E80461447F20
+- expected_values:
+    PRIUS_VARIABLE_VLV_TIM_AIM_1: 199.95305
+  response: '7E80461448000'

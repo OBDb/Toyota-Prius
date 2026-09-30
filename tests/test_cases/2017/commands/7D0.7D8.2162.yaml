@@ -1,29 +1,32 @@
 command_id: 7D0.7D8.2162
 test_cases:
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'On'
+    PRIUS_PARKING_BRAKE: 1
   response: 7D80461620300
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621900
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621904
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621906
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621907
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621908
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D8046162190B
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'OFF'
+    PRIUS_PARKING_BRAKE: 0
   response: 7D80461621910
 - expected_values:
-    PRIUS_PARKING_BRAKE: 'ON'
+    PRIUS_PARKING_BRAKE: 1
   response: 7D80461621B00
+- expected_values:
+    PRIUS_PARKING_BRAKE: 0
+  response: 7D80461621D01

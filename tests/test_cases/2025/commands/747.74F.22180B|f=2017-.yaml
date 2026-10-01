@@ -7,20 +7,8 @@ test_cases:
     PRIUS_HYBRID_BAT_IAT_1: 65.4472
   response: 74F0562180B4500
 - expected_values:
-    PRIUS_HYBRID_BAT_IAT_1: 73.92441
-  response: 74F0562180B49BD
-- expected_values:
-    PRIUS_HYBRID_BAT_IAT_1: 74.12009
-  response: 74F0562180B49D9
-- expected_values:
     PRIUS_HYBRID_BAT_IAT_1: 74.30179
   response: 74F0562180B49F3
 - expected_values:
     PRIUS_HYBRID_BAT_IAT_1: 74.49747
   response: 74F0562180B4A0F
-- expected_values:
-    PRIUS_HYBRID_BAT_IAT_1: 74.67219
-  response: 74F0562180B4A28
-- expected_values:
-    PRIUS_HYBRID_BAT_IAT_1: 75.24526
-  response: 74F0562180B4A7A

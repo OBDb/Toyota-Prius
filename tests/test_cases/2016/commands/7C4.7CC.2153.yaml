@@ -12,3 +12,9 @@ test_cases:
 - expected_values:
     PRIUS_REGULATOR_P: 543.6
   response: 7CC03615344
+- expected_values:
+    PRIUS_REGULATOR_P: 558.31
+  response: 7CC03615345
+- expected_values:
+    PRIUS_REGULATOR_P: 631.86
+  response: 7CC0361534A

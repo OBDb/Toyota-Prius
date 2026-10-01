@@ -4,6 +4,9 @@ test_cases:
     PRIUS_ECT: 47.15
   response: 7CC03612683
 - expected_values:
+    PRIUS_ECT: 56.95
+  response: 7CC0361269F
+- expected_values:
     PRIUS_ECT: 59.4
   response: 7CC036126A6
 - expected_values:

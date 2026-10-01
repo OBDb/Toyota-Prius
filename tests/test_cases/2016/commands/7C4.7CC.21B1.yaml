@@ -1,6 +1,12 @@
 command_id: 7C4.7CC.21B1
 test_cases:
 - expected_values:
+    PRIUS_GLASS_HUMIDITY: 34.44877
+  response: 7CC0461B15830
+- expected_values:
+    PRIUS_GLASS_HUMIDITY: 36.43854
+  response: 7CC0461B15D48
+- expected_values:
     PRIUS_GLASS_HUMIDITY: 37.44869
   response: 7CC0461B15FDE
 - expected_values:

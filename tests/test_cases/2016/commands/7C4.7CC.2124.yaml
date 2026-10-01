@@ -13,8 +13,14 @@ test_cases:
     PRIUS_SOLAR_DRIVER: 41
   response: 7CC03612429
 - expected_values:
+    PRIUS_SOLAR_DRIVER: 83
+  response: 7CC03612453
+- expected_values:
     PRIUS_SOLAR_DRIVER: 93
   response: 7CC0361245D
+- expected_values:
+    PRIUS_SOLAR_DRIVER: 94
+  response: 7CC0361245E
 - expected_values:
     PRIUS_SOLAR_DRIVER: 95
   response: 7CC0361245F

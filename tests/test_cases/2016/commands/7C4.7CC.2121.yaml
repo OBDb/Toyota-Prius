@@ -18,3 +18,9 @@ test_cases:
 - expected_values:
     PRIUS_CABIN_T: 23.25
   response: 7CC03612177
+- expected_values:
+    PRIUS_CABIN_T: 24.25
+  response: 7CC0361217B
+- expected_values:
+    PRIUS_CABIN_T: 25.25
+  response: 7CC0361217F

@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_12V_BAT_V_BEFORE_SMR: 11.29392
   response: 7DA0562107E2440
+- expected_values:
+    PRIUS_12V_BAT_V_BEFORE_SMR: 11.29392
+  response: 7DA0562107E24C0

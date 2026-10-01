@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_EXHAUST_VVT_HOLD_LEARN_B1: 50.66559
   response: 70805621089206F
+- expected_values:
+    PRIUS_EXHAUST_VVT_HOLD_LEARN_B1: 50.79374
+  response: '708056210892084'

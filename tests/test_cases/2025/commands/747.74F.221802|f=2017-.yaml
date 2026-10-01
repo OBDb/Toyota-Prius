@@ -10,8 +10,23 @@ test_cases:
     PRIUS_HYBRID_BAT_1_FAN_747: 40.5
   response: 74F0762180243045101
 - expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 48
+  response: 74F0762180244046001
+- expected_values:
     PRIUS_HYBRID_BAT_1_FAN_747: 50.5
   response: 74F0762180244046501
 - expected_values:
     PRIUS_HYBRID_BAT_1_FAN_747: 75.5
   response: 74F0762180250049701
+- expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 22.5
+  response: 74F076218028C0A2D01
+- expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 57.5
+  response: 74F07621802910A7301
+- expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 67.5
+  response: 74F07621802910A8701
+- expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 80
+  response: 74F07621802910AA001

@@ -4,6 +4,9 @@ test_cases:
     PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1: 31.81639
   response: 7080562108D0CBA
 - expected_values:
+    PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1: 31.82616
+  response: 7080562108D0CBB
+- expected_values:
     PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1: 31.83593
   response: 7080562108D0CBC
 - expected_values:

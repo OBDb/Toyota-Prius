@@ -11,4 +11,10 @@ test_cases:
   response: 7080762101902198AF0
 - expected_values:
     PRIUS_INJECTION: BOTH
+  response: 70807621019021D8000
+- expected_values:
+    PRIUS_INJECTION: BOTH
   response: '7080762101902218000'
+- expected_values:
+    PRIUS_INJECTION: BOTH
+  response: 70807621019028C8BB8

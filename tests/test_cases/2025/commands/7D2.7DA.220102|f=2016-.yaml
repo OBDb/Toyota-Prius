@@ -11,11 +11,6 @@ test_cases:
     7DA100A62010204A400
     7DA2102EAC001000000
 - expected_values:
-    PRIUS_KEY_CYCLE: 1188
-  response: |-
-    7DA100A62010204A400
-    7DA21053F3B01000000
-- expected_values:
     PRIUS_KEY_CYCLE: 1189
   response: |-
     7DA100A62010204A500
@@ -34,9 +29,14 @@ test_cases:
     PRIUS_KEY_CYCLE: 1190
   response: |-
     7DA100A62010204A600
-    7DA21009F1A01000000
-- expected_values:
-    PRIUS_KEY_CYCLE: 1190
-  response: |-
-    7DA100A62010204A600
     7DA2107D3C601000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 1191
+  response: |-
+    7DA100A62010204A700
+    7DA2100945A01000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 1191
+  response: |-
+    7DA100A62010204A700
+    7DA21031F4B01000000

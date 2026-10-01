@@ -4,5 +4,5 @@ test_cases:
     PRIUS_DC_DC_CONV_TGT_V: 26.24511
   response: 7DA0562111F00D7
 - expected_values:
-    PRIUS_DC_DC_CONV_TGT_V: 27.9541
-  response: 7DA0562111F00E5
+    PRIUS_DC_DC_CONV_TGT_V: 29.05273
+  response: 7DA0562111F00EE

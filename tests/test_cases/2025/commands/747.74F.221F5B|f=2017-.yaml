@@ -1,29 +1,8 @@
 command_id: 747.74F.221F5B|f=2017-
 test_cases:
 - expected_values:
-    PRIUS_HYBRID_BAT_SOC: 53.72549
-  response: 74F04621F5B89
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 61.17647
-  response: 74F04621F5B9C
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 61.96078
-  response: 74F04621F5B9E
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 62.7451
-  response: 74F04621F5BA0
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 65.09804
-  response: 74F04621F5BA6
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 67.05882
-  response: 74F04621F5BAB
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 68.23529
-  response: 74F04621F5BAE
-- expected_values:
-    PRIUS_HYBRID_BAT_SOC: 68.62745
-  response: 74F04621F5BAF
+    PRIUS_HYBRID_BAT_SOC: 35.29412
+  response: 74F04621F5B5A
 - expected_values:
     PRIUS_HYBRID_BAT_SOC: 69.80392
   response: 74F04621F5BB2

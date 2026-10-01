@@ -4,23 +4,8 @@ test_cases:
     PRIUS_FUEL_PUMP_DUTY_RATIO: 30
   response: 7080562106A01EC
 - expected_values:
-    PRIUS_FUEL_PUMP_DUTY_RATIO: 185.79268
-  response: 7080562106A0BE7
-- expected_values:
     PRIUS_FUEL_PUMP_DUTY_RATIO: 203.17073
   response: 7080562106A0D04
-- expected_values:
-    PRIUS_FUEL_PUMP_DUTY_RATIO: 203.71951
-  response: 7080562106A0D0D
-- expected_values:
-    PRIUS_FUEL_PUMP_DUTY_RATIO: 203.84146
-  response: 7080562106A0D0F
-- expected_values:
-    PRIUS_FUEL_PUMP_DUTY_RATIO: 214.93902
-  response: 7080562106A0DC5
-- expected_values:
-    PRIUS_FUEL_PUMP_DUTY_RATIO: 215.18293
-  response: 7080562106A0DC9
 - expected_values:
     PRIUS_FUEL_PUMP_DUTY_RATIO: 218.29268
   response: 7080562106A0DFC

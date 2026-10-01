@@ -5,22 +5,10 @@ test_cases:
     PRIUS_ECT_INIT: 20
   response: 708056210415F60
 - expected_values:
-    PRIUS_ECT_IGN: 19.375
-    PRIUS_ECT_INIT: 47.5
-  response: 708056210415F8C
+    PRIUS_ECT_IGN: 70
+    PRIUS_ECT_INIT: 69.375
+  response: 70805621041B0AF
 - expected_values:
-    PRIUS_ECT_IGN: 19.375
-    PRIUS_ECT_INIT: 65.625
-  response: 708056210415FA9
-- expected_values:
-    PRIUS_ECT_IGN: 19.375
-    PRIUS_ECT_INIT: 71.25
-  response: 708056210415FB2
-- expected_values:
-    PRIUS_ECT_IGN: 19.375
-    PRIUS_ECT_INIT: 72.5
-  response: 708056210415FB4
-- expected_values:
-    PRIUS_ECT_IGN: 19.375
-    PRIUS_ECT_INIT: 84.375
-  response: 708056210415FC7
+    PRIUS_ECT_IGN: 70
+    PRIUS_ECT_INIT: 91.25
+  response: 70805621041B0D2

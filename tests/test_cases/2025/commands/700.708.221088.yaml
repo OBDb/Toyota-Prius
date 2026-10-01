@@ -4,18 +4,6 @@ test_cases:
     PRIUS_EXHAUST_VVT_ANGLE_B1: 0
   response: '708056210880000'
 - expected_values:
-    PRIUS_EXHAUST_VVT_ANGLE_B1: 9.61778
-  response: 7080562108803D9
-- expected_values:
-    PRIUS_EXHAUST_VVT_ANGLE_B1: 11.10195
-  response: '708056210880471'
-- expected_values:
-    PRIUS_EXHAUST_VVT_ANGLE_B1: 27.2032
-  response: 708056210880AE2
-- expected_values:
-    PRIUS_EXHAUST_VVT_ANGLE_B1: 27.25202
-  response: 708056210880AE7
-- expected_values:
     PRIUS_EXHAUST_VVT_ANGLE_B1: 27.46683
   response: 708056210880AFD
 - expected_values:

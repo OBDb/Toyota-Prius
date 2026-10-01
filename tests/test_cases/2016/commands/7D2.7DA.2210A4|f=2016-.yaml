@@ -4,8 +4,11 @@ test_cases:
     PRIUS_GEN_INVERTER_T: 22
   response: 7DA066210A43E3C47
 - expected_values:
-    PRIUS_GEN_INVERTER_T: 26
-  response: 7DA066210A4423C49
+    PRIUS_GEN_INVERTER_T: 24
+  response: 7DA066210A4404B4D
 - expected_values:
-    PRIUS_GEN_INVERTER_T: 30
-  response: 7DA066210A4463C49
+    PRIUS_GEN_INVERTER_T: 29
+  response: 7DA066210A4454A4F
+- expected_values:
+    PRIUS_GEN_INVERTER_T: 35
+  response: 7DA066210A44B4A4F

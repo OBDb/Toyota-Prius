@@ -18,3 +18,9 @@ test_cases:
 - expected_values:
     PRIUS_GLASS_T: 82.37
   response: 7CC0461AF8AED
+- expected_values:
+    PRIUS_GLASS_T: 89.624
+  response: 7CC0461AF8C80
+- expected_values:
+    PRIUS_GLASS_T: 90.2
+  response: 7CC0461AF8CA0

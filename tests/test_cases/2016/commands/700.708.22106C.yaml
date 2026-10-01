@@ -4,23 +4,5 @@ test_cases:
     PRIUS_DIST_SINCE_BAT_DISC: 3886
   response: 7080562106C0F2E
 - expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3887
-  response: 7080562106C0F2F
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3888
-  response: 7080562106C0F30
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3889
-  response: 7080562106C0F31
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3890
-  response: 7080562106C0F32
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3891
-  response: 7080562106C0F33
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3892
-  response: 7080562106C0F34
-- expected_values:
-    PRIUS_DIST_SINCE_BAT_DISC: 3893
-  response: 7080562106C0F35
+    PRIUS_DIST_SINCE_BAT_DISC: 3898
+  response: 7080562106C0F3A

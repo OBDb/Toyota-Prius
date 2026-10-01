@@ -1,8 +1,14 @@
 command_id: 7B0.7B8.2121
 test_cases:
 - expected_values:
+    PRIUS_VSS: 0
+  response: 7B803612100
+- expected_values:
     PRIUS_VSS: 14.85
   response: 7B80361210B
+- expected_values:
+    PRIUS_VSS: 29.7
+  response: 7B803612116
 - expected_values:
     PRIUS_VSS: 44.55
   response: 7B803612121

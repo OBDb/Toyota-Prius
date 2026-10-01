@@ -25,3 +25,18 @@ test_cases:
   response: |-
     7DA100A620102430E00
     7DA210DBBC201000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 17167
+  response: |-
+    7DA100A620102430F00
+    7DA2101547201000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 17169
+  response: |-
+    7DA100A620102431100
+    7DA2101ECD901000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 17169
+  response: |-
+    7DA100A620102431100
+    7DA2103289F01000000

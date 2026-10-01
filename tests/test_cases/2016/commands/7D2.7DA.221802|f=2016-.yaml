@@ -1,0 +1,6 @@
+command_id: 7D2.7DA.221802|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_AUXILIARY_BAT: -12500
+    PRIUS_HYBRID_BAT_1_FAN: 0
+  response: 7DA0762180200000000

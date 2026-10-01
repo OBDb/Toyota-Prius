@@ -1,0 +1,11 @@
+command_id: 7D2.7DA.2210A4|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_GEN_INVERTER_T: 22
+  response: 7DA066210A43E3C47
+- expected_values:
+    PRIUS_GEN_INVERTER_T: 26
+  response: 7DA066210A4423C49
+- expected_values:
+    PRIUS_GEN_INVERTER_T: 30
+  response: 7DA066210A4463C49

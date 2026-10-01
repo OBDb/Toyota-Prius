@@ -1,0 +1,14 @@
+command_id: 7B0.7B8.2148
+test_cases:
+- expected_values:
+    PRIUS_FR_REGEN_OPERATION: 0
+    PRIUS_FR_REGEN_REQUEST: 0
+  response: 7B806614800000000
+- expected_values:
+    PRIUS_FR_REGEN_OPERATION: 31
+    PRIUS_FR_REGEN_REQUEST: 32
+  response: 7B80661480020001F
+- expected_values:
+    PRIUS_FR_REGEN_OPERATION: 38
+    PRIUS_FR_REGEN_REQUEST: 38
+  response: 7B806614800260026

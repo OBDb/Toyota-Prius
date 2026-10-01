@@ -1,0 +1,5 @@
+command_id: 7C0.7C8.21AC
+test_cases:
+- expected_values:
+    PRIUS_REVERSE_BEEP: 1
+  response: 7C80361AC40

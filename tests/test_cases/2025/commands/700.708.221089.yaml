@@ -1,0 +1,5 @@
+command_id: 700.708.221089
+test_cases:
+- expected_values:
+    PRIUS_EXHAUST_VVT_HOLD_LEARN_B1: 50.66559
+  response: 70805621089206F

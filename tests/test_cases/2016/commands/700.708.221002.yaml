@@ -7,8 +7,8 @@ test_cases:
     PRIUS_12V_V_700: 12.49509
   response: 7080562100227FC
 - expected_values:
-    PRIUS_12V_V_700: 12.51462
-  response: 70805621002280C
+    PRIUS_12V_V_700: 12.49997
+  response: '708056210022800'
 - expected_values:
-    PRIUS_12V_V_700: 14.20895
-  response: 708056210022D78
+    PRIUS_12V_V_700: 14.13571
+  response: 708056210022D3C

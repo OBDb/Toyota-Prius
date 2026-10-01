@@ -4,5 +4,5 @@ test_cases:
     PRIUS_DC_DC_CONV_OUTPUT: 21.875
   response: 7DA0462111C1C
 - expected_values:
-    PRIUS_DC_DC_CONV_OUTPUT: 50
-  response: 7DA0462111C40
+    PRIUS_DC_DC_CONV_OUTPUT: 50.78125
+  response: 7DA0462111C41

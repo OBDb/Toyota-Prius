@@ -4,6 +4,12 @@ test_cases:
     PRIUS_AC_POWER_CONS_747: -12500
   response: 74F0462106E00
 - expected_values:
+    PRIUS_AC_POWER_CONS_747: -12499.999
+  response: 74F0462106E02
+- expected_values:
+    PRIUS_AC_POWER_CONS_747: -12499.9985
+  response: 74F0462106E03
+- expected_values:
     PRIUS_AC_POWER_CONS_747: -12499.998
   response: 74F0462106E04
 - expected_values:
@@ -15,6 +21,9 @@ test_cases:
 - expected_values:
     PRIUS_AC_POWER_CONS_747: -12499.9965
   response: 74F0462106E07
+- expected_values:
+    PRIUS_AC_POWER_CONS_747: -12499.9955
+  response: 74F0462106E09
 - expected_values:
     PRIUS_AC_POWER_CONS_747: -12499.9945
   response: 74F0462106E0B

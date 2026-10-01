@@ -2,6 +2,9 @@ command_id: 700.708.221019
 test_cases:
 - expected_values:
     PRIUS_INJECTION: DIRECT
+  response: 70807621019013C88FC
+- expected_values:
+    PRIUS_INJECTION: DIRECT
   response: 7080762101901EB8000
 - expected_values:
     PRIUS_INJECTION: BOTH

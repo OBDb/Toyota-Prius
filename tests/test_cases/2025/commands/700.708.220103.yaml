@@ -4,5 +4,5 @@ test_cases:
     PRIUS_ENG_ODO: 15489
   response: 7080762010302003C81
 - expected_values:
-    PRIUS_ENG_ODO: 15515
-  response: 7080762010302003C9B
+    PRIUS_ENG_ODO: 15519
+  response: 7080762010302003C9F

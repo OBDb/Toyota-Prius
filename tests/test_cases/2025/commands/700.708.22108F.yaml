@@ -4,6 +4,9 @@ test_cases:
     PRIUS_EXHAUST_VVT_OVER_ADV_LEARN_B1: 89.21872
   response: 7080562108F23B0
 - expected_values:
+    PRIUS_EXHAUST_VVT_OVER_ADV_LEARN_B1: 89.43356
+  response: 7080562108F23C6
+- expected_values:
     PRIUS_EXHAUST_VVT_OVER_ADV_LEARN_B1: 89.92184
   response: 7080562108F23F8
 - expected_values:

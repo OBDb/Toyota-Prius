@@ -1,22 +1,20 @@
 command_id: 750.758.221005|e=2A,ta=2A,fc=1,f=2023-
 test_cases:
 - expected_values:
-    PRIUS_TP_RR_V2: 2.15517
+    PRIUS_TP_FL_V2: null
+    PRIUS_TP_FR_V2: null
+    PRIUS_TP_RL_V2: null
+    PRIUS_TP_RR_V2: null
+    PRIUS_TP_SPARE_V2: null
   response: |-
     7582A100D6210050000
-    7582A2100000000009A
+    7582A21000000000000
     7582A22000000000000
 - expected_values:
     PRIUS_TP_RR_V2: 2.24138
   response: |-
     7582A100D6210050000
     7582A2100000000009F
-    7582A22000000000000
-- expected_values:
-    PRIUS_TP_RL_V2: 2.06897
-  response: |-
-    7582A100D6210050000
-    7582A21000000950000
     7582A22000000000000
 - expected_values:
     PRIUS_TP_RL_V2: 2.24138

@@ -1,0 +1,20 @@
+command_id: 7C4.7CC.21AF
+test_cases:
+- expected_values:
+    PRIUS_GLASS_T: 73.604
+  response: 7CC0461AF8906
+- expected_values:
+    PRIUS_GLASS_T: 75.944
+  response: 7CC0461AF8988
+- expected_values:
+    PRIUS_GLASS_T: 79.22
+  response: 7CC0461AF8A3E
+- expected_values:
+    PRIUS_GLASS_T: 81.578
+  response: 7CC0461AF8AC1
+- expected_values:
+    PRIUS_GLASS_T: 82.226
+  response: 7CC0461AF8AE5
+- expected_values:
+    PRIUS_GLASS_T: 82.37
+  response: 7CC0461AF8AED

@@ -1,0 +1,22 @@
+command_id: 7C4.7CC.2141
+test_cases:
+- expected_values:
+    PRIUS_AIR_MIX_SERVO_ACT_D: 66
+    PRIUS_AIR_MIX_SERVO_TARG_D: 66
+  response: 7CC06614142420DAA
+- expected_values:
+    PRIUS_AIR_MIX_SERVO_ACT_D: 90
+    PRIUS_AIR_MIX_SERVO_TARG_D: 90
+  response: 7CC0661415A5A0DAA
+- expected_values:
+    PRIUS_AIR_MIX_SERVO_ACT_D: 100
+    PRIUS_AIR_MIX_SERVO_TARG_D: 100
+  response: 7CC06614164640DAA
+- expected_values:
+    PRIUS_AIR_MIX_SERVO_ACT_D: 104
+    PRIUS_AIR_MIX_SERVO_TARG_D: 104
+  response: 7CC06614168680DAA
+- expected_values:
+    PRIUS_AIR_MIX_SERVO_ACT_D: 110
+    PRIUS_AIR_MIX_SERVO_TARG_D: 110
+  response: 7CC0661416E6E0DAA

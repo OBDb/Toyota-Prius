@@ -5,11 +5,11 @@
     { "hdr": "7E3",              "type": "battery" }
   ],
   "commands": [
-{ "hdr": "700", "rax": "708", "cmd": {"22": "0103"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "0103"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_ENG_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_12V_V_700", "path": "Battery", "fmt": { "len": 16, "max": 79, "mul": 12.207, "div": 10000, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
@@ -21,7 +21,7 @@
   "signals": [
     {"id": "PRIUS_INJECTOR_PORT", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "milliseconds" }, "name": "Injector port"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1019"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1019"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_INJECTION", "path": "Engine", "name": "Injection", "fmt": {"len": 8, "map": {
           "1": { "description": "Direct", "value": "DIRECT" },
@@ -37,7 +37,7 @@
     {"id": "PRIUS_A_F_RATIO_LEARNED_MID_2_BANK_1", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learned mid 2, bank 1"},
     {"id": "PRIUS_A_F_RATIO_LEARNED_HIGH_BANK_1",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learned high, bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1041"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1041"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_ECT_IGN",  "path": "Engine", "fmt": {          "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, at ignition"},
     {"id": "PRIUS_ECT_INIT", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, initial"}
@@ -68,11 +68,11 @@
   "signals": [
     {"id": "PRIUS_EXHAUST_VVT_OCV_CONTROL_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 400, "mul": 400, "div": 65535, "unit": "percent" }, "name": "Exhaust VVT oil control valve control duty"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "106A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "106A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_FUEL_PUMP_DUTY_RATIO", "path": "Fuel", "fmt": { "len": 16, "max": 3996, "mul": 0.0609756098, "unit": "kilopascal" }, "name": "Fuel pump duty ratio"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "106C"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "106C"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_DIST_SINCE_BAT_DISC", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since last battery cable disconnection"}
   ]},
@@ -114,24 +114,24 @@
   "signals": [
     {"id": "PRIUS_INTAKE_VVT_CHANGE_ANGLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Intake VVT change angle bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1088"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1088"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_EXHAUST_VVT_ANGLE_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT change angle, bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1089"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1089"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_EXHAUST_VVT_HOLD_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 399.9, "mul": 399.9, "div": 65535, "unit": "percent" }, "name": "Exhaust VVT hold learn value, bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "108A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "108A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_VVT_IE_DUTY_RATIO_1",              "path": "ECU", "fmt": {           "len": 15, "max": -0.0531, "min": -200, "mul": 399.9, "div": 65535, "add": -200, "unit": "percent" }, "name": "VVT-ie duty ratio bank 1"},
     {"id": "PRIUS_VVT_IE_MOTOR_DIRECTION_FORWARD_1", "path": "ECU", "fmt": {"bix": 15, "len": 1,  "max": 1,                                                             "unit": "offon"   }, "name": "VVT-ie motor direction: forward bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "108D"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "108D"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Intake VVT most over-retarded learn value, bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "108F"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "108F"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_EXHAUST_VVT_OVER_ADV_LEARN_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT timing most over-advanced learn value, bank 1"}
   ]},
@@ -139,7 +139,7 @@
   "signals": [
     {"id": "PRIUS_FFT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel filter temperature"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "10A2"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "10A2"}, "freq": 3600, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_AF_LEARN_IDLE_PORT_B1", "path": "Engine", "fmt": {           "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value idle, bank 1"},
     {"id": "PRIUS_AF_LEARN_LOW_PORT_B1",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value low, bank 1"},
@@ -344,7 +344,7 @@
   "signals": [
     {"id": "PRIUS_CAT_T_BANK_2_SENS_2", "path": "Engine", "fmt": { "len": 16, "max": 11756.3, "min": -40, "mul": 9, "div": 50, "add": -40, "unit": "fahrenheit" }, "name": "Catalyst temperature bank 2 sensor 2"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1F46"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F46"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_AMBIENT_T", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
@@ -352,7 +352,7 @@
   "signals": [
     {"id": "PRIUS_EOT_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variation 2"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1F6D"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F6D"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HFP_TARGET",        "path": "Fuel", "fmt": {"bix": 8,  "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, target"},
     {"id": "PRIUS_HFP_ACTUAL",        "path": "Fuel", "fmt": {"bix": 24, "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, actual"},
@@ -371,7 +371,7 @@
   "signals": [
     {"id": "PRIUS_INTERCOOLER_WATER", "path": "Engine", "fmt": { "len": 16, "max": 300, "mul": 80, "div": 13107, "unit": "percent" }, "name": "Intercooler water pump"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "2827"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "2827"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_ELECTRIC_WATER_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 10200, "mul": 40, "unit": "rpm" }, "name": "Electric water pump"}
   ]},
@@ -383,7 +383,7 @@
   "signals": [
     {"id": "PRIUS_COOLANT_VALVE_1_CLOSE", "path": "Engine", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Coolant water route switching valve 1, closed?"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "2843"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "2843"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_VVT_IE_OPENING_ANGLE_BANK_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Variable valve timing opening angle bank 1"}
   ]},
@@ -448,20 +448,20 @@
   "signals": [
     {"id": "PRIUS_ODO_V6", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_AC_POWER_CONS_747", "path": "Engine", "fmt": { "len": 8, "max": -12500, "min": -12500, "div": 2000, "add": -12500, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "1802"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1802"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_1_FAN_747", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 127, "div": 2, "unit": "percent" }, "name": "Hybrid battery 1 fan"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "180B"}, "freq": 5, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "180B"}, "freq": 5, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_IAT_1", "path": "Battery", "fmt": {           "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery intake air temperature 1"},
     {"id": "PRIUS_HYBRID_BAT_IAT_2", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery intake air temperature 2"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_BAT_T_01", "path": "Battery", "fmt": {            "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 01"},
     {"id": "PRIUS_BAT_T_02", "path": "Battery", "fmt": {"bix": 16,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 02"},
@@ -480,7 +480,7 @@
     {"id": "PRIUS_BAT_T_15", "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 15"},
     {"id": "PRIUS_BAT_T_16", "path": "Battery", "fmt": {"bix": 240, "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 16"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "1819"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1819"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_BLOCK_1_V", "path": "Battery", "fmt": {           "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 1 average voltage"},
     {"id": "PRIUS_HYBRID_BAT_BLOCK_2_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "fahrenheit" }, "name": "Hybrid battery block 2 average voltage"},
@@ -595,11 +595,11 @@
     {"id": "PRIUS_HVBAT_C95_V", "path": "Battery.Cells", "fmt": {"bix": 1504, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #95 voltage"},
     {"id": "PRIUS_HVBAT_C96_V", "path": "Battery.Cells", "fmt": {"bix": 1520, "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #96 voltage"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "1F5B"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1F5B"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Hybrid battery SOC"}
   ]},
-{ "hdr": "747", "rax": "74F", "cmd": {"22": "1F9A"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1F9A"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 6553, "div": 10, "unit": "amps" }, "name": "Hybrid battery current"}
   ]},
@@ -955,7 +955,7 @@
   "signals": [
     {"id": "PRIUS_PARKING_BRAKE", "path": "Control", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_KEY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Key cycle"}
   ]},
@@ -963,11 +963,11 @@
   "signals": [
     {"id": "PRIUS_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_AUX_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 79.95, "mul": 61, "div": 50000, "unit": "volts" }, "name": "Aux battery voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1039"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1039"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_FRONT_REAR_MOTOR_TQ", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32.76, "min": -32.76, "div": 1000, "add": -32.768, "unit": "scalar" }, "name": "Front/rear motor torque ratio"}
   ]},
@@ -975,12 +975,12 @@
   "signals": [
     {"id": "PRIUS_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1069"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1069"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_MOTOR_REGENERATIVE",       "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque, requested"},
     {"id": "PRIUS_MOTOR_REGENERATIVE_BREAK", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106A"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106A"}, "freq": 0.25, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_REAR_MOTOR",              "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque, requested"},
     {"id": "PRIUS_REAR_MOTOR_REGENERATIVE", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque"}
@@ -990,7 +990,7 @@
     {"id": "PRIUS_HVBAT_SOC_MAX", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, maximum"},
     {"id": "PRIUS_HVBAT_SOC_MIN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, minimum"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_AC_POWER_CONS", "path": "Engine", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
   ]},
@@ -1001,7 +1001,7 @@
     {"id": "PRIUS_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "PRIUS_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "107E"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "107E"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_12V_BAT_V_BEFORE_SMR", "path": "Battery", "fmt": { "len": 8, "max": 11.56, "mul": 61, "div": 50000, "add": 11.25, "unit": "volts" }, "name": "12V battery voltage before system main relay"}
   ]},
@@ -1019,7 +1019,7 @@
   "signals": [
     {"id": "PRIUS_GEN_INVERTER_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A5"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A5"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_MOTOR_INVERTER_T",     "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature"},
     {"id": "PRIUS_MOTOR_INVERTER_T_ON",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature after ignition on"},
@@ -1030,18 +1030,18 @@
     {"id": "PRIUS_RM_INVRT_COOL_T", "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear motor inverter, coolant temperature"},
     {"id": "PRIUS_M_INVRT_MAX_T",   "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter, maximum temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A7"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A7"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_BOOSTING_CONV_T_HI", "path": "Transmission", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, upper"},
     {"id": "PRIUS_BOOSTING_CONV_T_LO", "path": "Transmission", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, lower"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A8"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A8"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_GEN_INVERTER_T_7D2",      "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"},
     {"id": "PRIUS_GEN_INVERTER_T_AFTER_ON", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature after ignition on"},
     {"id": "PRIUS_MAX_GEN_INVERTER_T",      "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Maximum generator inverter temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B0"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B0"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_VL_V_BEFORE_BOOSTING", "path": "Battery", "fmt": {           "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vl-voltage before boosting"},
     {"id": "PRIUS_VH_V_AFTER_BOOSTING",  "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vh-voltage after boosting"}
@@ -1050,23 +1050,23 @@
   "signals": [
     {"id": "PRIUS_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1112"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1112"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_INVERTER_WATER_PMP", "path": "Engine", "fmt": { "len": 16, "max": 199, "mul": 15259, "div": 5000000, "unit": "percent" }, "name": "Inverter water pump duty"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111C"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111C"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_DC_DC_CONV_OUTPUT", "path": "Transmission", "fmt": { "len": 8, "max": 199, "mul": 25, "div": 32, "unit": "amps" }, "name": "DC-DC converter output current"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111D"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111D"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_DC_DC_CONV_LOW_SIDE_V", "path": "Battery", "fmt": { "len": 8, "max": 19.92, "mul": 1953, "div": 25000, "unit": "volts" }, "name": "DC-DC converter low side voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111E"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111E"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_DC_DC_CONV_HIGH_SIDE_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter high side voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111F"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111F"}, "freq": 1, "filter": { "from": 2016 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "PRIUS_DC_DC_CONV_TGT_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter, target voltage before charging"}
   ]},
@@ -1113,7 +1113,7 @@
   "signals": [
     {"id": "PRIUS_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F42"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F42"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "PRIUS_12V_BAT_V_SMOOTHED", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "12V battery voltage smoothed"}
   ]},

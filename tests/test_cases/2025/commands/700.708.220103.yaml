@@ -1,0 +1,17 @@
+command_id: 700.708.220103
+test_cases:
+- expected_values:
+    PRIUS_ENG_ODO: 15489
+  response: 7080762010302003C81
+- expected_values:
+    PRIUS_ENG_ODO: 15490
+  response: 7080762010302003C82
+- expected_values:
+    PRIUS_ENG_ODO: 15491
+  response: 7080762010302003C83
+- expected_values:
+    PRIUS_ENG_ODO: 15492
+  response: 7080762010302003C84
+- expected_values:
+    PRIUS_ENG_ODO: 15493
+  response: 7080762010302003C85

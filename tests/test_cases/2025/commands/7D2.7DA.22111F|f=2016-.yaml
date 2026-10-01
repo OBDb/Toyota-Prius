@@ -1,0 +1,23 @@
+command_id: 7D2.7DA.22111F|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 26.85547
+  response: 7DA0562111F00DC
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 26.97754
+  response: 7DA0562111F00DD
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 27.09961
+  response: 7DA0562111F00DE
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 27.34375
+  response: 7DA0562111F00E0
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 27.46582
+  response: 7DA0562111F00E1
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 27.58789
+  response: 7DA0562111F00E2
+- expected_values:
+    PRIUS_DC_DC_CONV_TGT_V: 27.83203
+  response: 7DA0562111F00E4

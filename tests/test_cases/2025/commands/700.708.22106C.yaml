@@ -1,0 +1,20 @@
+command_id: 700.708.22106C
+test_cases:
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7028
+  response: 7080562106C1B74
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7029
+  response: 7080562106C1B75
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7030
+  response: 7080562106C1B76
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7031
+  response: 7080562106C1B77
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7032
+  response: 7080562106C1B78
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 7033
+  response: 7080562106C1B79

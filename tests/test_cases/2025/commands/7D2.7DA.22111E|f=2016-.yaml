@@ -1,26 +1,11 @@
 command_id: 7D2.7DA.22111E|f=2016-
 test_cases:
 - expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 220.94724
-  response: 7DA0562111E0712
+    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 215.94236
+  response: 7DA0562111E06E9
 - expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 222.16795
-  response: 7DA0562111E071C
+    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 218.38377
+  response: 7DA0562111E06FD
 - expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 222.7783
-  response: 7DA0562111E0721
-- expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 224.73142
-  response: 7DA0562111E0731
-- expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 225.46384
-  response: 7DA0562111E0737
-- expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 227.05076
-  response: 7DA0562111E0744
-- expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 229.37009
-  response: 7DA0562111E0757
-- expected_values:
-    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 229.85837
-  response: 7DA0562111E075B
+    PRIUS_DC_DC_CONV_HIGH_SIDE_V: 219.72654
+  response: 7DA0562111E0708

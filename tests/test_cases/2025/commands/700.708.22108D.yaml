@@ -1,5 +1,8 @@
 command_id: 700.708.22108D
 test_cases:
 - expected_values:
+    PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1: 31.81639
+  response: 7080562108D0CBA
+- expected_values:
     PRIUS_INTAKE_VVT_OVER_RET_LEARN_B1: 31.86522
   response: 7080562108D0CBF

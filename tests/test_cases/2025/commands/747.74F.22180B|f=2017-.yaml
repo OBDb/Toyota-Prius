@@ -1,0 +1,8 @@
+command_id: 747.74F.22180B|f=2017-
+test_cases:
+- expected_values:
+    PRIUS_HYBRID_BAT_IAT_1: 65.26549
+  response: 74F0562180B44E6
+- expected_values:
+    PRIUS_HYBRID_BAT_IAT_1: 65.4472
+  response: 74F0562180B4500

@@ -1,9 +1,6 @@
 command_id: 747.74F.220103|fc=1,f=2017-
 test_cases:
 - expected_values:
-    PRIUS_ODO_V6: 18428
-  response: 74F07620103020047FC
-- expected_values:
     PRIUS_ODO_V6: 20073
   response: 74F0762010302004E69
 - expected_values:
@@ -15,3 +12,6 @@ test_cases:
 - expected_values:
     PRIUS_ODO_V6: 42474
   response: 74F076201030200A5EA
+- expected_values:
+    PRIUS_ODO_V6: 66538
+  response: 74F07620103020103EA

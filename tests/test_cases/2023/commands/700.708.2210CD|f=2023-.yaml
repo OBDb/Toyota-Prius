@@ -1,0 +1,11 @@
+command_id: 700.708.2210CD|f=2023-
+test_cases:
+- expected_values:
+    PRIUS_LFP: 623.6
+  response: 708056210CD985C
+- expected_values:
+    PRIUS_LFP: 623.9
+  response: 708056210CD985F
+- expected_values:
+    PRIUS_LFP: 624.8
+  response: 708056210CD9868

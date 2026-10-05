@@ -1,0 +1,8 @@
+command_id: 700.708.221F5C|f=2023-
+test_cases:
+- expected_values:
+    PRIUS_EOT_V2: 17
+  response: 70804621F5C39
+- expected_values:
+    PRIUS_EOT_V2: 76
+  response: 70804621F5C74

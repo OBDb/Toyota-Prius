@@ -1,0 +1,23 @@
+command_id: 7B0.7B8.2121|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_VSS: 5.4
+  response: 7B803612104
+- expected_values:
+    PRIUS_VSS: 43.2
+  response: 7B803612120
+- expected_values:
+    PRIUS_VSS: 67.5
+  response: 7B803612132
+- expected_values:
+    PRIUS_VSS: 68.85
+  response: 7B803612133
+- expected_values:
+    PRIUS_VSS: 71.55
+  response: 7B803612135
+- expected_values:
+    PRIUS_VSS: 72.9
+  response: 7B803612136
+- expected_values:
+    PRIUS_VSS: 75.6
+  response: 7B803612138

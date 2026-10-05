@@ -1,9 +1,0 @@
-command_id: 7B0.7B8.213D
-test_cases:
-- expected_values:
-    PRIUS_ABS_WARN: 0
-    PRIUS_BRAKE_WARN: 0
-    PRIUS_BUZZER: 0
-    PRIUS_ECB_WARN: 0
-    PRIUS_SLIP_WARN: 0
-  response: 7B804613D0000

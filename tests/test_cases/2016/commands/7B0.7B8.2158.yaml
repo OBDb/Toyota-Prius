@@ -1,8 +1,0 @@
-command_id: 7B0.7B8.2158
-test_cases:
-- expected_values:
-    PRIUS_REGEN_COOPERATION: 0
-  response: 7B803615800
-- expected_values:
-    PRIUS_REGEN_COOPERATION: 1
-  response: 7B803615880

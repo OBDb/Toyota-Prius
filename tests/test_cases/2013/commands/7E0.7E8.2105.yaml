@@ -1,0 +1,27 @@
+command_id: 7E0.7E8.2105
+test_cases:
+- expected_values:
+    PRIUS_CAT_T_B1S1: 612.7
+  response: |-
+    7E8100861054D2F197F
+    7E82117F70000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1: 629.7
+  response: |-
+    7E8100861054D2F1A29
+    7E82118C30000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1: 649.5
+  response: |-
+    7E8100861054D2F1AEF
+    7E82119AB0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1: 601.4
+  response: |-
+    7E8100861054D34190E
+    7E821176F0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1: 624.6
+  response: |-
+    7E8100861054D3419F6
+    7E82118860000000000

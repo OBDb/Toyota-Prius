@@ -1,0 +1,9 @@
+command_id: 7E0.7E8.21E3
+test_cases:
+- expected_values:
+    PRIUS_CHECK_MODE_ON: 0
+    PRIUS_F_TEST_RESULTS_1: 0
+    PRIUS_MIS_TEST_RESULT: 0
+    PRIUS_OXS1_FS2_TEST_RESULT: 0
+    PRIUS_SPD_TEST_RESULT: 0
+  response: 7E80461E30000

@@ -1,0 +1,23 @@
+command_id: 7C4.7CC.214A
+test_cases:
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2747
+  response: 7CC04614A0ABB
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2859
+  response: 7CC04614A0B2B
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2909
+  response: 7CC04614A0B5D
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2984
+  response: 7CC04614A0BA8
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2985
+  response: 7CC04614A0BA9
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2998
+  response: 7CC04614A0BB6
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 3014
+  response: 7CC04614A0BC6

@@ -1,0 +1,6 @@
+command_id: 7C4.7CC.2144
+test_cases:
+- expected_values:
+    PRIUS_AIR_INLET_DAMPER_ACTUAL_PULSE: 19
+    PRIUS_AIR_INLET_DAMPER_TARGET_PULSE: 19
+  response: 7CC066144131301FF

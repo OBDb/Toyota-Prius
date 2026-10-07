@@ -1,0 +1,7 @@
+command_id: 7E0.7E8.213C
+test_cases:
+- expected_values:
+    PRIUS_INJ_DUR_CYL_1: 2.721
+    PRIUS_INJ_VOL_CYL_1: 0.00022
+    PRIUS_TOT_FT_1: 6.25
+  response: 7E807613C1AEF0AA190

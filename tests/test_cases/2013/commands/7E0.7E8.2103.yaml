@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.2103
+test_cases:
+- expected_values:
+    PRIUS_IGN_ADVANCE: -64
+    PRIUS_LONG_FT_B1: -4.6875
+    PRIUS_LONG_FT_B2: -100
+    PRIUS_SHORT_FT_B1: 0
+    PRIUS_SHORT_FT_B2: 7.8125
+  response: |-
+    7E8100961030000807A
+    7E8218A000000000000

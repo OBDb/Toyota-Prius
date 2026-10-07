@@ -1,0 +1,14 @@
+command_id: 7C4.7CC.2121
+test_cases:
+- expected_values:
+    PRIUS_CABIN_T: 25.75
+  response: 7CC03612181
+- expected_values:
+    PRIUS_CABIN_T: 26
+  response: 7CC03612182
+- expected_values:
+    PRIUS_CABIN_T: 26.25
+  response: 7CC03612183
+- expected_values:
+    PRIUS_CABIN_T: 26.5
+  response: 7CC03612184

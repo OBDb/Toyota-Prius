@@ -201,6 +201,17 @@ test_cases:
     7E8044110002B
     7E80441447ED4
 - expected_values:
+    EQ_RAT: 0.9776
+  response: |-
+    7E8044110013D
+    7E803410444
+    7E80741870105260000
+    7E80641249DE7A00D
+    7E80441447D22
+    7E803410D0D
+    7E804410C1036
+    7E803410F57
+- expected_values:
     EQ_RAT: 1.01428
   response: |-
     7E80441100285

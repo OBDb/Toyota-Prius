@@ -4,5 +4,8 @@ test_cases:
     PRIUS_AAT: null
   response: 7DA04621F4600
 - expected_values:
+    PRIUS_AAT: 13
+  response: 7DA04621F4635
+- expected_values:
     PRIUS_AAT: 37
   response: 7DA04621F464D

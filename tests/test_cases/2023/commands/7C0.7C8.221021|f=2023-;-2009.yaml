@@ -1,4 +1,4 @@
-command_id: 7C0.7C8.221021
+command_id: 7C0.7C8.221021|f=2023-;-2009
 test_cases:
 - expected_values:
     PRIUS_BATTERY_VOLTAGE: 13.6

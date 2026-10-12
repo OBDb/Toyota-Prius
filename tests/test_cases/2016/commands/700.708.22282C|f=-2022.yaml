@@ -1,4 +1,4 @@
-command_id: 700.708.22282C
+command_id: 700.708.22282C|f=-2022
 test_cases:
 - expected_values:
     PRIUS_COOLANT_VALVE_1_CLOSE: 0

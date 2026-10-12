@@ -1,4 +1,4 @@
-command_id: 750.758.222021|e=2A,ta=2A,fc=1
+command_id: 750.758.222021|e=2A,ta=2A,fc=1,f=2023-;-2015
 test_cases:
 - expected_values:
     PRIUS_TID_1: RR

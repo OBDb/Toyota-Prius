@@ -379,7 +379,7 @@
   "signals": [
     {"id": "PRIUS_ELECTRIC_THERMOSTAT_DUTY_RATIO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Electric thermostat duty ratio"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "282C"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "282C"}, "freq": 1, "filter": { "to": 2022 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "PRIUS_COOLANT_VALVE_1_CLOSE", "path": "Engine", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Coolant water route switching valve 1, closed?"}
   ]},
@@ -647,7 +647,7 @@
     {"id": "PRIUS_TP_RR_V2",    "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "PRIUS_TP_SPARE_V2", "path": "Tires", "fmt": {"bix": 72, "len": 8, "max": 3.8, "div": 58, "add": -0.5, "nullmin": 0, "unit": "bars" }, "name": "Spare tire pressure"}
   ]},
-{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400, "dbgfilter": { "to": 2022, "from": 2027 },
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400, "filter": { "to": 2015, "from": 2023 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "PRIUS_TID_1", "path": "Tires", "name": "Tire 1 position", "fmt": {"len": 8, "map": {
           "1": { "description": "Front left",  "value": "FL" },
@@ -819,7 +819,7 @@
     {"id": "PRIUS_ACCUMULATOR_OPEN",       "path": "Engine",      "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "Accumulator open"},
     {"id": "PRIUS_HV_COMM_OPEN",           "path": "Engine",      "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hydraulic valve, communication open"}
   ]},
-{ "hdr": "7B0", "rax": "7B8", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2027 },
+{ "hdr": "7B0", "rax": "7B8", "cmd": {"22": "1006"}, "freq": 5, "filter": { "to": 2009, "from": 2023 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "PRIUS_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
   ]},
@@ -850,11 +850,11 @@
   "signals": [
     {"id": "PRIUS_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 21, "mul": 500, "div": 3785, "unit": "gallons" }, "name": "Fuel level, volume", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "41"}, "freq": 30, "dbgfilter": { "to": 2012, "from": 2014 },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "41"}, "freq": 30, "filter": { "to": 2022 }, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "PRIUS_OIL_CHANGE_ODO", "path": "Fluids", "fmt": { "len": 8, "max": 41038.272, "mul": 2514600, "div": 15625, "unit": "kilometers" }, "name": "Distance since oil change"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "68"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "68"}, "freq": 1, "filter": { "to": 2022 }, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "PRIUS_RHEOSTAT", "path": "Lights", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Rheostat", "description": "Higher values are brighter"}
   ]},
@@ -872,11 +872,11 @@
   "signals": [
     {"id": "PRIUS_REVERSE_BEEP", "path": "Seatbelts", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "onoff" }, "name": "Reverse beep"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 1, "filter": { "to": 2009, "from": 2023 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "PRIUS_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ battery voltage"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "fcm1": true, "cmd": {"22": "1022"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2027 },
+{ "hdr": "7C0", "rax": "7C8", "fcm1": true, "cmd": {"22": "1022"}, "freq": 1, "filter": { "to": 2009, "from": 2023 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "PRIUS_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
@@ -1227,7 +1227,7 @@
   "signals": [
     {"id": "PRIUS_O2S11_V", "path": "Engine", "fmt": { "len": 8, "max": 1.27, "mul": 0.0049960784, "unit": "volts" }, "name": "Oxygen sensor voltage, bank 1 sensor 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2004, "years": [2006], "from": 2011 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "filter": { "to": 2015, "from": 2023 }, "dbgfilter": { "to": 2004, "years": [2006], "from": 2011 },
   "signals": [
     {"id": "PRIUS_CC_S", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
   ]},
@@ -1386,7 +1386,7 @@
     {"id": "PRIUS_F_C_ENG_STOP_REQ",     "path": "Engine",   "fmt": {"bix": 92, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Fuel cut for engine stop request"},
     {"id": "PRIUS_IDLE_SPD_CTRL",        "path": "Engine",   "fmt": {"bix": 93, "len": 1,  "max": 1,                                                                   "unit": "offon"        }, "name": "Idle speed control learning"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1, "filter": { "to": 2003, "from": 2009 }, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "PRIUS_PREV_TRIP_DST", "path": "Trips",  "fmt": {"bix": 40, "len": 16, "max": 655.35,             "div": 100,             "unit": "kilometers" }, "name": "Previous trip distance"},
     {"id": "PRIUS_VVTOT",         "path": "Engine", "fmt": {"bix": 56, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Variable valve timing oil temperature"},

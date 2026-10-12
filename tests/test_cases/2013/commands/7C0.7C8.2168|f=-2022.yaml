@@ -1,4 +1,4 @@
-command_id: 7C0.7C8.2168
+command_id: 7C0.7C8.2168|f=-2022
 test_cases:
 - expected_values:
     PRIUS_RHEOSTAT: 253

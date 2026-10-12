@@ -5,7 +5,6 @@ test_cases:
     PRIUS_TT_FR_V1: 25
     PRIUS_TT_RL_V1: 22
     PRIUS_TT_RR_V1: 22
-    PRIUS_TT_SPARE_V1: -20
   response: |-
     7582A1007611640413E
     7502A300001
@@ -15,7 +14,6 @@ test_cases:
     PRIUS_TT_FR_V1: 25
     PRIUS_TT_RL_V1: 22
     PRIUS_TT_RR_V1: 23
-    PRIUS_TT_SPARE_V1: -20
   response: |-
     7582A1007611640413E
     7502A300001

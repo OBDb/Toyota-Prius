@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221040|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_TRANSAXLE_OIL_T: 14
+  response: 7DA06621040D28036
+- expected_values:
+    PRIUS_TRANSAXLE_OIL_T: 14
+  response: 7DA06621040D29036
+- expected_values:
+    PRIUS_TRANSAXLE_OIL_T: 14
+  response: 7DA06621040D2C036
+- expected_values:
+    PRIUS_TRANSAXLE_OIL_T: 13
+  response: 7DA06621040D3B035

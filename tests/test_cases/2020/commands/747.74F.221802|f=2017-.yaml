@@ -1,0 +1,5 @@
+command_id: 747.74F.221802|f=2017-
+test_cases:
+- expected_values:
+    PRIUS_HYBRID_BAT_1_FAN_747: 0
+  response: 74F0762180200000000

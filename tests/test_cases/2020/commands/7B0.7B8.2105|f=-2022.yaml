@@ -1,0 +1,10 @@
+command_id: 7B0.7B8.2105|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_DECEL: -0.21388
+    PRIUS_DECEL_2: -0.07129
+  response: 7B80561057E7F00
+- expected_values:
+    PRIUS_DECEL: -0.21388
+    PRIUS_DECEL_2: 0.07129
+  response: 7B80561057E8000

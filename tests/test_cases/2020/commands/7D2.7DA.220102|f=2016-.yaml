@@ -1,0 +1,27 @@
+command_id: 7D2.7DA.220102|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_KEY_CYCLE: 9765
+  response: |-
+    7DA100A620102262500
+    7DA2101969701000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9765
+  response: |-
+    7DA100A620102262500
+    7DA2102C3A501000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9765
+  response: |-
+    7DA100A620102262500
+    7DA2103D10E01000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9765
+  response: |-
+    7DA100A620102262500
+    7DA210492E101000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9765
+  response: |-
+    7DA100A620102262500
+    7DA21054D3701000000

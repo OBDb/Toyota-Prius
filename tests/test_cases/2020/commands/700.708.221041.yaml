@@ -1,0 +1,22 @@
+command_id: 700.708.221041
+test_cases:
+- expected_values:
+    PRIUS_ECT_IGN: 14.375
+    PRIUS_ECT_INIT: 14.375
+  response: '708056210415757'
+- expected_values:
+    PRIUS_ECT_IGN: 14.375
+    PRIUS_ECT_INIT: 36.875
+  response: 70805621041577B
+- expected_values:
+    PRIUS_ECT_IGN: 14.375
+    PRIUS_ECT_INIT: 37.5
+  response: 70805621041577C
+- expected_values:
+    PRIUS_ECT_IGN: 14.375
+    PRIUS_ECT_INIT: 38.125
+  response: 70805621041577D
+- expected_values:
+    PRIUS_ECT_IGN: 14.375
+    PRIUS_ECT_INIT: 38.75
+  response: 70805621041577E

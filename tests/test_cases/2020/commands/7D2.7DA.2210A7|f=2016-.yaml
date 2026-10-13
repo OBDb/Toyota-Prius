@@ -1,0 +1,10 @@
+command_id: 7D2.7DA.2210A7|f=2016-
+test_cases:
+- expected_values:
+    PRIUS_BOOSTING_CONV_T_HI: 17
+    PRIUS_BOOSTING_CONV_T_LO: 17
+  response: 7DA076210A73939373D
+- expected_values:
+    PRIUS_BOOSTING_CONV_T_HI: 18
+    PRIUS_BOOSTING_CONV_T_LO: 19
+  response: 7DA076210A73A3B373D

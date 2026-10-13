@@ -1,0 +1,6 @@
+command_id: 7B0.7B8.211D|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_MAIN_IDLE_SW: 1
+    PRIUS_RESERVOIR_WARNING_SW: 0
+  response: 7B803611D20

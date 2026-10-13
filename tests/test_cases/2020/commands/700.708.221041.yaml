@@ -20,3 +20,23 @@ test_cases:
     PRIUS_ECT_IGN: 14.375
     PRIUS_ECT_INIT: 38.75
   response: 70805621041577E
+- expected_values:
+    PRIUS_ECT_IGN: 41.25
+    PRIUS_ECT_INIT: 41.25
+  response: '708056210418282'
+- expected_values:
+    PRIUS_ECT_IGN: 41.25
+    PRIUS_ECT_INIT: 51.25
+  response: '708056210418292'
+- expected_values:
+    PRIUS_ECT_IGN: 41.25
+    PRIUS_ECT_INIT: 66.875
+  response: 7080562104182AB
+- expected_values:
+    PRIUS_ECT_IGN: 41.25
+    PRIUS_ECT_INIT: 68.125
+  response: 7080562104182AD
+- expected_values:
+    PRIUS_ECT_IGN: 41.25
+    PRIUS_ECT_INIT: 77.5
+  response: 7080562104182BC

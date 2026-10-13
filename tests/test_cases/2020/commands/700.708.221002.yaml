@@ -1,11 +1,29 @@
 command_id: 700.708.221002
 test_cases:
 - expected_values:
+    PRIUS_12V_V_700: 12.65622
+  response: '708056210022880'
+- expected_values:
+    PRIUS_12V_V_700: 12.73434
+  response: 7080562100228C0
+- expected_values:
+    PRIUS_12V_V_700: 12.76852
+  response: 7080562100228DC
+- expected_values:
+    PRIUS_12V_V_700: 12.81247
+  response: '708056210022900'
+- expected_values:
+    PRIUS_12V_V_700: 12.81735
+  response: '708056210022904'
+- expected_values:
     PRIUS_12V_V_700: 14.20407
   response: 708056210022D74
 - expected_values:
     PRIUS_12V_V_700: 14.27242
   response: 708056210022DAC
+- expected_values:
+    PRIUS_12V_V_700: 14.30172
+  response: 708056210022DC4
 - expected_values:
     PRIUS_12V_V_700: 14.35543
   response: 708056210022DF0

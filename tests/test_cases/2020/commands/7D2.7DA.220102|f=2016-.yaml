@@ -9,11 +9,6 @@ test_cases:
     PRIUS_KEY_CYCLE: 9765
   response: |-
     7DA100A620102262500
-    7DA2102C3A501000000
-- expected_values:
-    PRIUS_KEY_CYCLE: 9765
-  response: |-
-    7DA100A620102262500
     7DA2103D10E01000000
 - expected_values:
     PRIUS_KEY_CYCLE: 9765
@@ -25,3 +20,13 @@ test_cases:
   response: |-
     7DA100A620102262500
     7DA21054D3701000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9766
+  response: |-
+    7DA100A620102262600
+    7DA2100F1D701000000
+- expected_values:
+    PRIUS_KEY_CYCLE: 9766
+  response: |-
+    7DA100A620102262600
+    7DA21025FB201000000

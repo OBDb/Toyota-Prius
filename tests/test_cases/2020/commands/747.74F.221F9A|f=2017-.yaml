@@ -1,6 +1,31 @@
 command_id: 747.74F.221F9A|f=2017-
 test_cases:
 - expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 37.9
+  response: |-
+    74F1009621F9A060032
+    74F2140017B00000000
+- expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 59.3
+  response: |-
+    74F1009621F9A060032
+    74F21C0025100000000
+- expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 14.2
+  response: |-
+    74F1009621F9A060033
+    74F2100008E00000000
+- expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 6548.5
+  response: |-
+    74F1009621F9A060034
+    74F2140FFCD00000000
+- expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 6538.2
+  response: |-
+    74F1009621F9A060034
+    74F2180FF6600000000
+- expected_values:
     PRIUS_HYBRID_BAT_CURRENT: 1.2
   response: |-
     74F1009621F9A060035
@@ -20,3 +45,8 @@ test_cases:
   response: |-
     74F1009621F9A060035
     74F21C0002200000000
+- expected_values:
+    PRIUS_HYBRID_BAT_CURRENT: 6479
+  response: |-
+    74F1009621F9A060036
+    74F2140FD1600000000

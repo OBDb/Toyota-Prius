@@ -1,6 +1,14 @@
 command_id: 7B0.7B8.2106|f=-2022
 test_cases:
 - expected_values:
+    PRIUS_YAW_1: -20
+    PRIUS_YAW_2: -20
+  response: 7B80661066C6C7817
+- expected_values:
+    PRIUS_YAW_1: -10
+    PRIUS_YAW_2: -10
+  response: 7B806610676767D99
+- expected_values:
     PRIUS_YAW_1: 0
     PRIUS_YAW_2: 0
   response: 7B806610680807F2E
@@ -8,3 +16,11 @@ test_cases:
     PRIUS_YAW_1: 0
     PRIUS_YAW_2: 0
   response: 7B806610680807F3D
+- expected_values:
+    PRIUS_YAW_1: 0
+    PRIUS_YAW_2: 0
+  response: 7B806610680807FE2
+- expected_values:
+    PRIUS_YAW_1: 0
+    PRIUS_YAW_2: 0
+  response: 7B806610680807FF1

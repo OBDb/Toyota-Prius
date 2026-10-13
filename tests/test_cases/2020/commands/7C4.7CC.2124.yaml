@@ -1,8 +1,20 @@
 command_id: 7C4.7CC.2124
 test_cases:
 - expected_values:
+    PRIUS_SOLAR_DRIVER: 50
+  response: 7CC03612432
+- expected_values:
+    PRIUS_SOLAR_DRIVER: 51
+  response: 7CC03612433
+- expected_values:
+    PRIUS_SOLAR_DRIVER: 52
+  response: 7CC03612434
+- expected_values:
     PRIUS_SOLAR_DRIVER: 54
   response: 7CC03612436
+- expected_values:
+    PRIUS_SOLAR_DRIVER: 55
+  response: 7CC03612437
 - expected_values:
     PRIUS_SOLAR_DRIVER: 57
   response: 7CC03612439

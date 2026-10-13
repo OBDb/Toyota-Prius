@@ -1,6 +1,24 @@
 command_id: 7D2.7DA.221002|f=2016-
 test_cases:
 - expected_values:
+    PRIUS_AUX_BAT_V: 12.78072
+  response: 7DA0562100228EC
+- expected_values:
+    PRIUS_AUX_BAT_V: 12.81
+  response: 7DA056210022904
+- expected_values:
+    PRIUS_AUX_BAT_V: 12.81976
+  response: 7DA05621002290C
+- expected_values:
+    PRIUS_AUX_BAT_V: 12.82952
+  response: 7DA056210022914
+- expected_values:
+    PRIUS_AUX_BAT_V: 12.8344
+  response: 7DA056210022918
+- expected_values:
+    PRIUS_AUX_BAT_V: 14.3228
+  response: 7DA056210022DDC
+- expected_values:
     PRIUS_AUX_BAT_V: 14.36672
   response: 7DA056210022E00
 - expected_values:

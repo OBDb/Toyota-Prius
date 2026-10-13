@@ -3,3 +3,15 @@ test_cases:
 - expected_values:
     PRIUS_EVAP_FIN_THERMISTOR: 14.75
   response: 7CC03614B7F
+- expected_values:
+    PRIUS_EVAP_FIN_THERMISTOR: 15.8
+  response: 7CC03614B82
+- expected_values:
+    PRIUS_EVAP_FIN_THERMISTOR: 16.15
+  response: 7CC03614B83
+- expected_values:
+    PRIUS_EVAP_FIN_THERMISTOR: 16.5
+  response: 7CC03614B84
+- expected_values:
+    PRIUS_EVAP_FIN_THERMISTOR: 16.85
+  response: 7CC03614B85

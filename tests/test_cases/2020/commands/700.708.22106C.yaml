@@ -3,3 +3,15 @@ test_cases:
 - expected_values:
     PRIUS_DIST_SINCE_BAT_DISC: 14543
   response: 7080562106C38CF
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 14545
+  response: 7080562106C38D1
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 14546
+  response: 7080562106C38D2
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 14547
+  response: 7080562106C38D3
+- expected_values:
+    PRIUS_DIST_SINCE_BAT_DISC: 14548
+  response: 7080562106C38D4

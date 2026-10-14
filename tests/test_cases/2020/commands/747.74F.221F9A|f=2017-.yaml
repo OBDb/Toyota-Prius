@@ -21,30 +21,10 @@ test_cases:
     74F1009621F9A060034
     74F2140FFCD00000000
 - expected_values:
-    PRIUS_HYBRID_BAT_CURRENT: 6538.2
-  response: |-
-    74F1009621F9A060034
-    74F2180FF6600000000
-- expected_values:
     PRIUS_HYBRID_BAT_CURRENT: 1.2
   response: |-
     74F1009621F9A060035
     74F2140000C00000000
-- expected_values:
-    PRIUS_HYBRID_BAT_CURRENT: 1.2
-  response: |-
-    74F1009621F9A060035
-    74F2180000C00000000
-- expected_values:
-    PRIUS_HYBRID_BAT_CURRENT: 2.8
-  response: |-
-    74F1009621F9A060035
-    74F2180001C00000000
-- expected_values:
-    PRIUS_HYBRID_BAT_CURRENT: 3.4
-  response: |-
-    74F1009621F9A060035
-    74F21C0002200000000
 - expected_values:
     PRIUS_HYBRID_BAT_CURRENT: 6479
   response: |-

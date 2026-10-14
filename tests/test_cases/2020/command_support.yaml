@@ -156,6 +156,8 @@ supported_commands_by_ecu:
   - 0146:AAT
   - 7E0.0104:LOAD_PCT
   - 7E0.0110:MAF
+  "7E2":
+  - 7E2.7EA.0131
   "7E3":
   - 7E3.7EB.0131
 unsupported_commands_by_ecu:
@@ -352,7 +354,6 @@ unsupported_commands_by_ecu:
   - 7E2.7EA.011F
   - 7E2.7EA.0121
   - 7E2.7EA.0130
-  - 7E2.7EA.0131
   - 7E2.7EA.0146
   - 7E2.7EA.014D
   - 7E2.7EA.014E

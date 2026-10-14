@@ -16,5 +16,8 @@ test_cases:
     PRIUS_INJECTOR_PORT: 5.793
   response: 7080562101816A1
 - expected_values:
+    PRIUS_INJECTOR_PORT: 6.549
+  response: '708056210181995'
+- expected_values:
     PRIUS_INJECTOR_PORT: 7.566
   response: 708056210181D8E

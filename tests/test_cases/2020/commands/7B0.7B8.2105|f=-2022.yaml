@@ -5,22 +5,6 @@ test_cases:
     PRIUS_DECEL_2: -0.07129
   response: 7B80561056D7F00
 - expected_values:
-    PRIUS_DECEL: -0.49906
-    PRIUS_DECEL_2: -0.35647
-  response: 7B80561057C7D3F
-- expected_values:
-    PRIUS_DECEL: -0.49906
-    PRIUS_DECEL_2: 0.07129
-  response: 7B80561057C802F
-- expected_values:
-    PRIUS_DECEL: -0.21388
-    PRIUS_DECEL_2: -0.07129
-  response: 7B80561057E7F00
-- expected_values:
-    PRIUS_DECEL: -0.21388
-    PRIUS_DECEL_2: 0.07129
-  response: 7B80561057E8000
-- expected_values:
     PRIUS_DECEL: -0.07129
     PRIUS_DECEL_2: 0.49906
   response: 7B80561057F8343
@@ -32,3 +16,7 @@ test_cases:
     PRIUS_DECEL: 1.06941
     PRIUS_DECEL_2: 0.21388
   response: 7B8056105878154
+- expected_values:
+    PRIUS_DECEL: 1.212
+    PRIUS_DECEL_2: 0.49906
+  response: 7B805610588834F

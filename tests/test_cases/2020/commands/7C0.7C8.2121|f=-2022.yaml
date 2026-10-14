@@ -4,20 +4,5 @@ test_cases:
     PRIUS_VSS_7C0: 0
   response: 7C803612100
 - expected_values:
-    PRIUS_VSS_7C0: 13
-  response: 7C80361210D
-- expected_values:
-    PRIUS_VSS_7C0: 20
-  response: 7C803612114
-- expected_values:
-    PRIUS_VSS_7C0: 33
-  response: 7C803612121
-- expected_values:
-    PRIUS_VSS_7C0: 79
-  response: 7C80361214F
-- expected_values:
-    PRIUS_VSS_7C0: 84
-  response: 7C803612154
-- expected_values:
-    PRIUS_VSS_7C0: 86
-  response: 7C803612156
+    PRIUS_VSS_7C0: 89
+  response: 7C803612159

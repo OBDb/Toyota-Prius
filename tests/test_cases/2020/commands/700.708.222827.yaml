@@ -13,5 +13,20 @@ test_cases:
     PRIUS_ELECTRIC_WATER_PUMP: 1800
   response: 708046228272D
 - expected_values:
+    PRIUS_ELECTRIC_WATER_PUMP: 2080
+  response: '7080462282734'
+- expected_values:
+    PRIUS_ELECTRIC_WATER_PUMP: 2160
+  response: '7080462282736'
+- expected_values:
+    PRIUS_ELECTRIC_WATER_PUMP: 2240
+  response: '7080462282738'
+- expected_values:
+    PRIUS_ELECTRIC_WATER_PUMP: 2280
+  response: '7080462282739'
+- expected_values:
+    PRIUS_ELECTRIC_WATER_PUMP: 2320
+  response: 708046228273A
+- expected_values:
     PRIUS_ELECTRIC_WATER_PUMP: 2560
   response: '7080462282740'

@@ -7,8 +7,17 @@ test_cases:
     PRIUS_12V_BAT_V_SMOOTHED: 12.778
   response: 7DA05621F4231EA
 - expected_values:
+    PRIUS_12V_BAT_V_SMOOTHED: 12.783
+  response: 7DA05621F4231EF
+- expected_values:
     PRIUS_12V_BAT_V_SMOOTHED: 12.807
   response: 7DA05621F423207
+- expected_values:
+    PRIUS_12V_BAT_V_SMOOTHED: 14.121
+  response: 7DA05621F423729
+- expected_values:
+    PRIUS_12V_BAT_V_SMOOTHED: 14.135
+  response: 7DA05621F423737
 - expected_values:
     PRIUS_12V_BAT_V_SMOOTHED: 14.277
   response: 7DA05621F4237C5

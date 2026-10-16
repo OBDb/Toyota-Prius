@@ -160,6 +160,8 @@ supported_commands_by_ecu:
   - 7E2.7EA.0131
   "7E3":
   - 7E3.7EB.0131
+  "7E5":
+  - 7E5.7ED.0131
 unsupported_commands_by_ecu:
   "700":
   - 700.708.221019:PRIUS_INJECTION
@@ -374,7 +376,6 @@ unsupported_commands_by_ecu:
   - 7E5.7ED.011F
   - 7E5.7ED.0121
   - 7E5.7ED.0130
-  - 7E5.7ED.0131
   - 7E5.7ED.014D
   - 7E5.7ED.014E
   "7E6":

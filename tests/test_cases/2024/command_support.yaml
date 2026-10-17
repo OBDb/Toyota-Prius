@@ -250,6 +250,7 @@ supported_commands_by_ecu:
   - 7E6.7EE.0104
   - 7E6.7EE.0105
   - 7E6.7EE.0111
+  - 7E6.7EE.0131
 unsupported_commands_by_ecu:
   "6F1":
   - 6F1.221700
@@ -549,7 +550,6 @@ unsupported_commands_by_ecu:
   - 7E6.7EE.011F
   - 7E6.7EE.0121
   - 7E6.7EE.0130
-  - 7E6.7EE.0131
   - 7E6.7EE.0142
   - 7E6.7EE.0146
   - 7E6.7EE.014D

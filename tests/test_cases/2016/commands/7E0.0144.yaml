@@ -65,6 +65,13 @@ test_cases:
 - expected_values:
     EQ_RAT: 1.00058
   response: |-
+    7E803410D33
+    7E80441448013
+    7E8074187010C200000
+    7E804410C2616
+- expected_values:
+    EQ_RAT: 1.00058
+  response: |-
     7E803410D39
     7E8034104F3
     7E804410C1DCC

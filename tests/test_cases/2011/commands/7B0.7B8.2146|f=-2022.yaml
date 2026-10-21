@@ -5,5 +5,68 @@ test_cases:
     PRIUS_ZP_DEC2: 0
     PRIUS_ZP_YAW: 0
   response: |-
+    7B8100961460000807F
+    7B821F3021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B8100961460000807F
+    7B821FA021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B8100961460000807F
+    7B821FC021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B8100961460000807F
+    7B821FD021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B8100961460000807F
+    7B821FE021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B8100961460000807F
+    7B821FF021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
     7B81009614600008080
     7B82100021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B82101021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B82102021F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B82109021F00000000

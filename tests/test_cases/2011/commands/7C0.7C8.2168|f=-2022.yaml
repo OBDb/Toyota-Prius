@@ -1,6 +1,12 @@
 command_id: 7C0.7C8.2168|f=-2022
 test_cases:
 - expected_values:
+    PRIUS_RHEOSTAT: 0
+  response: 7C803616800
+- expected_values:
+    PRIUS_RHEOSTAT: 58
+  response: 7C80361683A
+- expected_values:
     PRIUS_RHEOSTAT: 253
   response: 7C8036168FD
 - expected_values:

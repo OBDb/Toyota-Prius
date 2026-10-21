@@ -3,3 +3,12 @@ test_cases:
 - expected_values:
     PRIUS_WHEEL_CYLINDER_PRESSURE: 0.4902
   response: 7B803610719
+- expected_values:
+    PRIUS_WHEEL_CYLINDER_PRESSURE: 0.5098
+  response: 7B80361071A
+- expected_values:
+    PRIUS_WHEEL_CYLINDER_PRESSURE: 0.66667
+  response: 7B803610722
+- expected_values:
+    PRIUS_WHEEL_CYLINDER_PRESSURE: 0.82353
+  response: 7B80361072A

@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_EGR_STEP_POSITION: 0
   response: '7E803614700'
+- expected_values:
+    PRIUS_EGR_STEP_POSITION: 68
+  response: '7E803614744'

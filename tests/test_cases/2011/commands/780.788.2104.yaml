@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_BUCKLE_RS: 1
   response: '78806610402020101'
+- expected_values:
+    PRIUS_BUCKLE_RS: 2
+  response: '78806610402020102'

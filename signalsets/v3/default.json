@@ -1142,7 +1142,7 @@
   "signals": [
     {"id": "PRIUS_HYBRID_BAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 1020, "mul": 4, "unit": "volts" }, "name": "Hybrid battery voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "filter": { "to": 2009 }, "dbgfilter": { "to": 2008 },
   "signals": [
     {"id": "PRIUS_LOAD",    "path": "Engine",   "fmt": {           "len": 8,  "max": 100,                  "mul": 100, "div": 255,             "unit": "percent"           }, "name": "Calculated load",            "suggestedMetric": "engineLoad"},
     {"id": "PRIUS_MAF",     "path": "Engine",   "fmt": {"bix": 24, "len": 16, "max": 655.35,                           "div": 100,             "unit": "gramsPerSecond"    }, "name": "Mass air flow",              "suggestedMetric": "massAirFlow"},
@@ -1152,7 +1152,27 @@
     {"id": "PRIUS_RPM_7E0", "path": "Movement", "fmt": {"bix": 64, "len": 16, "max": 16383.75,                         "div": 4,               "unit": "rpm"               }, "name": "Engine speed",               "suggestedMetric": "engineSpeed"},
     {"id": "PRIUS_VSS_7E0", "path": "Movement", "fmt": {"bix": 80, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Vehicle speed",              "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "03"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "filter": { "from": 2010 }, "dbgfilter": { "years": [2012], "from": 2014 },
+  "signals": [
+    {"id": "PRIUS_LOAD_G3",          "path": "Engine",   "fmt": {            "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Calculated load",                    "suggestedMetric": "engineLoad"},
+    {"id": "PRIUS_VEHICLE_LOAD_G3",  "path": "Engine",   "fmt": {"bix": 8,   "len": 16, "max": 100,                  "mul": 100, "div": 65535,             "unit": "percent"           }, "name": "Vehicle load"},
+    {"id": "PRIUS_MAF_G3",           "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                           "div": 100,               "unit": "gramsPerSecond"    }, "name": "Mass air flow",                      "suggestedMetric": "massAirFlow"},
+    {"id": "PRIUS_MAP_G3",           "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Intake manifold absolute pressure"},
+    {"id": "PRIUS_IAT_G3",           "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Intake air temperature"},
+    {"id": "PRIUS_BARO_G3",          "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Barometric pressure"},
+    {"id": "PRIUS_ECT_7E0_G3",       "path": "Engine",   "fmt": {"bix": 64,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Engine coolant temperature",         "suggestedMetric": "engineCoolantTemperature"},
+    {"id": "PRIUS_RPM_7E0_G3",       "path": "Movement", "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                         "div": 4,                 "unit": "rpm"               }, "name": "Engine speed",                       "suggestedMetric": "engineSpeed"},
+    {"id": "PRIUS_VSS_7E0_G3",       "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                      "suggestedMetric": "speed"},
+    {"id": "PRIUS_RUN_TIME_G3",      "path": "Engine",   "fmt": {"bix": 96,  "len": 16, "max": 65535,                                                      "unit": "seconds"           }, "name": "Engine run time"},
+    {"id": "PRIUS_TPS_G3",           "path": "Engine",   "fmt": {"bix": 112, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle position"},
+    {"id": "PRIUS_TPS1_V_G3",        "path": "Engine",   "fmt": {"bix": 120, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor 1 voltage"},
+    {"id": "PRIUS_TPS2_V_G3",        "path": "Engine",   "fmt": {"bix": 128, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor 2 voltage"},
+    {"id": "PRIUS_THROTTLE_DUTY_G3", "path": "Engine",   "fmt": {"bix": 136, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle motor duty"},
+    {"id": "PRIUS_WARMUPS_CLR_G3",   "path": "Engine",   "fmt": {"bix": 152, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Warm-up cycles since codes cleared"},
+    {"id": "PRIUS_TIME_CLR_G3",      "path": "Engine",   "fmt": {"bix": 168, "len": 16, "max": 65535,                                                      "unit": "minutes"           }, "name": "Time since codes cleared"},
+    {"id": "PRIUS_12V_G3",           "path": "Battery",  "fmt": {"bix": 184, "len": 16, "max": 65.535,                           "div": 1000,              "unit": "volts"             }, "name": "12 V battery voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "03"}, "freq": 1, "filter": { "to": 2009 }, "dbgfilter": { "to": 2008 },
   "signals": [
     {"id": "PRIUS_SHORT_FT_B1", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Short term fuel trim, bank 1", "suggestedMetric": "shortTermFuelTrim"},
     {"id": "PRIUS_LONG_FT_B1",  "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Long term fuel trim, bank 1"},
@@ -1160,7 +1180,14 @@
     {"id": "PRIUS_LONG_FT_B2",  "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Long term fuel trim, bank 2"},
     {"id": "PRIUS_IGN_ADVANCE", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 63.5,  "min": -64,              "div": 2,   "add": -64,  "unit": "degrees" }, "name": "Ignition timing advance"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "03"}, "freq": 1, "filter": { "from": 2010 }, "dbgfilter": { "years": [2012], "from": 2014 },
+  "signals": [
+    {"id": "PRIUS_SHORT_FT_B1_G3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Short term fuel trim, bank 1", "suggestedMetric": "shortTermFuelTrim"},
+    {"id": "PRIUS_LONG_FT_B1_G3",  "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 99.21, "min": -100, "mul": 200, "div": 256, "add": -100, "unit": "percent" }, "name": "Long term fuel trim, bank 1"},
+    {"id": "PRIUS_IGN_ADVANCE_G3", "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 63.5,  "min": -64,              "div": 2,   "add": -64,  "unit": "degrees" }, "name": "Ignition timing advance"},
+    {"id": "PRIUS_EVAP_PURGE_G3",  "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 100,                "mul": 100, "div": 255,              "unit": "percent" }, "name": "EVAP purge duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "filter": { "to": 2009 }, "dbgfilter": { "to": 2008 },
   "signals": [
     {"id": "PRIUS_LAMBDA_TARGET",  "path": "Fuel",   "fmt": {            "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Target air-fuel equivalence ratio"},
     {"id": "PRIUS_AF_LAMBDA_B1S1", "path": "Engine", "fmt": {"bix": 16,  "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Air-fuel equivalence ratio, bank 1 sensor 1", "suggestedMetric": "o2Lambda"},
@@ -1168,10 +1195,23 @@
     {"id": "PRIUS_AFS_I_B1S1",     "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 127.99, "min": -128,              "div": 256,   "add": -128, "unit": "milliamps" }, "name": "Air-fuel sensor current, bank 1 sensor 1"},
     {"id": "PRIUS_O2S_B1S2",       "path": "Engine", "fmt": {"bix": 144, "len": 8,  "max": 1.275,               "mul": 5,    "div": 1000,               "unit": "volts"     }, "name": "Oxygen sensor voltage, bank 1 sensor 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "05"}, "freq": 5, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "filter": { "from": 2010 }, "dbgfilter": { "years": [2012], "from": 2014 },
+  "signals": [
+    {"id": "PRIUS_LAMBDA_TARGET_G3",  "path": "Fuel",   "fmt": {           "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Target air-fuel equivalence ratio"},
+    {"id": "PRIUS_AF_LAMBDA_B1S1_G3", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 1.99,                "mul": 1.99, "div": 65535,              "unit": "scalar"    }, "name": "Air-fuel equivalence ratio, bank 1 sensor 1", "suggestedMetric": "o2Lambda"},
+    {"id": "PRIUS_AFS_V_B1S1_G3",     "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 7.99,                "mul": 7.99, "div": 65535,              "unit": "volts"     }, "name": "Air-fuel sensor voltage, bank 1 sensor 1"},
+    {"id": "PRIUS_AFS_I_B1S1_G3",     "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 127.99, "min": -128,              "div": 256,   "add": -128, "unit": "milliamps" }, "name": "Air-fuel sensor current, bank 1 sensor 1"},
+    {"id": "PRIUS_O2S_B1S2_G3",       "path": "Engine", "fmt": {"bix": 80, "len": 8,  "max": 1.275,               "mul": 5,    "div": 1000,               "unit": "volts"     }, "name": "Oxygen sensor voltage, bank 1 sensor 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "05"}, "freq": 5, "filter": { "to": 2009 }, "dbgfilter": { "to": 2008 },
   "signals": [
     {"id": "PRIUS_CAT_T_B1S1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 1"},
     {"id": "PRIUS_CAT_T_B1S2", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "05"}, "freq": 5, "filter": { "from": 2010 }, "dbgfilter": { "years": [2012], "from": 2014 },
+  "signals": [
+    {"id": "PRIUS_CAT_T_B1S1_G3", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 1"},
+    {"id": "PRIUS_CAT_T_B1S2_G3", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "06"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
   "signals": [

@@ -1,0 +1,10 @@
+command_id: 7E0.7E8.2103|f=2010-
+test_cases:
+- expected_values:
+    PRIUS_EVAP_PURGE_G3: 0
+    PRIUS_IGN_ADVANCE_G3: 5
+    PRIUS_LONG_FT_B1_G3: -4.6875
+    PRIUS_SHORT_FT_B1_G3: 0
+  response: |-
+    7E8100961030000807A
+    7E8218A000000000000

@@ -3,3 +3,15 @@ test_cases:
 - expected_values:
     PRIUS_AAT_7C4: 19.4
   response: 7CC0361227A
+- expected_values:
+    PRIUS_AAT_7C4: 19.75
+  response: 7CC0361227B
+- expected_values:
+    PRIUS_AAT_7C4: 20.1
+  response: 7CC0361227C
+- expected_values:
+    PRIUS_AAT_7C4: 20.8
+  response: 7CC0361227E
+- expected_values:
+    PRIUS_AAT_7C4: 21.15
+  response: 7CC0361227F

@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_REGEN_COOPERATION: 0
   response: 7B803615800
+- expected_values:
+    PRIUS_REGEN_COOPERATION: 1
+  response: 7B803615880

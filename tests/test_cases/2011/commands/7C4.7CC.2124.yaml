@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_SOLAR_DRIVER: 0
   response: 7CC03612400
+- expected_values:
+    PRIUS_SOLAR_DRIVER: 1
+  response: 7CC03612401

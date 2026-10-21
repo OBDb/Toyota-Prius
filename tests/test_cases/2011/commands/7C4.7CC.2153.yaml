@@ -1,0 +1,8 @@
+command_id: 7C4.7CC.2153
+test_cases:
+- expected_values:
+    PRIUS_REGULATOR_P: 573.02
+  response: 7CC03615346
+- expected_values:
+    PRIUS_REGULATOR_P: 587.73
+  response: 7CC03615347

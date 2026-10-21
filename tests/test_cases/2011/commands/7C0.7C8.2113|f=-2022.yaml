@@ -1,0 +1,14 @@
+command_id: 7C0.7C8.2113|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_BAT_V: 12.6
+  response: 7C80361137E
+- expected_values:
+    PRIUS_BAT_V: 12.7
+  response: 7C80361137F
+- expected_values:
+    PRIUS_BAT_V: 14.4
+  response: 7C803611390
+- expected_values:
+    PRIUS_BAT_V: 14.5
+  response: 7C803611391

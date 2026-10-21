@@ -1,0 +1,5 @@
+command_id: 7B0.7B8.21BC|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_HAZARD_SWITCH_HISTORY: COMPLETE
+  response: 7B80361BC20

@@ -1,0 +1,17 @@
+command_id: 7C4.7CC.2126
+test_cases:
+- expected_values:
+    PRIUS_ECT: 39.1
+  response: 7CC0361266C
+- expected_values:
+    PRIUS_ECT: 39.45
+  response: 7CC0361266D
+- expected_values:
+    PRIUS_ECT: 40.15
+  response: 7CC0361266F
+- expected_values:
+    PRIUS_ECT: 40.5
+  response: 7CC03612670
+- expected_values:
+    PRIUS_ECT: 40.85
+  response: 7CC03612671

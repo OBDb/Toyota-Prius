@@ -1,0 +1,20 @@
+command_id: 7C0.7C8.2123|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_ECT_7C0: 0
+  response: 7C803612300
+- expected_values:
+    PRIUS_ECT_7C0: 35
+  response: 7C803612346
+- expected_values:
+    PRIUS_ECT_7C0: 35.5
+  response: 7C803612347
+- expected_values:
+    PRIUS_ECT_7C0: 36
+  response: 7C803612348
+- expected_values:
+    PRIUS_ECT_7C0: 36.5
+  response: 7C803612349
+- expected_values:
+    PRIUS_ECT_7C0: 37
+  response: 7C80361234A

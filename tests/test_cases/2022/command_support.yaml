@@ -91,6 +91,8 @@ supported_commands_by_ecu:
   - 0144:EQ_RAT
   - 0145:TP_R
   - 0146:AAT
+  - 0147:TP_B
+  - 014C:TAC_PCT
   "7E6":
   - 7E6.7EE.0131
 unsupported_commands_by_ecu:

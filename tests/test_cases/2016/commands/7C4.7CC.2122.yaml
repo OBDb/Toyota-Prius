@@ -4,6 +4,9 @@ test_cases:
     PRIUS_AAT_7C4: 16.95
   response: 7CC03612273
 - expected_values:
+    PRIUS_AAT_7C4: 17.65
+  response: 7CC03612275
+- expected_values:
     PRIUS_AAT_7C4: 19.05
   response: 7CC03612279
 - expected_values:

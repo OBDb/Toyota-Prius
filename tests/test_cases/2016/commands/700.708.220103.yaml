@@ -21,6 +21,9 @@ test_cases:
     70003220103
     70807620103010311A0
 - expected_values:
+    PRIUS_ENG_ODO: 171965
+  response: 7080762010301029FBD
+- expected_values:
     PRIUS_ENG_ODO: 199704
   response: 7080762010301030C18
 - expected_values:

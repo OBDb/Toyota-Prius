@@ -292,6 +292,16 @@ test_cases:
     7E8074187010C9C0000
     7E80441448013
 - expected_values:
+    EQ_RAT: 0.98517
+  response: |-
+    7E8064124862A704A
+    7E8044110002B
+    7E803410400
+    7E804410C0000
+    7E803410D0D
+    7E803410F5B
+    7E80441447E1A
+- expected_values:
     EQ_RAT: 1.00058
   response: |-
     7E80641248AB07393

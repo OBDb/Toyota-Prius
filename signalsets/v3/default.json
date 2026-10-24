@@ -1389,9 +1389,9 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "44"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
   "signals": [
-    {"id": "PRIUS_VARIABLE_VLV_TIM_AIM_1", "path": "Engine", "fmt": {           "len": 16, "max": 399, "mul": 1333,         "div": 218450, "unit": "percent" }, "name": "Variable valve timing aim angle 1"},
-    {"id": "PRIUS_VARIABLE_VLV_TIM_OIL_1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 399, "mul": 0.0061020829,                "unit": "percent" }, "name": "Variable valve timing oil control valve duty 1"},
-    {"id": "PRIUS_VARIABLE_VLV_TIM_1",     "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 639, "mul": 0.0097642481,                "unit": "degrees" }, "name": "Variable valve timing change angle 1"}
+    {"id": "PRIUS_VARIABLE_VLV_TIM_AIM_1", "path": "Engine", "fmt": {           "len": 16, "max": 65535,                      "unit": "scalar"  }, "name": "Variable valve timing aim angle 1, raw count"},
+    {"id": "PRIUS_VARIABLE_VLV_TIM_OIL_1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 399,   "mul": 0.0061020829, "unit": "percent" }, "name": "Variable valve timing oil control valve duty 1"},
+    {"id": "PRIUS_VARIABLE_VLV_TIM_1",     "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 639,   "mul": 0.0097642481, "unit": "degrees" }, "name": "Variable valve timing change angle 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "45"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2012], "from": 2014 },
   "signals": [

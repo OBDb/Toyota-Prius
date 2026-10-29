@@ -38,10 +38,10 @@ test_cases:
     7DA2100020080000400
 - expected_values:
     PRIUS_RPM: -2
-    PRIUS_TQ: 0
+    PRIUS_TQ: -0.125
   response: |-
     7DA100C6210A17FFE80
-    7DA2100020080000000
+    7DA210002007FFF0000
 - expected_values:
     PRIUS_RPM: -1
     PRIUS_TQ: -5.5

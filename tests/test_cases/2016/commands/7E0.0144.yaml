@@ -268,6 +268,18 @@ test_cases:
     7E803410F58
     7E804414481D4
 - expected_values:
+    EQ_RAT: 0.99084
+  response: |-
+    7E80441100471
+    7E8034104D6
+    7E804413148CE
+    7E803410F53
+    7E80641247A4862CE
+    7E804410C185A
+    7E803410D41
+    7E8074187010BCC0000
+    7E80441447ED4
+- expected_values:
     EQ_RAT: 0.96109
   response: 7E80441447B05
 - expected_values:

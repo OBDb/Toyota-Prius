@@ -1,11 +1,11 @@
 command_id: 7D2.7DA.2210A1|f=2016-
 test_cases:
 - expected_values:
-    PRIUS_RPM: -427
-    PRIUS_TQ: -9.875
+    PRIUS_RPM: -509
+    PRIUS_TQ: -7
   response: |-
-    7DA100C6210A17E557F
-    7DA21AA02007FB10400
+    7DA100C6210A17E037F
+    7DA21C402007FC80400
 - expected_values:
     PRIUS_RPM: -395
     PRIUS_TQ: -10.125

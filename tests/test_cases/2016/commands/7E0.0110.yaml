@@ -281,6 +281,16 @@ test_cases:
     7E803410F4D
     7E80441448013
 - expected_values:
+    MAF: 6.73
+  response: |-
+    7E804411002A1
+    7E804410C1456
+    7E803410D0C
+    7E804414481D4
+    7E807418701062E0000
+    7E803410470
+    7E803410F56
+- expected_values:
     MAF: 18.7
   response: |-
     7E8044110074E

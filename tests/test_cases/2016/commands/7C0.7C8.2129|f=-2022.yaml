@@ -47,6 +47,11 @@ test_cases:
     7C80361290F
     7C80361290F
 - expected_values:
+    PRIUS_FLI_VOL: 2.11361
+  response: |-
+    7C803612910
+    7C803612910
+- expected_values:
     PRIUS_FLI_VOL: 2.37781
   response: |-
     7C803612912
@@ -85,11 +90,6 @@ test_cases:
     7C81009611200800001
     7C82110000000000000
     7C80361291E
-- expected_values:
-    PRIUS_FLI_VOL: 4.22721
-  response: |-
-    7C803612920
-    7C803612920
 - expected_values:
     PRIUS_FLI_VOL: 8.71863
   response: |-

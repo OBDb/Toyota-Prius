@@ -324,7 +324,7 @@
   "signals": [
     {"id": "PRIUS_ATF_TEMP_700", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 30,
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 1,
   "signals": [
     {"id": "PRIUS_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
@@ -846,7 +846,7 @@
   "signals": [
     {"id": "PRIUS_ECT_7C0", "path": "Engine", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 5, "filter": { "to": 2022 }, "dbgfilter": { "to": 2009, "years": [2018] },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 1, "filter": { "to": 2022 }, "dbgfilter": { "to": 2009, "years": [2018] },
   "signals": [
     {"id": "PRIUS_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 21, "mul": 500, "div": 3785, "unit": "gallons" }, "name": "Fuel level, volume", "suggestedMetric": "fuelTankLevel"}
   ]},

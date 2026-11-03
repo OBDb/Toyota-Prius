@@ -1,0 +1,6 @@
+command_id: 7E2.7EA.2175|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_INV_COOLANT_T: 31.0
+    PRIUS_INV_PUMP_RPM: 3500.0
+  response: 7EA066175200DAC47

@@ -1,0 +1,8 @@
+command_id: 7E2.7EA.2174|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_BOOST_LOWER_T: 34.0
+    PRIUS_BOOST_UPPER_T: 33.0
+  response: |-
+    7EA100B6174494A3D66
+    7EA210001C201C10000

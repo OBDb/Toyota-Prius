@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.219B|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_HVBAT_FAN_MODE: 0
+  response: 7EA06619B000000FF

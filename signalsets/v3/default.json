@@ -1568,6 +1568,99 @@
   "signals": [
     {"id": "PRIUS_TQ_CONV_TURBINE_WHL", "path": "Tires", "fmt": { "len": 8, "max": 6, "mul": 12750, "unit": "rpm" }, "name": "Torque converter turbine wheel speed"}
   ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "61"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_MG1_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor generator 1 temperature"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "62"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_MG2_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor generator 2 temperature"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "70"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_INV_MG1_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Inverter temperature, MG1"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "71"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_INV_MG2_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Inverter temperature, MG2"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "74"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_BOOST_UPPER_T", "path": "Engine", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boost converter temperature, upper"},
+    {"id": "PRIUS_BOOST_LOWER_T", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boost converter temperature, lower"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "75"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_INV_PUMP_RPM",  "path": "Engine", "fmt": {"bix": 8,  "len": 16, "max": 65535,                         "unit": "rpm"     }, "name": "Inverter coolant pump speed"},
+    {"id": "PRIUS_INV_COOLANT_T", "path": "Engine", "fmt": {"bix": 24, "len": 8,  "max": 215,   "min": -40, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "7D"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_AC_POWER", "path": "Climate", "fmt": {"bix": 16, "len": 8, "max": 12750, "mul": 50, "unit": "watts" }, "name": "A/C electric power"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "81"}, "freq": 1, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_BLOCK_1_V_G3",  "path": "Battery.Cells", "fmt": {            "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 1 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_2_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 16,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 2 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_3_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 3 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_4_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 4 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_5_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 5 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_6_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 6 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_7_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 7 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_8_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 112, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 8 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_9_V_G3",  "path": "Battery.Cells", "fmt": {"bix": 128, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 9 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_10_V_G3", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 10 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_11_V_G3", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 11 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_12_V_G3", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 12 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_13_V_G3", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 13 voltage"},
+    {"id": "PRIUS_HVBAT_BLOCK_14_V_G3", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 16, "max": 79.99, "mul": 79.99, "div": 65535, "unit": "volts" }, "name": "HV battery block 14 voltage"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "87"}, "freq": 5, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_INTAKE_T_G3", "path": "Battery", "fmt": {           "len": 16, "max": 205.9, "min": -50, "mul": 255.9, "div": 65535, "add": -50, "unit": "celsius" }, "name": "HV battery intake air temperature"},
+    {"id": "PRIUS_HVBAT_T1_G3",       "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 205.9, "min": -50, "mul": 255.9, "div": 65535, "add": -50, "unit": "celsius" }, "name": "HV battery temperature 1"},
+    {"id": "PRIUS_HVBAT_T2_G3",       "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 205.9, "min": -50, "mul": 255.9, "div": 65535, "add": -50, "unit": "celsius" }, "name": "HV battery temperature 2"},
+    {"id": "PRIUS_HVBAT_T3_G3",       "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 205.9, "min": -50, "mul": 255.9, "div": 65535, "add": -50, "unit": "celsius" }, "name": "HV battery temperature 3"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "8E"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_FAN_PCT", "path": "Battery", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "percent" }, "name": "HV battery fan"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "92"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_WEAKEST_BLOCK",    "path": "Battery", "fmt": {"bix": 16,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "HV battery weakest block"},
+    {"id": "PRIUS_HVBAT_LOW_COUNT",        "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "HV battery low-charge counter"},
+    {"id": "PRIUS_HVBAT_DC_INHIBIT_COUNT", "path": "Battery", "fmt": {"bix": 72,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "HV battery DC inhibit counter"},
+    {"id": "PRIUS_HVBAT_HIGH_COUNT",       "path": "Battery", "fmt": {"bix": 88,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "HV battery high-charge counter"},
+    {"id": "PRIUS_HVBAT_HOT_COUNT",        "path": "Battery", "fmt": {"bix": 104, "len": 16, "max": 65535, "unit": "scalar" }, "name": "HV battery over-temperature counter"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "95"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_BLOCK_1_R_G3",  "path": "Battery.Cells", "fmt": {            "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 1 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_2_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 8,   "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 2 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_3_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 16,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 3 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_4_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 24,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 4 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_5_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 5 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_6_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 6 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_7_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 7 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_8_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 56,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 8 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_9_R_G3",  "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 9 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_10_R_G3", "path": "Battery.Cells", "fmt": {"bix": 72,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 10 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_11_R_G3", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 11 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_12_R_G3", "path": "Battery.Cells", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 12 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_13_R_G3", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 13 internal resistance"},
+    {"id": "PRIUS_HVBAT_BLOCK_14_R_G3", "path": "Battery.Cells", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "milliohms" }, "name": "HV battery block 14 internal resistance"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "98"}, "freq": 1, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_I_G3",            "path": "Battery", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "amps"      }, "name": "HV battery current"},
+    {"id": "PRIUS_HVBAT_DISCHARGE_LIMIT", "path": "Battery", "fmt": {"bix": 16, "len": 8,  "max": 63.5,   "min": -64,     "div": 2,   "add": -64,     "unit": "kilowatts" }, "name": "HV battery discharge power limit"},
+    {"id": "PRIUS_HVBAT_CHARGE_LIMIT",    "path": "Battery", "fmt": {"bix": 24, "len": 8,  "max": 63.5,   "min": -64,     "div": 2,   "add": -64,     "unit": "kilowatts" }, "name": "HV battery charge power limit"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "9B"}, "freq": 0.25, "filter": { "from": 2010, "to": 2015 },
+  "signals": [
+    {"id": "PRIUS_HVBAT_FAN_MODE", "path": "Battery", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "HV battery fan mode"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"21": "C3"}, "freq": 0.25, "filter": { "from": 2004, "to": 2009 }, "dbgfilter": { "to": 2008 },
   "signals": [
     {"id": "PRIUS_MG2_RPM",       "path": "Engine",       "fmt": {            "len": 16, "max": 49152,    "min": -16383,                          "add": -16383, "unit": "rpm"          }, "name": "Motor generator 2 speed"},

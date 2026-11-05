@@ -25,17 +25,17 @@ test_cases:
     7DA100C6210A17F0B7F
     7DA217002007F7A0400
 - expected_values:
+    PRIUS_RPM: -186
+    PRIUS_TQ: -19.5
+  response: |-
+    7DA100C6210A17F467F
+    7DA215F02007F640400
+- expected_values:
     PRIUS_RPM: -26
     PRIUS_TQ: -2
   response: |-
     7DA100C6210A17FE67F
     7DA21F602007FF00400
-- expected_values:
-    PRIUS_RPM: -6
-    PRIUS_TQ: 12.125
-  response: |-
-    7DA100C6210A17FFA80
-    7DA216F020080610400
 - expected_values:
     PRIUS_RPM: -5
     PRIUS_TQ: -1.5

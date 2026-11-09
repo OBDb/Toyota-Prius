@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     PRIUS_OIL_CHANGE_ODO: 2092.1472
   response: 7C80361410D
+- expected_values:
+    PRIUS_OIL_CHANGE_ODO: 3862.4256
+  response: 7C803614118

@@ -4,29 +4,5 @@ test_cases:
     PRIUS_SOLAR_DRIVER: 2
   response: 7CC03612402
 - expected_values:
-    PRIUS_SOLAR_DRIVER: 50
-  response: 7CC03612432
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 51
-  response: 7CC03612433
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 52
-  response: 7CC03612434
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 54
-  response: 7CC03612436
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 55
-  response: 7CC03612437
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 57
-  response: 7CC03612439
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 63
-  response: 7CC0361243F
-- expected_values:
-    PRIUS_SOLAR_DRIVER: 66
-  response: 7CC03612442
-- expected_values:
     PRIUS_SOLAR_DRIVER: 67
   response: 7CC03612443

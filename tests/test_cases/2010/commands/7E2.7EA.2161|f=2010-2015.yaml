@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.2161|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_MG1_T: 67.0
+  response: 7EA0761616B3B738000

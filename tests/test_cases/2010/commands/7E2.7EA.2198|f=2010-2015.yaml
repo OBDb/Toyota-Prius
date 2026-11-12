@@ -1,0 +1,9 @@
+command_id: 7E2.7EA.2198|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_HVBAT_CHARGE_LIMIT: 20.0
+    PRIUS_HVBAT_DISCHARGE_LIMIT: -25.0
+    PRIUS_HVBAT_I_G3: 4.85
+  response: |-
+    7EA100A619881E54EA8
+    7EA210080864B000000

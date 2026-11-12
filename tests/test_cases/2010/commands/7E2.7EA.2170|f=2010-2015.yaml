@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.2170|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_INV_MG1_T: 35.0
+  response: 7EA0661704B3D5D00

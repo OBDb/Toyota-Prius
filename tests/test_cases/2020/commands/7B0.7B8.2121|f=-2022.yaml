@@ -16,6 +16,9 @@ test_cases:
     PRIUS_VSS: 29.7
   response: 7B803612116
 - expected_values:
+    PRIUS_VSS: 32.4
+  response: 7B803612118
+- expected_values:
     PRIUS_VSS: 37.8
   response: 7B80361211C
 - expected_values:

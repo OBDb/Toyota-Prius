@@ -1,0 +1,8 @@
+command_id: 7B0.7B8.2107
+test_cases:
+- expected_values:
+    PRIUS_WHEEL_CYLINDER_PRESSURE: 0.64706
+  response: 7B803610721
+- expected_values:
+    PRIUS_WHEEL_CYLINDER_PRESSURE: 0.70588
+  response: 7B803610724

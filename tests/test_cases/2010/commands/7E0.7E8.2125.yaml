@@ -1,0 +1,7 @@
+command_id: 7E0.7E8.2125
+test_cases:
+- expected_values:
+    PRIUS_CRUISE_CONTROL_LIVE_BRAKE_CANCEL_SWITCH: 0
+    PRIUS_POWER_STEERING_SIGNAL: 0
+    PRIUS_STOP_LIGHT_SWITCH: 0
+  response: '7E803612500'

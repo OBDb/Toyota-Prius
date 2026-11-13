@@ -5,3 +5,8 @@ test_cases:
   response: |-
     7E8100A61E100004AFD
     7E8210000114E000000
+- expected_values:
+    PRIUS_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100004AFD
+    7E82100001709000000

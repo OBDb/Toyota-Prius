@@ -3,4 +3,8 @@ test_cases:
 - expected_values:
     PRIUS_YAW_1: 0
     PRIUS_YAW_2: 0
+  response: 7B8066106808081EF
+- expected_values:
+    PRIUS_YAW_1: 0
+    PRIUS_YAW_2: 0
   response: 7B80661068080821C

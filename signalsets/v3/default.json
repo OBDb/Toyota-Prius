@@ -1592,7 +1592,7 @@
   "signals": [
     {"id": "PRIUS_MG1_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor generator 1 temperature"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "62"}, "freq": 5, "filter": { "from": 2010, "to": 2015 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"21": "62"}, "freq": 5, "filter": { "from": 2010, "to": 2015 }, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "PRIUS_MG2_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor generator 2 temperature"}
   ]},
@@ -1673,7 +1673,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "98"}, "freq": 1, "filter": { "from": 2010, "to": 2015 },
   "signals": [
-    {"id": "PRIUS_HVBAT_I_G3",            "path": "Battery", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "amps"      }, "name": "HV battery current", "suggestedMetric": "tractionBatteryCurrent"},
+    {"id": "PRIUS_HVBAT_I_G3",            "path": "Battery", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "amps"      }, "name": "HV battery current",               "suggestedMetric": "tractionBatteryCurrent"},
     {"id": "PRIUS_HVBAT_DISCHARGE_LIMIT", "path": "Battery", "fmt": {"bix": 16, "len": 8,  "max": 63.5,   "min": -64,     "div": 2,   "add": -64,     "unit": "kilowatts" }, "name": "HV battery discharge power limit"},
     {"id": "PRIUS_HVBAT_CHARGE_LIMIT",    "path": "Battery", "fmt": {"bix": 24, "len": 8,  "max": 63.5,   "min": -64,     "div": 2,   "add": -64,     "unit": "kilowatts" }, "name": "HV battery charge power limit"}
   ]},

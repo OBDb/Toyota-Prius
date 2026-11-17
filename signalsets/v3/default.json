@@ -124,8 +124,8 @@
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "108A"}, "freq": 1, "filter": { "to": 2015, "from": 2023 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
-    {"id": "PRIUS_VVT_IE_DUTY_RATIO_1",              "path": "ECU", "fmt": {           "len": 15, "max": -0.0531, "min": -200, "mul": 399.9, "div": 65535, "add": -200, "unit": "percent" }, "name": "VVT-ie duty ratio bank 1"},
-    {"id": "PRIUS_VVT_IE_MOTOR_DIRECTION_FORWARD_1", "path": "ECU", "fmt": {"bix": 15, "len": 1,  "max": 1,                                                             "unit": "offon"   }, "name": "VVT-ie motor direction: forward bank 1"}
+    {"id": "PRIUS_VVT_IE_DUTY_RATIO_1",              "path": "ECU", "fmt": {           "len": 15, "max": 199.98, "min": -200, "mul": 25, "div": 2048, "add": -200, "unit": "percent" }, "name": "VVT-ie duty ratio bank 1"},
+    {"id": "PRIUS_VVT_IE_MOTOR_DIRECTION_FORWARD_1", "path": "ECU", "fmt": {"bix": 15, "len": 1,  "max": 1,                                                        "unit": "offon"   }, "name": "VVT-ie motor direction: forward bank 1"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "108D"}, "freq": 3600, "filter": { "to": 2015, "from": 2023 }, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [

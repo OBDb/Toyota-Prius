@@ -7,7 +7,12 @@
   "commands": [
 { "hdr": "700", "rax": "708", "cmd": {"22": "0103"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
-    {"id": "PRIUS_ENG_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "PRIUS_ENG_ODO_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "PRIUS_ENG_ODO_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
@@ -101,7 +106,7 @@
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "107B"}, "freq": 5,
   "signals": [
-    {"id": "PRIUS_EOT_700", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+    {"id": "PRIUS_EOT_700", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature", "suggestedMetric": "intakeAirTemperature"}
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1084"}, "freq": 1,
   "signals": [
@@ -402,7 +407,12 @@
   ]},
 { "hdr": "701", "rax": "709", "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2023], "from": 2025 },
   "signals": [
-    {"id": "PRIUS_ODO_V5", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "PRIUS_ODO_V5_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "PRIUS_ODO_V5_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1614"}, "freq": 0.25,
   "signals": [
@@ -446,7 +456,12 @@
   ]},
 { "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2017 }, "dbgfilter": { "years": [2018], "from": 2027 },
   "signals": [
-    {"id": "PRIUS_ODO_V6", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "PRIUS_ODO_V6_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "PRIUS_ODO_V6_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "747", "rax": "74F", "cmd": {"22": "106E"}, "freq": 1, "filter": { "from": 2017 }, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023], "from": 2026 },
   "signals": [
@@ -961,7 +976,12 @@
   ]},
 { "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2016 }, "dbgfilter": { "years": [2018, 2019], "from": 2027 },
   "signals": [
-    {"id": "PRIUS_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "PRIUS_ODO_V2_V2_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "PRIUS_ODO_V2_V2_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "filter": { "from": 2016 }, "dbgfilter": { "years": [2017, 2018, 2019, 2021, 2022, 2023], "from": 2026 },
   "signals": [
@@ -1703,5 +1723,19 @@
     {"id": "PRIUS_HVBAT_BLOCK_13_R",      "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                                "unit": "milliohms" }, "name": "HV battery block 13 internal resistance"},
     {"id": "PRIUS_HVBAT_BLOCK_14_R",      "path": "Battery", "fmt": {"bix": 224, "len": 8,  "max": 255,                                                "unit": "milliohms" }, "name": "HV battery block 14 internal resistance"}
   ]}
+],
+"synthetics": [
+  { "id": "PRIUS_ENG_ODO", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "PRIUS_ENG_ODO_RAW", "key": "PRIUS_ENG_ODO_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }},
+  { "id": "PRIUS_ODO_V2_V2", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "PRIUS_ODO_V2_V2_RAW", "key": "PRIUS_ODO_V2_V2_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }},
+  { "id": "PRIUS_ODO_V5", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "PRIUS_ODO_V5_RAW", "key": "PRIUS_ODO_V5_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }},
+  { "id": "PRIUS_ODO_V6", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "PRIUS_ODO_V6_RAW", "key": "PRIUS_ODO_V6_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }}
 ]
 }

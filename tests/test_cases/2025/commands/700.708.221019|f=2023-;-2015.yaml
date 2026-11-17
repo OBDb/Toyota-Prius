@@ -1,0 +1,20 @@
+command_id: 700.708.221019|f=2023-;-2015
+test_cases:
+- expected_values:
+    PRIUS_INJECTION: DIRECT
+  response: 70807621019013C88FC
+- expected_values:
+    PRIUS_INJECTION: DIRECT
+  response: 7080762101901EB8000
+- expected_values:
+    PRIUS_INJECTION: BOTH
+  response: 7080762101902198AF0
+- expected_values:
+    PRIUS_INJECTION: BOTH
+  response: 70807621019021D8000
+- expected_values:
+    PRIUS_INJECTION: BOTH
+  response: '7080762101902218000'
+- expected_values:
+    PRIUS_INJECTION: BOTH
+  response: 70807621019028C8BB8

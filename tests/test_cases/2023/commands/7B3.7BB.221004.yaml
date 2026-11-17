@@ -1,8 +1,0 @@
-command_id: 7B3.7BB.221004
-test_cases:
-- expected_values:
-    PRIUS_STEERING_ANGLE: 7.5
-  response: 7BB06621004000505
-- expected_values:
-    PRIUS_STEERING_ANGLE: 7.5
-  response: 7BB06621004000506

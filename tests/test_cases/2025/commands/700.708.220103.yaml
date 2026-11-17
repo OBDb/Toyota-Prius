@@ -1,8 +1,10 @@
 command_id: 700.708.220103
 test_cases:
 - expected_values:
-    PRIUS_ENG_ODO: 15489
+    PRIUS_ENG_ODO_RAW: 15489
+    PRIUS_ENG_ODO_UNIT: MI
   response: 7080762010302003C81
 - expected_values:
-    PRIUS_ENG_ODO: 15519
+    PRIUS_ENG_ODO_RAW: 15519
+    PRIUS_ENG_ODO_UNIT: MI
   response: 7080762010302003C9F

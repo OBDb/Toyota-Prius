@@ -1,14 +1,18 @@
 command_id: 747.74F.220103|fc=1,f=2017-
 test_cases:
 - expected_values:
-    PRIUS_ODO_V6: 109868
+    PRIUS_ODO_V6_RAW: 109868
+    PRIUS_ODO_V6_UNIT: MI
   response: 74F076201030201AD2C
 - expected_values:
-    PRIUS_ODO_V6: 110335
+    PRIUS_ODO_V6_RAW: 110335
+    PRIUS_ODO_V6_UNIT: MI
   response: 74F076201030201AEFF
 - expected_values:
-    PRIUS_ODO_V6: 110336
+    PRIUS_ODO_V6_RAW: 110336
+    PRIUS_ODO_V6_UNIT: MI
   response: 74F076201030201AF00
 - expected_values:
-    PRIUS_ODO_V6: 117369
+    PRIUS_ODO_V6_RAW: 117369
+    PRIUS_ODO_V6_UNIT: MI
   response: 74F076201030201CA79

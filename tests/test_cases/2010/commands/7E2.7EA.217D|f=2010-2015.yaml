@@ -1,0 +1,14 @@
+command_id: 7E2.7EA.217D|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_AC_POWER: 0
+  response: 7EA05617D000000
+- expected_values:
+    PRIUS_AC_POWER: 250
+  response: 7EA05617D000005
+- expected_values:
+    PRIUS_AC_POWER: 0
+  response: 7EA05617D6C0500
+- expected_values:
+    PRIUS_AC_POWER: 250
+  response: 7EA05617D850005

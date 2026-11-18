@@ -1,0 +1,38 @@
+command_id: 7E2.7EA.2175|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_INV_COOLANT_T: 16
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC38
+- expected_values:
+    PRIUS_INV_COOLANT_T: 17
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC39
+- expected_values:
+    PRIUS_INV_COOLANT_T: 18
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC3A
+- expected_values:
+    PRIUS_INV_COOLANT_T: 19
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC3B
+- expected_values:
+    PRIUS_INV_COOLANT_T: 20
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC3C
+- expected_values:
+    PRIUS_INV_COOLANT_T: 21
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC3D
+- expected_values:
+    PRIUS_INV_COOLANT_T: 22
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC3E
+- expected_values:
+    PRIUS_INV_COOLANT_T: 24
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC40
+- expected_values:
+    PRIUS_INV_COOLANT_T: 26
+    PRIUS_INV_PUMP_RPM: 3500
+  response: 7EA066175200DAC42

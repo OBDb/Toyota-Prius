@@ -24,6 +24,16 @@ test_cases:
     7E803410400
     7C80562102210A0
 - expected_values:
+    PRIUS_FLV: 42.66
+  response: |-
+    7E803410576
+    7C80562102210AA
+- expected_values:
+    PRIUS_FLV: 42.62
+  response: |-
+    7E803410584
+    7C80562102210A6
+- expected_values:
     PRIUS_FLV: 42.65
   response: |-
     7E8044131957E
@@ -38,3 +48,13 @@ test_cases:
   response: |-
     7EA044131957E
     7C80562102210A0
+- expected_values:
+    PRIUS_FLV: 42.55
+  response: |-
+    7ED03410584
+    7C805621022109F
+- expected_values:
+    PRIUS_FLV: 42.62
+  response: |-
+    7EE03410584
+    7C80562102210A6

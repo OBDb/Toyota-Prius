@@ -6,5 +6,5 @@ test_cases:
   response: '7E803610670'
 - expected_values:
     PRIUS_MIL: 1
-    PRIUS_NUMBER_OF_EMISSION_DTC: 21
-  response: '7E803610695'
+    PRIUS_NUMBER_OF_EMISSION_DTC: 26
+  response: 7E80361069A

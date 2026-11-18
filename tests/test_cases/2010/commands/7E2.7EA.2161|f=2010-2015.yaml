@@ -7,17 +7,17 @@ test_cases:
     PRIUS_MG1_T: 40
   response: 7EA076161504F508000
 - expected_values:
-    PRIUS_MG1_T: 43
-  response: 7EA076161534F5383F3
-- expected_values:
     PRIUS_MG1_T: 46
   response: 7EA076161564F566C5F
 - expected_values:
-    PRIUS_MG1_T: 56
-  response: 7EA076161604F60A045
+    PRIUS_MG1_T: 68
+  response: 7EA0761616C6C6C8ACB
 - expected_values:
-    PRIUS_MG1_T: 71
-  response: 7EA0761616F4F70835B
+    PRIUS_MG1_T: 80
+  response: 7EA076161786C79A702
 - expected_values:
-    PRIUS_MG1_T: 72
-  response: 7EA076161704F707683
+    PRIUS_MG1_T: 84
+  response: 7EA0761617C6C7C84FA
+- expected_values:
+    PRIUS_MG1_T: 85
+  response: 7EA0761617D6C7D7B68

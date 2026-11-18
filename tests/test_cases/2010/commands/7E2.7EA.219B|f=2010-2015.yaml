@@ -5,4 +5,10 @@ test_cases:
   response: 7EA06619B000000FF
 - expected_values:
     PRIUS_HVBAT_FAN_MODE: 1
+  response: 7EA06619B000100FD
+- expected_values:
+    PRIUS_HVBAT_FAN_MODE: 1
   response: 7EA06619B000100FF
+- expected_values:
+    PRIUS_HVBAT_FAN_MODE: 2
+  response: 7EA06619B000200FF

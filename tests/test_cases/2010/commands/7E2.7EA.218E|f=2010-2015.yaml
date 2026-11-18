@@ -4,5 +4,5 @@ test_cases:
     PRIUS_HVBAT_FAN_PCT: 0
   response: 7EA04618E0080
 - expected_values:
-    PRIUS_HVBAT_FAN_PCT: 56
-  response: 7EA04618E7080
+    PRIUS_HVBAT_FAN_PCT: 58.5
+  response: 7EA04618E7580

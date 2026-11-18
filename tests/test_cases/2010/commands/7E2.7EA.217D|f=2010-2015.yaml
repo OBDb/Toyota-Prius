@@ -8,7 +8,7 @@ test_cases:
   response: 7EA05617D000005
 - expected_values:
     PRIUS_AC_POWER: 0
-  response: 7EA05617D6C0500
+  response: 7EA05617D5E0500
 - expected_values:
-    PRIUS_AC_POWER: 250
-  response: 7EA05617D850005
+    PRIUS_AC_POWER: 0
+  response: 7EA05617D9A0000

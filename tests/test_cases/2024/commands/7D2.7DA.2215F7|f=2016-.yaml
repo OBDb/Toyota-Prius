@@ -28,6 +28,11 @@ test_cases:
     7EB03410583
     7DA056215F78096
 - expected_values:
+    PRIUS_12V_C: 0.48074
+  response: |-
+    7ED044131FFFF
+    7DA056215F7807E
+- expected_values:
     PRIUS_12V_C: 0.69818
   response: |-
     7EE0341057F

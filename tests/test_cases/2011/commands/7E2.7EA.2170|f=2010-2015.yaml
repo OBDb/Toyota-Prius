@@ -1,0 +1,20 @@
+command_id: 7E2.7EA.2170|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_INV_MG1_T: 18
+  response: 7EA0661703A383F00
+- expected_values:
+    PRIUS_INV_MG1_T: 18
+  response: 7EA0661703A384B00
+- expected_values:
+    PRIUS_INV_MG1_T: 18
+  response: 7EA0661703A384B80
+- expected_values:
+    PRIUS_INV_MG1_T: 19
+  response: 7EA0661703B384B00
+- expected_values:
+    PRIUS_INV_MG1_T: 20
+  response: 7EA0661703C384B80
+- expected_values:
+    PRIUS_INV_MG1_T: 24
+  response: 7EA06617040384B00

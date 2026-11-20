@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.218E|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_HVBAT_FAN_PCT: 0
+  response: 7EA04618E0080

@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     PRIUS_COMP_SPD: 0
   response: 7CC0461490000
+- expected_values:
+    PRIUS_COMP_SPD: 1441
+  response: 7CC04614905A1
+- expected_values:
+    PRIUS_COMP_SPD: 1874
+  response: 7CC0461490752

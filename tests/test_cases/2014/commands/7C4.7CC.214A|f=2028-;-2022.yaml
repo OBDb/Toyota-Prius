@@ -7,6 +7,9 @@ test_cases:
     PRIUS_COMP_TGT_SPD: 2200
   response: 7CC04614A0898
 - expected_values:
+    PRIUS_COMP_TGT_SPD: 2221
+  response: 7CC04614A08AD
+- expected_values:
     PRIUS_COMP_TGT_SPD: 2299
   response: 7CC04614A08FB
 - expected_values:
@@ -16,8 +19,14 @@ test_cases:
     PRIUS_COMP_TGT_SPD: 2332
   response: 7CC04614A091C
 - expected_values:
+    PRIUS_COMP_TGT_SPD: 2340
+  response: 7CC04614A0924
+- expected_values:
     PRIUS_COMP_TGT_SPD: 2346
   response: 7CC04614A092A
 - expected_values:
     PRIUS_COMP_TGT_SPD: 2372
   response: 7CC04614A0944
+- expected_values:
+    PRIUS_COMP_TGT_SPD: 2373
+  response: 7CC04614A0945

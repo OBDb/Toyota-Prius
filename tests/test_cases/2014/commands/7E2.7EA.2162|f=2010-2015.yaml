@@ -7,8 +7,11 @@ test_cases:
     PRIUS_MG2_T: 21
   response: 7EA0761623D3B3D8000
 - expected_values:
+    PRIUS_MG2_T: 30
+  response: 7EA0761624646477FA7
+- expected_values:
     PRIUS_MG2_T: 31
   response: 7EA076162473B4797C1
 - expected_values:
-    PRIUS_MG2_T: 33
-  response: 7EA076162493B498000
+    PRIUS_MG2_T: 41
+  response: 7EA0761625146518000

@@ -13,6 +13,10 @@ test_cases:
     PRIUS_YAW_2: 0
   response: 7B806610680808000
 - expected_values:
+    PRIUS_YAW_1: 7
+    PRIUS_YAW_2: 7
+  response: 7B8066106878784B0
+- expected_values:
     PRIUS_YAW_1: 16
     PRIUS_YAW_2: 16
-  response: 7B8066106909084B0
+  response: 7B806610690908384

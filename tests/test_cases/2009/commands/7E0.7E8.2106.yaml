@@ -2,8 +2,8 @@ command_id: 7E0.7E8.2106
 test_cases:
 - expected_values:
     PRIUS_MIL: 0
-    PRIUS_NUMBER_OF_EMISSION_DTC: 112
-  response: '7E803610670'
+    PRIUS_NUMBER_OF_EMISSION_DTC: 109
+  response: 7E80361066D
 - expected_values:
     PRIUS_MIL: 1
     PRIUS_NUMBER_OF_EMISSION_DTC: 26

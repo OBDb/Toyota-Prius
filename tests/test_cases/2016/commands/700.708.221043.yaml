@@ -5,6 +5,6 @@ test_cases:
     PRIUS_EWP_TARGET_VSS: 0
   response: '708056210430000'
 - expected_values:
-    PRIUS_EWP_RPM: 4750
-    PRIUS_EWP_TARGET_VSS: 4775
-  response: 70805621043BFBE
+    PRIUS_EWP_RPM: 4825
+    PRIUS_EWP_TARGET_VSS: 4825
+  response: 70805621043C1C1

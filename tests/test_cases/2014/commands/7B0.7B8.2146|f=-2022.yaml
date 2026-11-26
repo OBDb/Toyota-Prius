@@ -48,4 +48,11 @@ test_cases:
     PRIUS_ZP_YAW: 0
   response: |-
     7B81009614600008080
+    7B8210E0F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
     7B8210F0F1F00000000

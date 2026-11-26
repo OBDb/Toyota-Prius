@@ -10,5 +10,8 @@ test_cases:
     PRIUS_INV_MG1_T: 25
   response: 7EA066170413C5900
 - expected_values:
+    PRIUS_INV_MG1_T: 27
+  response: 7EA06617043455400
+- expected_values:
     PRIUS_INV_MG1_T: 38
   response: 7EA0661704E3C5200

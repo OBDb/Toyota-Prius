@@ -1,0 +1,29 @@
+command_id: 7C4.7CC.2149|f=2028-;-2022
+test_cases:
+- expected_values:
+    PRIUS_COMP_SPD: 0
+  response: 7CC0461490000
+- expected_values:
+    PRIUS_COMP_SPD: 639
+  response: 7CC046149027F
+- expected_values:
+    PRIUS_COMP_SPD: 1785
+  response: 7CC04614906F9
+- expected_values:
+    PRIUS_COMP_SPD: 2196
+  response: 7CC0461490894
+- expected_values:
+    PRIUS_COMP_SPD: 2200
+  response: 7CC0461490898
+- expected_values:
+    PRIUS_COMP_SPD: 2204
+  response: 7CC046149089C
+- expected_values:
+    PRIUS_COMP_SPD: 2249
+  response: 7CC04614908C9
+- expected_values:
+    PRIUS_COMP_SPD: 2260
+  response: 7CC04614908D4
+- expected_values:
+    PRIUS_COMP_SPD: 2334
+  response: 7CC046149091E

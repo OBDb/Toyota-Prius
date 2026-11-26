@@ -1,0 +1,20 @@
+command_id: 7E2.7EA.2161|f=2010-2015
+test_cases:
+- expected_values:
+    PRIUS_MG1_T: 24
+  response: 7EA076161403C408000
+- expected_values:
+    PRIUS_MG1_T: 26
+  response: 7EA076161423C4290E5
+- expected_values:
+    PRIUS_MG1_T: 31
+  response: 7EA076161473C47A51C
+- expected_values:
+    PRIUS_MG1_T: 34
+  response: 7EA0761614A3C4A7864
+- expected_values:
+    PRIUS_MG1_T: 34
+  response: 7EA0761614A3C4B7838
+- expected_values:
+    PRIUS_MG1_T: 35
+  response: 7EA0761614B3C4B8000

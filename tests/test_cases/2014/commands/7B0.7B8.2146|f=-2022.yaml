@@ -1,0 +1,51 @@
+command_id: 7B0.7B8.2146|f=-2022
+test_cases:
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B821000F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B821040F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B821050F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B821060F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B821070F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B8210B0F1F00000000
+- expected_values:
+    PRIUS_ZP_DEC: 0
+    PRIUS_ZP_DEC2: 0
+    PRIUS_ZP_YAW: 0
+  response: |-
+    7B81009614600008080
+    7B8210F0F1F00000000

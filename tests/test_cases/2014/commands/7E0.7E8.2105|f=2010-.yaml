@@ -1,0 +1,56 @@
+command_id: 7E0.7E8.2105|f=2010-
+test_cases:
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 611.8
+    PRIUS_CAT_T_B1S2_G3: 487.9
+  response: |-
+    7E8100861054E0B1976
+    7E821149F0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 413.7
+    PRIUS_CAT_T_B1S2_G3: 300.5
+  response: |-
+    7E8100861054EB711B9
+    7E8210D4D0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 553.1
+    PRIUS_CAT_T_B1S2_G3: 439.9
+  response: |-
+    7E8100861054EB7172B
+    7E82112BF0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 709.8
+    PRIUS_CAT_T_B1S2_G3: 641.3
+  response: |-
+    7E8100861054EB71D4A
+    7E8211A9D0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 384.4
+    PRIUS_CAT_T_B1S2_G3: 272.1
+  response: |-
+    7E8100861054EBB1094
+    7E8210C310000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 420.1
+    PRIUS_CAT_T_B1S2_G3: 312.4
+  response: |-
+    7E8100861054EBB11F9
+    7E8210DC40000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 421
+    PRIUS_CAT_T_B1S2_G3: 310.7
+  response: |-
+    7E8100861054EBB1202
+    7E8210DB30000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 387.3
+    PRIUS_CAT_T_B1S2_G3: 271.6
+  response: |-
+    7E8100861054EC010B1
+    7E8210C2C0000000000
+- expected_values:
+    PRIUS_CAT_T_B1S1_G3: 400.5
+    PRIUS_CAT_T_B1S2_G3: 297.6
+  response: |-
+    7E8100861054EC01135
+    7E8210D300000000000

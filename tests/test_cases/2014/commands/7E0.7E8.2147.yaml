@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.2147
+test_cases:
+- expected_values:
+    PRIUS_EGR_STEP_POSITION: 0
+  response: '7E803614700'
+- expected_values:
+    PRIUS_EGR_STEP_POSITION: 25
+  response: '7E803614719'
+- expected_values:
+    PRIUS_EGR_STEP_POSITION: 28
+  response: 7E80361471C
+- expected_values:
+    PRIUS_EGR_STEP_POSITION: 58
+  response: 7E80361473A
